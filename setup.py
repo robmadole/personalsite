@@ -20,6 +20,9 @@ setup(
     install_requires=[
         'Flask==0.9',
         'Frozen-Flask==0.10',
+        'Flask-Assets==0.8',
+        'closure==20121212',
+        'yuicompressor==2.4.7',
     ],
     license='CC-BY',
     author='Rob Madole'

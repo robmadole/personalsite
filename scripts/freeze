@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+# vim : setfiletype=python :
+from flask_frozen import Freezer
+
+from personalsite.web import app
+from personalsite import routes
+
+freezer = Freezer(app)
+freezer.freeze()
