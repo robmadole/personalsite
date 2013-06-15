@@ -1,0 +1,9 @@
+Open the main documentation at:
+
+    http://localhost:5001
+
+Run the development server:
+
+    $ cd /vagrant
+    $ ./scripts/develop
+

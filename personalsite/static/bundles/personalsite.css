@@ -1,0 +1,11 @@
+html {
+  background-color: #e6e6e6;
+}
+body {
+  background-color: white;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.hero {
+  background-color: #3183bd;
+  color: white;
+}

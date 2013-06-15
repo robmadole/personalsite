@@ -15,5 +15,13 @@ assets.register(
     'core_css',
     Bundle(
         'bootstrap/css/bootstrap.css',
+        'fontawesome/css/font-awesome.css',
         filters='yui_css',
         output='bundles/core.css'))
+
+assets.register(
+    'personalsite_css',
+    Bundle(
+        'personalsite/less/screen.less',
+        filters='less',
+        output='bundles/personalsite.css'))

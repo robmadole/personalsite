@@ -9,3 +9,7 @@ nodejs:
   pkg:
     - installed
     - version: 0.10.7-1chl1~precise1
+
+less:
+  npm:
+    - installed
