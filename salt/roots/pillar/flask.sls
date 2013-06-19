@@ -1,0 +1,1 @@
+personalsite_settings_file: settings/development.py

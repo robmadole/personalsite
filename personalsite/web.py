@@ -2,22 +2,17 @@ from flask import Flask
 from flask.ext.assets import Environment, Bundle
 
 app = Flask(__name__)
+app.config.from_object('personalsite.settings.base')
+app.config.from_envvar('PERSONALSITE_SETTINGS_FILE')
+
 assets = Environment(app)
 
 assets.register(
     'core_js',
     Bundle(
-        'jquery/js/jquery.js',
+        'jquery/jquery.js',
         filters='closure_js',
         output='bundles/core.js'))
-
-assets.register(
-    'core_css',
-    Bundle(
-        'bootstrap/css/bootstrap.css',
-        'fontawesome/css/font-awesome.css',
-        filters='yui_css',
-        output='bundles/core.css'))
 
 assets.register(
     'personalsite_css',

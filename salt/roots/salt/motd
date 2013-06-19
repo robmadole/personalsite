@@ -7,3 +7,7 @@ Run the development server:
     $ cd /vagrant
     $ ./scripts/develop
 
+Run the tests:
+
+    $ cd /vagrant
+    $ nosetests

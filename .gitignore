@@ -1,6 +1,7 @@
 *.egg-info
 .jig
 .vagrant
+.coverage
 docs/build
 *.pyc
 *.webassets-cache

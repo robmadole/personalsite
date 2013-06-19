@@ -1,8 +1,17 @@
-@blue: #3183bd;
+@import "../../bootstrap/less/bootstrap.less";
+@import "../../fontawesome/less/font-awesome.less";
+
+@FontAwesomePath: "../fontawesome/font";
 
 @backgroundColor: darken(white, 10%);
 
-@lato: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@sansFontFamily: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@serifFontFamily: "Lora", Georgia, "Times New Roman", Times, serif;
+
+@weightUltraLight: 100;
+@weightBook: 300;
+@weightNormal: 400;
+@weightBold: 700;
 
 html {
   background-color: @backgroundColor;
@@ -10,10 +19,80 @@ html {
 
 body {
   background-color: white;
-  font-family: @lato;
+}
+
+nav {
+  font-weight: @weightNormal;
+  padding: @baseFontSize;
+
+  span {
+    float: left;
+  }
+
+  ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      float: left;
+      padding-left: @baseFontSize * 2;
+    }
+  }
+}
+
+header {
+  background-color: @blue;
+  color: white;
+  padding: 0 @baseFontSize * 10;
 }
 
 .hero {
-  background-color: @blue;
-  color: white;
+  margin: @baseLineHeight * 4 0;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: @weightUltraLight;
+  }
+
+  h1 {
+    font-size: @baseFontSize * 6;
+    line-height: @baseLineHeight * 4;
+    margin-bottom: @baseLineHeight * 2;
+  }
+}
+
+article {
+  @articleSizeMultiplier: 1.5;
+
+  @articleFontSize: @baseFontSize * @articleSizeMultiplier;
+  @articleLineHeight: @baseLineHeight * @articleSizeMultiplier;
+
+  font-family: @serifFontFamily;
+  font-size: @articleFontSize;
+  line-height: @articleLineHeight;
+
+  h3, h4, h5, h6 {
+    font-family: @sansFontFamily;
+    font-weight: @weightBold;
+    text-transform: uppercase;
+    margin: @articleLineHeight * 1.75 0 @articleLineHeight 0;
+  }
+
+  .column {
+    margin-top: @articleLineHeight * 3;
+    padding: 0 @articleLineHeight * 4 @articleLineHeight * 3 @articleLineHeight * 4;
+  }
+
+  ul {
+    margin-top: @articleLineHeight * 1;
+  }
+
+  li {
+    line-height: @articleLineHeight;
+  }
+
+  p + p {
+    margin-top: @articleLineHeight * 1;
+  }
 }

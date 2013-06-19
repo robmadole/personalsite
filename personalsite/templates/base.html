@@ -7,6 +7,18 @@
     {% include "head/css.html" %}
   </head>
   <body>
+  {% block nav %}
+    <nav class="container">
+      <span><a href="/">robmadole.com</a></span>
+      <ul>
+        <li><a href="//twitter.com/robmadole"><i class="icon-twitter"></i> Twitter</a></li>
+        <li><a href="//github.com/robmadole"><i class="icon-github"></i> GitHub</a></li>
+        <li><a href=""><i class="icon-pencil"></i> Articles</a></li>
+        <li><a href=""><i class="icon-book"></i> Bookmarks</a></li>
+      </ul>
+    </nav>
+  {% endblock %}
+
   {% block body %}
 
   {% endblock %}
