@@ -1,5 +1,7 @@
 @import "../../bootstrap/less/bootstrap.less";
+@import "../../bootstrap/less/mixins.less";
 @import "../../fontawesome/less/font-awesome.less";
+@import "mixins.less";
 
 @FontAwesomePath: "../fontawesome/font";
 
@@ -13,12 +15,21 @@
 @weightNormal: 400;
 @weightBold: 700;
 
+@largeMargin: @baseLineHeight * 4;
+
+// Colors
+@grayLighter: lighten(@grayLight, 20%);
+
 html {
   background-color: @backgroundColor;
 }
 
 body {
   background-color: white;
+}
+
+strong {
+  font-weight: 700;
 }
 
 nav {
@@ -40,29 +51,61 @@ nav {
       padding-left: @baseFontSize * 2;
     }
   }
+
+  &.dark {
+    color: white;
+    background-color: @blue;
+    font-weight: @weightBook;
+
+    a {
+      color: white;
+    }
+
+    a:hover, a:focus {
+      color: white;
+    }
+  }
 }
 
 header {
   background-color: @blue;
   color: white;
   padding: 0 @baseFontSize * 10;
-}
-
-.hero {
-  margin: @baseLineHeight * 4 0;
 
   h1, h2, h3, h4, h5, h6 {
     font-weight: @weightUltraLight;
   }
+}
+
+.page-heading {
+  margin: 0 0 @largeMargin 0;
+  padding: @baseLineHeight 0;
+  color: @grayDark;
+  background-color: transparent;
+  border-bottom: 1px solid @grayLighter;
+
+  h1 {
+    font-weight: @weightNormal;
+    text-align: right;
+  }
+
+  p {
+    font-family: @serifFontFamily;
+    margin-top: @baseLineHeight * 0.5;
+  }
+}
+
+.hero {
+  margin: @largeMargin 0;
 
   h1 {
     font-size: @baseFontSize * 6;
-    line-height: @baseLineHeight * 4;
+    line-height: @largeMargin;
     margin-bottom: @baseLineHeight * 2;
   }
 }
 
-article {
+.article-detail {
   @articleSizeMultiplier: 1.5;
 
   @articleFontSize: @baseFontSize * @articleSizeMultiplier;
@@ -95,4 +138,72 @@ article {
   p + p {
     margin-top: @articleLineHeight * 1;
   }
+}
+
+.articles-list {
+  list-style: none;
+  margin: 0 0 @baseLineHeight * 4;
+
+  li {
+    margin-bottom: @baseLineHeight * 2;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .pubdate {
+    line-height: @baseLineHeight * 2.5;
+    display: block;
+    text-align: right;
+  }
+
+  p {
+    font-family: @serifFontFamily;
+  }
+}
+
+.bookmarks-list {
+  list-style: none;
+  margin: 0 0 @largeMargin 0;
+  padding: 0;
+
+  li.bookmark {
+    .clearfix;
+    position: relative;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  .categories {
+    margin-top: @baseLineHeight;
+    padding-top: @baseLineHeight;
+    border-top: 1px solid @grayLighter;
+
+    &.collapse {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+
+    ul {
+      margin: 0;
+      width: 100%;
+      list-style: none;
+      float: left;
+      .columns(50%, 2, @baseLineHeight, transparent, none);
+    }
+  }
+
+  .category-expand {
+    margin-top: @baseLineHeight / 3;
+    float: right;
+  }
+}
+
+.search-bookmarks {
+  text-align: right;
+  margin-bottom: @baseLineHeight * 2;
 }

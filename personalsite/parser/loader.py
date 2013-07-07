@@ -25,18 +25,43 @@ class Loader(object):
         return instance
 
 
-class ArticleLoader(Loader):
+class DirectoryFinder(object):
+
+    """
+    Find objects in a directory of files.
+
+    """
+    def find(self, directory):
+        """
+        Find all objects in a given directory.
+        """
+        files = listdir(directory)
+
+        # If our object has a clear_cache method call that to prepare
+        # for a new set of objects.
+        try:
+            self.obj_class.clear_cache()
+        except AttributeError:
+            pass
+
+        # Find all the files
+        for filename in files:
+            yield self.obj_class(join(directory, filename))
+
+
+class ArticleLoader(Loader, DirectoryFinder):
 
     """
     Article loader.
 
     """
-    def find(self, directory):
-        """
-        Find all articles in a given directory.
-        """
-        files = listdir(directory)
+    pass
 
-        # Find all the files
-        for filename in files:
-            yield self.obj_class(join(directory, filename))
+
+class BookmarkLoader(Loader, DirectoryFinder):
+
+    """
+    Bookmark loader.
+
+    """
+    pass

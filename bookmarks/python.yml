@@ -1,0 +1,28 @@
+title:
+  Python
+
+categories:
+
+  - name: Gotchas
+    slug: python-gotchas
+    description:
+      Things that surprise or make you stumble with Python
+
+  - name: Functional programming
+    slug: python-functional-programming
+    description:
+      Projects or techniques that make FP nicer in Python
+
+locations:
+
+  - url: http://docs.python.org/2/library/collections.html#collections.OrderedDict
+    categories:
+      - python-gotchas
+    description:
+      Pythons dict() builtin type is not ordered and it plainly states that in
+      the documentation. This caused me trouble and to this day it still can
+      sneak up and bite me. OrderedDict to the rescue.
+
+  - url: https://github.com/Suor/funcy
+    categories:
+      - python-functional-programming

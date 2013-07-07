@@ -5,15 +5,15 @@
 <header class="jumbotron">
   <div class="container">
     <div class="hero">
-      <span class="pubdate" data-handle="article_date">{{ article.created_date|article_date }}</span>
-      <h1 data-handle="article_title">{{ article.meta.title }}</h1>
-      <h2 data-handle="article_teaser">{{ article.meta.teaser }}</h2>
+      <span class="pubdate" role="article-date">{{ article.created_date|article_date }}</span>
+      <h1 role="article-title">{{ article.meta.title }}</h1>
+      <h2 role="article-teaser">{{ article.meta.teaser }}</h2>
     </div>
   </div>
 </header>
 
-<article class="container">
-  <div class="column" data-handle="article_body">
+<article class="article-detail container">
+  <div class="column" role="article-body">
     {{ article.body|safe }}
   </div>
 </article>

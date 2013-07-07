@@ -1,0 +1,22 @@
+title:
+  Bananas
+
+categories:
+
+  - name: Desserts using bananas
+    slug: bananas-desserts
+    description:
+      Recipes for desserts using bananas as the main ingredient
+
+  - name: Countries that grow them
+    slug: bananas-countries
+    description:
+      Where do bananas grow and what kind of climate you need to grow them
+
+locations:
+
+  - url: http://recipes.com/banana-crazy-dessert
+    categories:
+      - bananas-desserts
+    description:
+      Great recipe if you want to go crazy eating bananas

@@ -5,3 +5,4 @@
 docs/build
 *.pyc
 *.webassets-cache
+personalsite/static/bundles

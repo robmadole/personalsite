@@ -8,8 +8,14 @@ nodejs-ppas:
 nodejs:
   pkg:
     - installed
-    - version: 0.10.7-1chl1~precise1
+    - version: 0.10.12-1chl1~precise1
 
-less:
+npm-packages:
   npm:
     - installed
+    - names:
+      - less
+      - uglify-js
+      - coffee-script
+    - require:
+      - pkg: nodejs

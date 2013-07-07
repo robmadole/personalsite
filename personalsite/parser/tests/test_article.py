@@ -3,6 +3,7 @@ from os.path import join, dirname
 from unittest import TestCase
 
 from personalsite.parser.article import Article, loader
+from personalsite.tests.testcases import LoaderTestCase
 
 
 class ArticleTestCase(TestCase):
@@ -16,22 +17,14 @@ class ArticleTestCase(TestCase):
             dirname(__file__), 'fixtures', 'articles')
 
 
-class ArticleLoaderTest(ArticleTestCase):
+class ArticleLoaderTest(LoaderTestCase, ArticleTestCase):
 
     """
     Article loader tests.
 
     """
-    def test_will_find_articles(self):
-        articles = loader.find(self.fixture_directory)
-
-        self.assertGreater(len(list(articles)), 0)
-
-    def test_they_are_articles(self):
-        articles = loader.find(self.fixture_directory)
-
-        for article in articles:
-            self.assertIsInstance(article, Article)
+    loader = loader
+    object_class = Article
 
 
 class ArticleTest(ArticleTestCase):

@@ -2,8 +2,10 @@ from unittest import TestCase
 from os.path import join, dirname
 from datetime import date
 
-from personalsite.parser.article import loader
-from personalsite.presenters import ArticlePresenter, NotFound
+from personalsite.parser import article
+from personalsite.parser import bookmark
+from personalsite.presenters import (
+    ArticlePresenter, BookmarkPresenter, NotFound)
 
 
 class ArticlePresenterTestCase(TestCase):
@@ -13,7 +15,7 @@ class ArticlePresenterTestCase(TestCase):
 
     """
     def setUp(self):
-        self.articles = loader.find(
+        self.articles = article.loader.find(
             join(dirname(__file__), 'fixtures', 'articles'))
 
         self.presenter = ArticlePresenter(self.articles)
@@ -49,3 +51,30 @@ class ArticlePresenterTestCase(TestCase):
 
         with self.assertRaises(NotFound):
             self.presenter.latest()
+
+    def test_to_list(self):
+        """
+        Can get a list of articles.
+        """
+        self.assertEqual(3, len(self.presenter.to_list()))
+
+
+class BookmarkPresenterTestCase(TestCase):
+
+    """
+    Presenter for a bookmakrs.
+
+    """
+    def setUp(self):
+        self.bookmarks = bookmark.loader.find(
+            join(dirname(__file__), 'fixtures', 'bookmarks'))
+
+        self.presenter = BookmarkPresenter(self.bookmarks)
+
+    def test_ordered_by_name(self):
+        """
+        Bookmarks are ordered alphabetically.
+        """
+        self.assertEqual(
+            ['Apples', 'Bananas', 'Cars'],
+            [i.title for i in self.presenter.to_list()])

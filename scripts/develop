@@ -3,4 +3,12 @@
 from personalsite.web import app
 from personalsite import routes
 
-app.run(debug=True, host='0.0.0.0')
+extra_files = [
+    app.config.get('ARTICLES_DIRECTORY'),
+    app.config.get('BOOKMARKS_DIRECTORY')
+]
+
+app.run(
+    debug=True,
+    host='0.0.0.0',
+    extra_files=extra_files)

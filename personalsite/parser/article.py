@@ -1,8 +1,8 @@
 import re
 import datetime
-from os.path import basename
 
 from personalsite.parser.loader import Loader
+from personalsite.parser.matcher import FilenameMatcher
 from personalsite.parser.meta import separate_meta
 
 ARTICLE_FILENAME_PATTERN = re.compile(r'''
@@ -15,27 +15,16 @@ ARTICLE_FILENAME_PATTERN = re.compile(r'''
     \.html''', re.VERBOSE)
 
 
-class Article(object):
+class Article(FilenameMatcher):
 
     """
     A written article containing meta data and an HTML snippet.
 
     """
+    filename_pattern = ARTICLE_FILENAME_PATTERN
+
     def __init__(self, path):
-        self.path = path
-        self.basename = basename(path)
-
-        match = ARTICLE_FILENAME_PATTERN.match(self.basename)
-
-        if not match:
-            raise ValueError('Invalid filename {}'.format(self.basename))
-
-        parts = match.groupdict()
-
-        self.year = int(parts['year'])
-        self.month = int(parts['month'])
-        self.day = int(parts['day'])
-        self.slug = parts['slug']
+        super(Article, self).__init__(path)
 
         # We will store article contents in here
         self._content_cache = None

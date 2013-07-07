@@ -1,0 +1,15 @@
+title:
+  Twitter Bootstrap
+
+categories:
+
+  - name: Extras
+    slug: twitter-bootstrap-extras
+    description:
+      Plugins, themes, and add-ons
+
+locations:
+
+  - url: https://github.com/ExactTarget/fuelux
+    categories:
+      - twitter-bootstrp-extras

@@ -9,6 +9,8 @@ Vagrant.configure("2") do |config|
   config.vm.network :forwarded_port, guest: 5000, host: 5000, auto_correct: false
   # Sphinx docs
   config.vm.network :forwarded_port, guest: 5001, host: 5001, auto_correct: false
+  # Karma test runner
+  config.vm.network :forwarded_port, guest: 9876, host: 9876, auto_correct: false
 
   # For Salt
   config.vm.synced_folder "salt/roots", "/srv"

@@ -1,0 +1,22 @@
+title:
+  Trucks
+
+categories:
+
+  - name: Yellow ones
+    slug: yellow-ones
+    description:
+      Information about yellow trucks
+
+  - name: Old ones
+    slug: old-ones
+    description:
+      Trucks that are old
+
+locations:
+
+  - url: http://oldtrucks.com/truck1.jpg
+    categories:
+      - old-ones
+    description:
+      This is a very nice truck.

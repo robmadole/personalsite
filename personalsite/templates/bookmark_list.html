@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block nav %}
+
+  {% set nav_type="dark" %}
+  {% include "nav.html" %}
+
+{% endblock %}
+
+{% block body %}
+
+<header class="page-heading">
+  <div class="container">
+    <div class="row">
+      <div class="span6">
+        <p>This area of my site functions as my reference material. I collect things here that I find interesting and need to refer back to later.</p>
+      </div>
+      <div class="span6">
+        <h1>Bookmarks</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="span6">
+      <ol class="bookmarks-list" role="bookmarks">
+        {% for bookmark in bookmarks %}
+          {% set url = url_for('bookmark_detail', slug=bookmark.slug) %}
+          <li class="bookmark well" role="card">
+            <a class="btn btn-small category-expand" role="category-expander" href="#"><i class="icon-list-ul"></i></a>
+            <h3 role="title"><a href="{{ url }}">{{ bookmark.title }}</a></h3>
+
+            <div class="categories collapse" role="categories">
+              <ul>
+                {% for category in bookmark.categories %}
+                  <li><a href="{{ url }}#{{ category.slug }}">{{ category.name }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+    <div class="span6">
+      {% include "bookmark_search_form.html" %}
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+title:
+  Apples
+
+categories:
+
+  - name: Green
+    slug: apples-green
+    description:
+      Information about green apples
+
+  - name: Red
+    slug: apples-red
+    description:
+      Red apples
+
+locations:
+
+  - url: http://apples.com/tasty1.jpg
+    categories:
+      - apples-green
+    description:
+      These apples are good

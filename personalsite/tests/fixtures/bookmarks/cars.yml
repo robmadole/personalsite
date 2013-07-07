@@ -1,0 +1,22 @@
+title:
+  Cars
+
+categories:
+
+  - name: Batmobiles
+    slug: cars-batmobiles
+    description:
+      Only cars that look like the Batmobile
+
+  - name: Super tiny
+    slug: cars-super-tiny
+    description:
+      Cars that are very small
+
+locations:
+
+  - url: http://batman.com/original-batmobile1.jpg
+    categories:
+      - cars-batmobiles
+    description:
+      This was the first Batmobile

@@ -26,6 +26,7 @@ setup(
         'closure==20121212',
         'yuicompressor==2.4.7',
         'pyyaml==3.10',
+        'whoosh==2.5.1',
     ],
     license='CC-BY',
     author='Rob Madole'

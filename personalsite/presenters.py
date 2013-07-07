@@ -1,4 +1,5 @@
 from operator import attrgetter
+from collections import defaultdict
 
 
 class NotFound(Exception):
@@ -42,3 +43,39 @@ class ArticlePresenter(object):
                 return article
         else:
             raise NotFound(slug)
+
+    def to_list(self):
+        """
+        Get an ordered list of articles.
+        """
+        return self.articles[:]
+
+
+class BookmarkPresenter(object):
+
+    """
+    Presenter pattern for a list of bookmarks.
+
+    """
+    def __init__(self, bookmarks):
+        self.bookmarks = sorted(
+            bookmarks,
+            key=attrgetter('title'))
+
+    def to_list(self):
+        """
+        Get an alphabetized list of bookmarks.
+        """
+        return self.bookmarks[:]
+
+    def by_category(self):
+        """
+        Get a dict of bookmarks organized by category.
+        """
+        categories = defaultdict(list)
+
+        for bookmark in self.bookmarks:
+            for category in bookmark.categories:
+                categories[category].append(bookmark)
+
+        return categories

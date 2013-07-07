@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block nav %}
+
+  {% set nav_type="dark" %}
+  {% include "nav.html" %}
+
+{% endblock %}
+
+{% block body %}
+
+<header class="page-heading">
+  <div class="container">
+    <div class="row">
+      <div class="span6">
+        <p>I write about <strong>developing web applications</strong>. Agile development, software testing, and team building are what you&rsquo;ll typically find.</p>
+      </div>
+      <div class="span6">
+        <h1>Articles</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <ol class="articles-list">
+    {% for article in articles %}
+      <li>
+        <article class="row">
+          <div class="span2">
+            <span class="pubdate" data-handle="article_date">{{ article.created_date|article_date }}</span>
+          </div>
+          <div class="span7 offset1">
+            <a href="{{ url_for('article_detail', slug=article.slug) }}">
+              <h2 data-handle="article_title">{{ article.meta.title }}</h1>
+              <p data-handle="article_teaser">{{ article.meta.teaser }}</p>
+            </a>
+          </div>
+        </article>
+      </li>
+    {% endfor %}
+  </ol>
+</div>
+
+{% endblock %}
