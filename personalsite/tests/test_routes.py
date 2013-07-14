@@ -1,15 +1,18 @@
+import json
 from os.path import join, dirname
 
 from personalsite.tests.testcases import PersonalSiteTestCase
 from personalsite.web import app
 from personalsite import routes
 from personalsite.parser import article, bookmark
+from personalsite.search.index import SearchIndex
 
 
 class ViewTest(PersonalSiteTestCase):
     def setUp(self):
         self._original_articles = routes.articles
         self._original_bookmarks = routes.bookmarks
+        self._original_search_index = routes.search_index
 
         routes.articles = article.loader.find(
             join(dirname(__file__), 'fixtures', 'articles'))
@@ -17,11 +20,14 @@ class ViewTest(PersonalSiteTestCase):
         routes.bookmarks = bookmark.loader.find(
             join(dirname(__file__), 'fixtures', 'bookmarks'))
 
+        routes.search_index = SearchIndex(bookmarks=routes.bookmarks)
+
         self.app = app.test_client()
 
     def tearDown(self):
         routes.articles = self._original_articles
         routes.bookmarks = self._original_bookmarks
+        routes.search_index = self._original_search_index
 
     def test_entry_page_latest_article(self):
         """
@@ -76,3 +82,13 @@ class ViewTest(PersonalSiteTestCase):
         response = self.app.get('/bookmarks')
 
         self.assertEqual(200, response.status_code)
+
+    def test_search_keyword(self):
+        """
+        Search for a bookmark.
+        """
+        response = self.app.get('/bookmarks/search?q=ap')
+
+        data = json.loads(response.data)
+
+        self.assertIn('search', data)

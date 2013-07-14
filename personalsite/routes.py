@@ -1,17 +1,24 @@
 from functools import wraps
 
-from flask import render_template, abort
+from flask import render_template, abort, request
+from flask.json import jsonify
 
 from personalsite.web import app
 from personalsite.parser import article, bookmark
 from personalsite.presenters import (
-    ArticlePresenter, BookmarkPresenter, NotFound)
+    ArticlePresenter, BookmarkPresenter, SearchResultPresenter, NotFound)
+from personalsite.search.index import SearchIndex
+from personalsite.serializer.tool import load_drivers
 
 articles = list(article.loader.find(
     app.config.get('ARTICLES_DIRECTORY')))
 
 bookmarks = list(bookmark.loader.find(
     app.config.get('BOOKMARKS_DIRECTORY')))
+
+search_index = SearchIndex(bookmarks=bookmarks)
+
+load_drivers()
 
 
 def not_found_raise_404(func):
@@ -61,7 +68,11 @@ def bookmark_list():
 
 @app.route('/bookmarks/search')
 def bookmark_search():
-    pass
+    query_string = request.args.get('q', '')
+
+    presenter = SearchResultPresenter(search_index.search(query_string))
+
+    return jsonify({'search': presenter.to_list()})
 
 
 @app.route('/bookmarks/<slug>')

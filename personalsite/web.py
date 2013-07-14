@@ -13,8 +13,8 @@ assets.register(
     'core_js',
     Bundle(
         'jquery/jquery.js',
-        'underscore/js/underscore.js',
-        'backbone/js/backbone.js',
+        'underscore/underscore.js',
+        'backbone/backbone.js',
         filters='uglifyjs',
         output='{}/core.js'.format(OUTPUT_DIRECTORY)))
 

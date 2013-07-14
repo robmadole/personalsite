@@ -1,6 +1,8 @@
 from operator import attrgetter
 from collections import defaultdict
 
+from personalsite.serializer.tool import serialize
+
 
 class NotFound(Exception):
 
@@ -79,3 +81,25 @@ class BookmarkPresenter(object):
                 categories[category].append(bookmark)
 
         return categories
+
+
+class SearchResultPresenter(object):
+
+    """
+    Presenter for search results.
+
+    """
+    def __init__(self, results):
+        self.results = results
+
+    def to_list(self):
+        """
+        Convert search results to a list of plain dictionaries.
+        """
+        results_list = []
+        with self.results as results:
+            for result in results:
+                serialized = serialize(result)
+                results_list.append(serialized)
+
+        return results_list

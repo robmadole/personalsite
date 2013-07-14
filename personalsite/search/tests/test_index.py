@@ -7,8 +7,8 @@ from personalsite.search.index import SearchIndex
 
 class SearchTest(TestCase):
     def setUp(self):
-        self.bookmarks = list(bookmark.loader.find(
-            join(dirname(__file__), 'fixtures', 'bookmarks')))
+        self.bookmarks = list(bookmark.loader.find(join(
+            dirname(__file__), '..', '..', 'tests', 'fixtures', 'bookmarks')))
 
         self.index = SearchIndex(bookmarks=self.bookmarks)
 

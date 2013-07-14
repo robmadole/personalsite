@@ -4,11 +4,13 @@ from datetime import date
 
 from personalsite.parser import article
 from personalsite.parser import bookmark
+from personalsite.search.index import SearchIndex
+from personalsite.serializer.tool import load_drivers
 from personalsite.presenters import (
-    ArticlePresenter, BookmarkPresenter, NotFound)
+    ArticlePresenter, BookmarkPresenter, SearchResultPresenter, NotFound)
 
 
-class ArticlePresenterTestCase(TestCase):
+class ArticlePresenterTest(TestCase):
 
     """
     Presenter interface to a list of articles.
@@ -59,7 +61,7 @@ class ArticlePresenterTestCase(TestCase):
         self.assertEqual(3, len(self.presenter.to_list()))
 
 
-class BookmarkPresenterTestCase(TestCase):
+class BookmarkPresenterTest(TestCase):
 
     """
     Presenter for a bookmakrs.
@@ -78,3 +80,29 @@ class BookmarkPresenterTestCase(TestCase):
         self.assertEqual(
             ['Apples', 'Bananas', 'Cars'],
             [i.title for i in self.presenter.to_list()])
+
+
+class SearchResultPresenterTest(TestCase):
+
+    """
+    Presenter for search results.
+
+    """
+
+    def setUp(self):
+        self.bookmarks = bookmark.loader.find(
+            join(dirname(__file__), 'fixtures', 'bookmarks'))
+
+        self.results = SearchIndex(bookmarks=self.bookmarks).search('ap')
+
+        load_drivers()
+
+        self.presenter = SearchResultPresenter(self.results)
+
+    def test_convert_to_plain_object(self):
+        """
+        Converts search results to a plain Python object.
+        """
+        result_list = self.presenter.to_list()
+
+        self.assertGreater(len(result_list), 0)
