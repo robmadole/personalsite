@@ -23,6 +23,8 @@ class Bookmark(FilenameMatcher):
     A collection of links and notes categorized by subject.
 
     """
+    _cache_by_slug = {}
+
     filename_pattern = BOOKMARK_FILENAME_PATTERN
 
     slug = None
@@ -38,13 +40,25 @@ class Bookmark(FilenameMatcher):
         self._locations_cache = [
             Location(i) for i in self._object_cache.get('locations', [])]
 
+        self.__class__.cache_add(self)
+
     @classmethod
-    def clear_cache(self):
+    def clear_cache(cls):
         """
         Remove any cached data that this or child objects use for lookup.
         """
+        cls._cache_by_slug.clear()
+
         Category.clear_cache()
         Location.clear_cache()
+
+    @classmethod
+    def cache_add(cls, instance):
+        cls._cache_by_slug[instance.slug] = instance
+
+    @classmethod
+    def lookup_by_slug(cls, slug):
+        return cls._cache_by_slug[slug]
 
     @property
     def _object(self):
@@ -92,6 +106,10 @@ class Category(object):
         cls._cache_by_slug[instance.slug] = instance
 
     @classmethod
+    def lookup_by_slug(cls, slug):
+        return cls._cache_by_slug[slug]
+
+    @classmethod
     def lookup_slugs(cls, slugs):
         """
         Find categories by slug.
@@ -99,7 +117,7 @@ class Category(object):
         :param list slugs:
         """
         return sorted(
-            [cls._cache_by_slug[i] for i in slugs],
+            [cls.lookup_by_slug(i) for i in slugs],
             key=attrgetter('name'))
 
     @property
@@ -113,6 +131,8 @@ class Location(object):
     A URL or other location of a resource on the Internet.
 
     """
+    _cache_by_url = {}
+
     _cache_by_category_slug = defaultdict(list)
 
     def __init__(self, location):
@@ -126,12 +146,19 @@ class Location(object):
 
     @classmethod
     def clear_cache(cls):
+        cls._cache_by_url.clear()
         cls._cache_by_category_slug.clear()
 
     @classmethod
     def cache_add(cls, instance):
+        cls._cache_by_url[instance.url] = instance
+
         for slug in instance._categories:
             cls._cache_by_category_slug[slug].append(instance)
+
+    @classmethod
+    def lookup_by_url(cls, url):
+        return cls._cache_by_url[url]
 
     @classmethod
     def lookup_by_category_slug(cls, category_slug):

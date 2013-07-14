@@ -44,6 +44,14 @@ class BookmarkTest(BookmarkTestCase):
         self.assertEqual('Trucks', self.bookmark.title)
         self.assertEqual('trucks', self.bookmark.slug)
 
+    def test_get_bookmark_by_slug(self):
+        """
+        Can get a bookmark by its slug.
+        """
+        self.assertIsInstance(
+            Bookmark.lookup_by_slug('trucks'),
+            Bookmark)
+
     def test_get_categories(self):
         """
         Can get categories.
@@ -52,6 +60,14 @@ class BookmarkTest(BookmarkTestCase):
 
         for category in self.bookmark.categories:
             self.assertIsInstance(category, Category)
+
+    def test_get_category_by_slug(self):
+        """
+        Can get a category by its slug.
+        """
+        self.assertIsInstance(
+            Category.lookup_by_slug('yellow-ones'),
+            Category)
 
     def test_get_locations(self):
         """
@@ -62,6 +78,14 @@ class BookmarkTest(BookmarkTestCase):
 
         if not self.bookmark.locations:
             self.fail('No locations found')
+
+    def test_get_location_by_url(self):
+        """
+        Can get a location by its URL.
+        """
+        self.assertIsInstance(
+            Location.lookup_by_url('http://oldtrucks.com/truck1.jpg'),
+            Location)
 
     def test_category_attributes(self):
         """
