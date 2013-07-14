@@ -1,0 +1,17 @@
+title:
+  Bookmark title
+
+categories:
+
+  - name: Category
+    slug: category
+    description:
+      Category description
+
+locations:
+
+  - url: http://location.com
+    categories:
+      - category
+    description:
+      Description of location.com
