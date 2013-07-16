@@ -17,5 +17,6 @@ npm-packages:
       - less
       - uglify-js
       - coffee-script
+      - handlebars
     - require:
       - pkg: nodejs

@@ -15,15 +15,16 @@ assets.register(
         'jquery/jquery.js',
         'underscore/underscore.js',
         'backbone/backbone.js',
+        'handlebars/js/backbone.js',
         filters='uglifyjs',
         output='{}/core.js'.format(OUTPUT_DIRECTORY)))
 
-#assets.register(
-#    'personalsite_templates',
-#    Bundle(
-#        'personalsite/app/**/templates/*.html',
-#        filters='jst',
-#        output='{}/personalsite_templates.js'.format(OUTPUT_DIRECTORY)))
+assets.register(
+    'personalsite_templates',
+    Bundle(
+        'personalsite/app/**/templates/*.html',
+        filters='handlebars',
+        output='{}/personalsite_templates.js'.format(OUTPUT_DIRECTORY)))
 
 assets.register(
     'personalsite_js',
