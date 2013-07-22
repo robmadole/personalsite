@@ -1,21 +1,26 @@
-from unittest import TestCase
 from os.path import join, dirname
 
-from personalsite.parser import bookmark
-from personalsite.serializer.tool import load_drivers, serialize
+from personalsite.web import app
+from personalsite.tests.testcases import PersonalSiteTestCase
+from personalsite.serializer.tool import serialize
+from personalsite.injectables.content import get_bookmarks
 
 
-class DriversTest(TestCase):
+class DriversTest(PersonalSiteTestCase):
     def setUp(self):
-        load_drivers()
+        self.content = self.content_from_fixtures(
+            app, join(dirname(__file__), 'fixtures'))
 
-        self.bookmarks = bookmark.loader.find(
-            join(dirname(__file__), 'fixtures', 'bookmarks'))
+        self.content.__enter__()
+
+    def tearDown(self):
+        self.content.__exit__(None, None, None)
 
     def test_bookmark_serializer(self):
-        bookmark = self.bookmarks.next()
+        with app.test_request_context('/'):
+            bookmark = get_bookmarks()[0]
 
-        serialized = serialize(bookmark)
+            serialized = serialize(bookmark)
 
         self.assertEqual('bookmark', serialized['type'])
         self.assertEqual(bookmark.slug, serialized['id'])
@@ -23,12 +28,13 @@ class DriversTest(TestCase):
         self.assertEqual(bookmark.title, serialized['title'])
         self.assertEqual(
             [i.slug for i in bookmark.categories],
-            serialized['categories'])
+            serialized['links']['categories'])
 
     def test_category_serializer(self):
-        category = self.bookmarks.next().categories[0]
+        with app.test_request_context('/'):
+            category = get_bookmarks()[0].categories[0]
 
-        serialized = serialize(category)
+            serialized = serialize(category)
 
         self.assertEqual('category', serialized['type'])
         self.assertEqual(category.slug, serialized['id'])
@@ -37,12 +43,13 @@ class DriversTest(TestCase):
         self.assertEqual(category.description, serialized['description'])
         self.assertEqual(
             [i.url for i in category.locations],
-            serialized['locations'])
+            serialized['links']['locations'])
 
     def test_location_serializer(self):
-        location = self.bookmarks.next().locations[0]
+        with app.test_request_context('/'):
+            location = get_bookmarks()[0].locations[0]
 
-        serialized = serialize(location)
+            serialized = serialize(location)
 
         self.assertEqual('location', serialized['type'])
         self.assertEqual(location.url, serialized['id'])
@@ -52,4 +59,4 @@ class DriversTest(TestCase):
         self.assertEqual(location.description, serialized['description'])
         self.assertEqual(
             [i.slug for i in location.categories],
-            serialized['categories'])
+            serialized['links']['categories'])

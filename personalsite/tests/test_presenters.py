@@ -2,10 +2,12 @@ from unittest import TestCase
 from os.path import join, dirname
 from datetime import date
 
+from personalsite.web import app
 from personalsite.parser import article
 from personalsite.parser import bookmark
+from personalsite.tests.testcases import PersonalSiteTestCase
+from personalsite.injectables.content import get_bookmarks
 from personalsite.search.index import SearchIndex
-from personalsite.serializer.tool import load_drivers
 from personalsite.presenters import (
     ArticlePresenter, BookmarkPresenter, SearchResultPresenter, NotFound)
 
@@ -82,7 +84,7 @@ class BookmarkPresenterTest(TestCase):
             [i.title for i in self.presenter.to_list()])
 
 
-class SearchResultPresenterTest(TestCase):
+class SearchResultPresenterTest(PersonalSiteTestCase):
 
     """
     Presenter for search results.
@@ -90,19 +92,23 @@ class SearchResultPresenterTest(TestCase):
     """
 
     def setUp(self):
-        self.bookmarks = bookmark.loader.find(
-            join(dirname(__file__), 'fixtures', 'bookmarks'))
+        self.content = self.content_from_fixtures(
+            app, join(dirname(__file__), 'fixtures'))
 
-        self.results = SearchIndex(bookmarks=self.bookmarks).search('ap')
+        self.content.__enter__()
 
-        load_drivers()
-
-        self.presenter = SearchResultPresenter(self.results)
+    def tearDown(self):
+        self.content.__exit__(None, None, None)
 
     def test_convert_to_plain_object(self):
         """
         Converts search results to a plain Python object.
         """
-        result_list = self.presenter.to_list()
+        with app.test_request_context('/'):
+            results = SearchIndex(bookmarks=get_bookmarks()).search('ap')
+
+            presenter = SearchResultPresenter(results)
+
+            result_list = presenter.to_list()
 
         self.assertGreater(len(result_list), 0)

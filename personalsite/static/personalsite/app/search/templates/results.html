@@ -1,5 +1,19 @@
 <ul>
   {{#each results}}
-    {{title}}
+    {{#resultType "category" }}
+      <li><i class="icon-tag"></i> {{name}}</li>
+    {{/resultType}}
+
+    {{#resultType "bookmark" }}
+      <li><i class="icon-bookmark"></i> {{title}}</li>
+    {{/resultType}}
+
+    {{#resultType "location" }}
+      <li><i class="icon-link"></i> <a href="{{url}}">{{url}}</a></li>
+    {{/resultType}}
+  {{else}}
+    {{#if keyword}}
+    <li class="no-results"><i class="icon-thumbs-down"></i> No results for that keyword.</li>
+    {{/if}}
   {{/each}}
 </ul>

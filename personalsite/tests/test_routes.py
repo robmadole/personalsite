@@ -3,37 +3,25 @@ from os.path import join, dirname
 
 from personalsite.tests.testcases import PersonalSiteTestCase
 from personalsite.web import app
-from personalsite import routes
-from personalsite.parser import article, bookmark
-from personalsite.search.index import SearchIndex
 
 
 class ViewTest(PersonalSiteTestCase):
     def setUp(self):
-        self._original_articles = routes.articles
-        self._original_bookmarks = routes.bookmarks
-        self._original_search_index = routes.search_index
+        self.client = app.test_client()
 
-        routes.articles = article.loader.find(
-            join(dirname(__file__), 'fixtures', 'articles'))
+        self.content = self.content_from_fixtures(
+            app, join(dirname(__file__), 'fixtures'))
 
-        routes.bookmarks = bookmark.loader.find(
-            join(dirname(__file__), 'fixtures', 'bookmarks'))
-
-        routes.search_index = SearchIndex(bookmarks=routes.bookmarks)
-
-        self.app = app.test_client()
+        self.content.__enter__()
 
     def tearDown(self):
-        routes.articles = self._original_articles
-        routes.bookmarks = self._original_bookmarks
-        routes.search_index = self._original_search_index
+        self.content.__exit__(None, None, None)
 
     def test_entry_page_latest_article(self):
         """
         Get the latest article.
         """
-        response = self.app.get('/')
+        response = self.client.get('/')
 
         self.assertEqual(200, response.status_code)
 
@@ -45,7 +33,7 @@ class ViewTest(PersonalSiteTestCase):
         """
         List of articles.
         """
-        response = self.app.get('/articles')
+        response = self.client.get('/articles')
 
         self.assertEqual(200, response.status_code)
 
@@ -53,9 +41,9 @@ class ViewTest(PersonalSiteTestCase):
         """
         If no articles are available.
         """
-        routes.articles = []
+        self.articles = []
 
-        response = self.app.get('/')
+        response = self.client.get('/')
 
         self.assertEqual(404, response.status_code)
 
@@ -63,7 +51,7 @@ class ViewTest(PersonalSiteTestCase):
         """
         Get article by slug.
         """
-        response = self.app.get('/articles/old')
+        response = self.client.get('/articles/old')
 
         self.assertEqual(200, response.status_code)
 
@@ -71,7 +59,7 @@ class ViewTest(PersonalSiteTestCase):
         """
         Article by slug not found.
         """
-        response = self.app.get('/articles/notaslug')
+        response = self.client.get('/articles/notaslug')
 
         self.assertEqual(404, response.status_code)
 
@@ -79,7 +67,7 @@ class ViewTest(PersonalSiteTestCase):
         """
         List of bookmarks.
         """
-        response = self.app.get('/bookmarks')
+        response = self.client.get('/bookmarks')
 
         self.assertEqual(200, response.status_code)
 
@@ -87,7 +75,7 @@ class ViewTest(PersonalSiteTestCase):
         """
         Search for a bookmark.
         """
-        response = self.app.get('/bookmarks/search?q=ap')
+        response = self.client.get('/bookmarks/search?q=ap')
 
         data = json.loads(response.data)
 

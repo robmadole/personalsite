@@ -103,3 +103,7 @@ class SearchResultPresenter(object):
                 results_list.append(serialized)
 
         return results_list
+
+
+class CategoryPresenter(object):
+    pass

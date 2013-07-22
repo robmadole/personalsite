@@ -5,3 +5,5 @@ ARTICLES_DIRECTORY = realpath(
 
 BOOKMARKS_DIRECTORY = realpath(
     join(dirname(__file__), '..', '..', 'bookmarks'))
+
+ASSETS_DIRECTORY_NAME = 'bundles'

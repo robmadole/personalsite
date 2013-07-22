@@ -1,0 +1,19 @@
+title:
+  Monitoring
+
+categories:
+
+  - name: Presentations
+    slug: monitoring-presentations
+    description:
+      Presentations on the topic usually from various conferences
+
+locations:
+
+  - url: https://speakerdeck.com/monitorama
+    categories:
+      - monitoring-presentations
+
+  - url: http://vimeo.com/monitorama/videos
+    categories:
+      - monitoring-presentations
