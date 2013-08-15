@@ -2,6 +2,7 @@
 .jig
 .vagrant
 .coverage
+cover
 docs/build
 *.pyc
 *.webassets-cache
