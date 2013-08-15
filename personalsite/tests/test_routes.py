@@ -71,6 +71,22 @@ class ViewTest(PersonalSiteTestCase):
 
         self.assertEqual(200, response.status_code)
 
+    def test_bookmark_detail(self):
+        """
+        Specific bookmark.
+        """
+        response = self.client.get('/bookmarks/apples')
+
+        self.assertEqual(200, response.status_code)
+
+    def test_category_detail(self):
+        """
+        Specific category.
+        """
+        response = self.client.get('/categories/apples-green')
+
+        self.assertEqual(200, response.status_code)
+
     def test_search_keyword(self):
         """
         Search for a bookmark.

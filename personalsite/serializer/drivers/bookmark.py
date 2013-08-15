@@ -1,3 +1,5 @@
+from urlparse import urljoin
+
 from flask import url_for, request
 
 from personalsite.serializer.drivers.base import Serializer
@@ -11,7 +13,7 @@ class BookmarkSerializer(Serializer):
         return {
             u'id': self.instance.slug,
             u'type': u'bookmark',
-            u'href': u'{}{}'.format(
+            u'href': urljoin(
                 request.url_root,
                 url_for('bookmark_detail', slug=self.instance.slug)
             ),
@@ -29,7 +31,7 @@ class CategorySerializer(Serializer):
         return {
             u'id': self.instance.slug,
             u'type': u'category',
-            u'href': u'{}{}'.format(
+            u'href': urljoin(
                 request.url_root,
                 url_for('category_detail', slug=self.instance.slug)
             ),

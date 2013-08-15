@@ -13,7 +13,20 @@ class NotFound(Exception):
     pass
 
 
-class ArticlePresenter(object):
+class SingleObjectPresenter(object):
+
+    """
+    Presenter for a single object.
+
+    """
+    def __init__(self, obj):
+        self.obj = obj
+
+    def to_object(self):
+        return self.obj
+
+
+class ArticleListPresenter(object):
 
     """
     Presenter pattern for a list of articles.
@@ -53,7 +66,7 @@ class ArticlePresenter(object):
         return self.articles[:]
 
 
-class BookmarkPresenter(object):
+class BookmarkListPresenter(object):
 
     """
     Presenter pattern for a list of bookmarks.
@@ -83,6 +96,22 @@ class BookmarkPresenter(object):
         return categories
 
 
+class BookmarkPresenter(SingleObjectPresenter):
+
+    """
+    Presenter for bookmark.
+
+    """
+
+
+class CategoryPresenter(SingleObjectPresenter):
+
+    """
+    Presenter for categories.
+
+    """
+
+
 class SearchResultPresenter(object):
 
     """
@@ -103,7 +132,3 @@ class SearchResultPresenter(object):
                 results_list.append(serialized)
 
         return results_list
-
-
-class CategoryPresenter(object):
-    pass

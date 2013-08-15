@@ -9,10 +9,11 @@ from personalsite.tests.testcases import PersonalSiteTestCase
 from personalsite.injectables.content import get_bookmarks
 from personalsite.search.index import SearchIndex
 from personalsite.presenters import (
-    ArticlePresenter, BookmarkPresenter, SearchResultPresenter, NotFound)
+    ArticleListPresenter, BookmarkListPresenter,
+    BookmarkPresenter, CategoryPresenter, SearchResultPresenter, NotFound)
 
 
-class ArticlePresenterTest(TestCase):
+class ArticleListPresenterTest(TestCase):
 
     """
     Presenter interface to a list of articles.
@@ -22,7 +23,7 @@ class ArticlePresenterTest(TestCase):
         self.articles = article.loader.find(
             join(dirname(__file__), 'fixtures', 'articles'))
 
-        self.presenter = ArticlePresenter(self.articles)
+        self.presenter = ArticleListPresenter(self.articles)
 
     def test_latest_article(self):
         """
@@ -63,17 +64,17 @@ class ArticlePresenterTest(TestCase):
         self.assertEqual(3, len(self.presenter.to_list()))
 
 
-class BookmarkPresenterTest(TestCase):
+class BookmarkListPresenterTest(TestCase):
 
     """
-    Presenter for a bookmakrs.
+    Presenter for a bookmarks.
 
     """
     def setUp(self):
         self.bookmarks = bookmark.loader.find(
             join(dirname(__file__), 'fixtures', 'bookmarks'))
 
-        self.presenter = BookmarkPresenter(self.bookmarks)
+        self.presenter = BookmarkListPresenter(self.bookmarks)
 
     def test_ordered_by_name(self):
         """
@@ -82,6 +83,46 @@ class BookmarkPresenterTest(TestCase):
         self.assertEqual(
             ['Apples', 'Bananas', 'Cars'],
             [i.title for i in self.presenter.to_list()])
+
+    def test_by_category(self):
+        categories = self.presenter.by_category()
+
+        for category in categories:
+            self.assertIsInstance(category, bookmark.Category)
+
+
+class BookmarkPresenterTest(TestCase):
+
+    """
+    Presenter for individual bookmarks.
+
+    """
+    def setUp(self):
+        self.bookmarks = bookmark.loader.find(
+            join(dirname(__file__), 'fixtures', 'bookmarks'))
+
+        self.presenter = BookmarkPresenter(
+            self.bookmarks.next())
+
+    def test_to_object(self):
+        self.assertIsInstance(self.presenter.to_object(), bookmark.Bookmark)
+
+
+class CategoryPresenterTest(TestCase):
+
+    """
+    Presenter for individual categories.
+
+    """
+    def setUp(self):
+        self.bookmarks = bookmark.loader.find(
+            join(dirname(__file__), 'fixtures', 'bookmarks'))
+
+        self.presenter = CategoryPresenter(
+            self.bookmarks.next().categories[0])
+
+    def test_to_object(self):
+        self.assertIsInstance(self.presenter.to_object(), bookmark.Category)
 
 
 class SearchResultPresenterTest(PersonalSiteTestCase):

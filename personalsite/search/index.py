@@ -17,6 +17,15 @@ bookmark_schema = Schema(
     categories=KEYWORD())
 
 
+def get_bookmark_parser():
+    """
+    Get a query parser for searching bookmark content.
+    """
+    return MultifieldParser(
+        ['title', 'slug', 'description'],
+        bookmark_schema)
+
+
 class SearchResult(object):
 
     """
@@ -93,9 +102,7 @@ class SearchIndex(object):
         searcher = self._index.searcher()
 
         try:
-            parser = MultifieldParser(
-                ['title', 'slug', 'description'],
-                bookmark_schema)
+            parser = get_bookmark_parser()
 
             query = parser.parse(query_string)
             query.apply(partial(boost, fields=['title', 'slug'], value=2.0))

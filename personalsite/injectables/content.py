@@ -17,6 +17,20 @@ def get_bookmarks():
     return g.bookmarks
 
 
+def get_bookmark_lookup():
+    # Load the bookmarks if they are not available
+    get_bookmarks()
+
+    _bookmark = bookmark
+
+    class lookup:
+        bookmark = _bookmark.Bookmark.lookup_by_slug
+        category = _bookmark.Category.lookup_by_slug
+        location = _bookmark.Location.lookup_by_url
+
+    return lookup
+
+
 def get_articles():
     articles = g.get('articles', None)
 

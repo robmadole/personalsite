@@ -4,6 +4,8 @@ class SearchResultCollection extends Backbone.Collection
   model : SearchResultModel
 
   parse : (response, options) =>
+    @links = response.links
+
     return response.search
 
   search : (queryString) =>

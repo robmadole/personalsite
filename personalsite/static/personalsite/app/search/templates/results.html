@@ -1,15 +1,15 @@
 <ul>
   {{#each results}}
-    {{#resultType "category" }}
-      <li><i class="icon-tag"></i> {{name}}</li>
+    {{#resultType "category"}}
+      <li><i class="icon-tag"></i> <a href="{{{url}}}">{{name}}</a></li>
     {{/resultType}}
 
-    {{#resultType "bookmark" }}
-      <li><i class="icon-bookmark"></i> {{title}}</li>
+    {{#resultType "bookmark"}}
+      <li><i class="icon-bookmark"></i> <a href="{{{url}}}"> {{title}}</a></li>
     {{/resultType}}
 
-    {{#resultType "location" }}
-      <li><i class="icon-link"></i> <a href="{{url}}">{{url}}</a></li>
+    {{#resultType "location"}}
+      <li><i class="icon-link"></i> <a href="{{{url}}}">{{url}}</a></li>
     {{/resultType}}
   {{else}}
     {{#if keyword}}

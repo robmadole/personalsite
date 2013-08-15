@@ -17,3 +17,7 @@ Handlebars.registerHelper 'resultType', (type, options) ->
     return options.fn @
   else
     return options.inverse @
+
+
+Handlebars.registerHelper 'toJSON', (options) ->
+  @toJSON()

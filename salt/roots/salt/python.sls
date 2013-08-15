@@ -12,6 +12,7 @@ python-tools:
       - watchdog
       - nose
       - coverage
+      - mock
       - beautifulsoup4
     - download_cache: /home/vagrant/.pip-cache
     - require:

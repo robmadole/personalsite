@@ -1,3 +1,5 @@
+from urlparse import urljoin
+
 from flask import request
 
 
@@ -16,16 +18,16 @@ def uri_template(app, **kwargs):
     endpoint = kwargs.keys()[0]
     parameters = kwargs.values()[0]
 
-    for rule in app.url_map.iter_rules():
-        if rule.endpoint == endpoint:
+    for url in app.url_map.iter_rules():
+        if url.endpoint == endpoint:
             break
     else:
         return ''
 
-    ut = rule.rule
+    ut = url.rule
 
     for param, replacement in parameters.items():
         ut = ut.replace(
             '<{}>'.format(param), '{' + replacement + '}')
 
-    return '{}{}'.format(request.url_root, ut)
+    return urljoin(request.url_root, ut)

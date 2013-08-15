@@ -24,7 +24,6 @@ class Injector(object):
     Implementation of dependency injection for a Flask application.
 
     """
-
     namespace = ''
 
     injectables = Injectables()

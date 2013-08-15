@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block nav %}
+
+  {% set nav_type="dark" %}
+  {% include "nav.html" %}
+
+{% endblock %}
+
+{% block body %}
+
+<header class="page-heading bookmark-detail-heading">
+  <div class="container">
+    <div class="row">
+      <div class="span6">
+        <h1 class="bookmark-title">{{ category.name }}</h1>
+        {% if category.description %}<p class="category-description">{{ category.description }}</p>{% endif %}
+      </div>
+      <div class="span6">
+        <h1>Categories</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <ol class="category-list" role="categories">
+        {% for location in category.locations %}
+          <li class="well">
+            <ul>
+              {% for location in category.locations %}
+                <li>
+                  <a href="{{ location.url }}">{{ location.url }}</a>
+                  {% if location.description %}
+                  <span class="location-description">
+                    {{ location.description }}
+                  </span>
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

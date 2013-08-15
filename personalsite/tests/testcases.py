@@ -50,6 +50,19 @@ class PersonalSiteTestCase(TestCase):
         with appcontext_pushed.connected_to(handler, app):
             yield
 
+    @contextmanager
+    def content_empty(self, app):
+        """
+        Replace the application content with all empty values.
+        """
+        def handler(sender, **kwargs):
+            g.articles = None
+            g.bookmarks = None
+            g.search_index = None
+
+        with appcontext_pushed.connected_to(handler, app):
+            yield
+
 
 class LoaderTestCase(object):
 

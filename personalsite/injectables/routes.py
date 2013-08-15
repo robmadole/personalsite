@@ -4,10 +4,10 @@ from flask import render_template, abort, request, make_response
 from flask.json import jsonify
 
 from personalsite.presenters import (
-    ArticlePresenter, BookmarkPresenter, SearchResultPresenter,
-    CategoryPresenter, NotFound)
+    ArticleListPresenter, BookmarkPresenter, BookmarkListPresenter,
+    SearchResultPresenter, CategoryPresenter, NotFound)
 from personalsite.injectables.content import (
-    get_bookmarks, get_articles, get_search_index)
+    get_bookmarks, get_bookmark_lookup, get_articles, get_search_index)
 from personalsite.rest import uri_template
 
 NO_CACHE_HEADERS = {
@@ -25,7 +25,7 @@ def not_found_raise_404(func):
     def wrapper(*args, **kwargs):
         try:
             return func(*args, **kwargs)
-        except NotFound:
+        except (NotFound, KeyError):
             abort(404)
     return wrapper
 
@@ -36,42 +36,45 @@ def inject(app):
     def root():
         return render_template(
             'article_detail.html',
-            article=ArticlePresenter(get_articles()).latest())
+            article=ArticleListPresenter(get_articles()).latest())
 
     @app.route('/articles')
     @not_found_raise_404
     def article_list():
         return render_template(
             'article_list.html',
-            articles=ArticlePresenter(get_articles()).to_list())
+            articles=ArticleListPresenter(get_articles()).to_list())
 
     @app.route('/articles/<slug>')
     @not_found_raise_404
     def article_detail(slug):
         return render_template(
             'article_detail.html',
-            article=ArticlePresenter(get_articles()).by_slug(slug))
+            article=ArticleListPresenter(get_articles()).by_slug(slug))
 
     @app.route('/bookmarks')
     @not_found_raise_404
     def bookmark_list():
         return render_template(
             'bookmark_list.html',
-            bookmarks=BookmarkPresenter(get_bookmarks()).to_list())
+            bookmarks=BookmarkListPresenter(get_bookmarks()).to_list())
 
     @app.route('/bookmarks/<slug>')
     @not_found_raise_404
     def bookmark_detail(slug):
+        bookmark = get_bookmark_lookup().bookmark(slug)
+
         return render_template(
             'bookmark_detail.html',
-            bookmark=BookmarkPresenter(get_bookmarks()).by_slug(slug))
+            bookmark=BookmarkPresenter(bookmark).to_object())
 
-    @app.route('/category/<slug>')
+    @app.route('/categories/<slug>')
     @not_found_raise_404
     def category_detail(slug):
+        category = get_bookmark_lookup().category(slug)
         return render_template(
             'category_detail.html',
-            bookmark=CategoryPresenter(get_bookmarks()).by_category(slug))
+            category=CategoryPresenter(category).to_object())
 
     @app.route('/bookmarks/search')
     def bookmark_search():
