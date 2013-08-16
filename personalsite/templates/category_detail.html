@@ -24,27 +24,19 @@
 </header>
 
 <div class="container">
-  <div class="row">
-    <div class="span12">
-      <ol class="category-list" role="categories">
-        {% for location in category.locations %}
-          <li class="well">
-            <ul>
-              {% for location in category.locations %}
-                <li>
-                  <a href="{{ location.url }}">{{ location.url }}</a>
-                  {% if location.description %}
-                  <span class="location-description">
-                    {{ location.description }}
-                  </span>
-                  {% endif %}
-                </li>
-              {% endfor %}
-            </ul>
-          </li>
-        {% endfor %}
-      </ol>
-    </div>
+  <div class="well location-list" role="locations">
+    <ul>
+      {% for location in category.locations %}
+        <li>
+          <a href="{{ location.url }}">{{ location.url }}</a>
+          {% if location.description %}
+          <span class="location-description">
+            {{ location.description }}
+          </span>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 </div>
 
