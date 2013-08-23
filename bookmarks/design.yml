@@ -1,0 +1,12 @@
+categories:
+-   description: Conveying information in compact symbols
+    name: Icons
+    slug: design-icons
+locations:
+-   categories:
+    - design-icons
+    description: "\xD7 Close \u0627\u0644\u0639\u0631\u0628\u064A\u0651\u0629 \u0431\u044A\u043B\u0433\u0430\u0440\u0441\u043A\u0438
+        Dansk Nederlands English Fran\xE7ais Deutsch \u0395\u03BB\u03BB\u03B7\u03BD\u03B9\u03BA\u03AC"
+    title: !!python/unicode The Noun Project
+    url: http://thenounproject.com
+title: Design

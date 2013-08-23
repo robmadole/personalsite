@@ -51,6 +51,7 @@ class LocationSerializer(Serializer):
             u'id': self.instance.url,
             u'type': u'location',
             u'slug': self.instance.url,
+            u'title': self.instance.title,
             u'href': self.instance.url,
             u'url': self.instance.url,
             u'description': self.instance.description,

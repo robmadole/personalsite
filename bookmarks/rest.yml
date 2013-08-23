@@ -1,0 +1,13 @@
+categories:
+-   description: Representations that carry links
+    name: Hypermedia
+    slug: rest-hypermedia
+locations:
+-   categories:
+    - rest-hypermedia
+    description: "JSON hypermedia documents DocJSON is a simple document format for
+        building Hypermedia Web APIs. A DocJSON document consists of standard JSON,
+        with the addition of a set of hypermedia controls that\u2026"
+    title: !!python/unicode docjson
+    url: https://github.com/docjson/docjson
+title: REST

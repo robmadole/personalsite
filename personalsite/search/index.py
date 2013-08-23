@@ -81,7 +81,7 @@ def extract_documents(bookmarks):
             yield {
                 'type': unicode(location.__class__),
                 'slug': unicode(location.url),
-                'title': unicode(location.url),
+                'title': unicode(location.title),
                 'description': unicode(location.description)
             }
 

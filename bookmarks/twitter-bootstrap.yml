@@ -1,15 +1,13 @@
-title:
-  Twitter Bootstrap
-
 categories:
-
-  - name: Extras
+-   description: Plugins, themes, and add-ons
+    name: Extras
     slug: twitter-bootstrap-extras
-    description:
-      Plugins, themes, and add-ons
-
 locations:
-
-  - url: https://github.com/ExactTarget/fuelux
-    categories:
-      - twitter-bootstrap-extras
+-   categories:
+    - twitter-bootstrap-extras
+    description: !!python/unicode Fuel UX extends Twitter Bootstrap with additional
+        lightweight JavaScript controls. Other benefits include easy installation
+        into web projects, integrated scripts for customizing Bootstrap and Fuel&hellip;
+    title: !!python/unicode fuelux
+    url: https://github.com/ExactTarget/fuelux
+title: Twitter Bootstrap

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+  {% block header %}
+    <header class="jumbotron error-header">
+      <div class="container">
+        <div class="hero">
+          <h1 class="code">{{ exception.code }}</h1>
+          <h2 class="error-type">{{ exception.name }}</h2>
+        </div>
+      </div>
+      <img src="{{ url_for('static', filename='personalsite/img/sadbob.svg') }}">
+    </header>
+  {% endblock %}
+
+  {% block message %}
+    <div class="container error-message">
+      <p class="message">{{ exception.description }}</p>
+    </div>
+  {% endblock %}
+
+{% endblock %}

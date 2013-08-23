@@ -1,0 +1,13 @@
+categories:
+-   description: Linux computer for $25
+    name: Raspberry Pi
+    slug: hardware-raspberrypi
+locations:
+-   categories:
+    - hardware-raspberrypi
+    description: "Create, Share, Learn, and Teach. Opening the circuitry of the mind
+        with open culture, open source, Python, and the Raspberry Pi.Welcome to Raspberry
+        IO!Raspberry IO is a collection of Raspberry Pi\u2026"
+    title: !!python/unicode Raspberry IO
+    url: http://raspberry.io
+title: Hardware

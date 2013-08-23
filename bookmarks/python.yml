@@ -1,28 +1,102 @@
-title:
-  Python
-
 categories:
-
-  - name: Gotchas
+-   description: Things that surprise or make you stumble with Python
+    name: Gotchas
     slug: python-gotchas
-    description:
-      Things that surprise or make you stumble with Python
-
-  - name: Functional programming
+-   description: Projects or techniques that make FP nicer in Python
+    name: Functional programming
     slug: python-functional-programming
-    description:
-      Projects or techniques that make FP nicer in Python
-
+-   description: Tornado is an asynchronous web framework
+    name: Tornado
+    slug: python-tornado
+-   description: Libraries and packages to help you build stuff
+    name: Frameworks and libraries
+    slug: python-frameworks-libraries
+-   description: Manipulation or management of images using Python
+    name: Image processing
+    slug: python-image-processing
+-   description: Dealing with files and text
+    name: Text processing
+    slug: python-text-processing
+-   description: All things Django-related
+    name: Django
+    slug: python-django
+-   description: Internationalization and localization
+    name: I18N and L10N
+    slug: python-i18n-l10n
+-   description: Things related to asynchronous, event loops, co-routines, and threading
+    name: Concurrency
+    slug: python-concurrency
+-   description: Diagnose, debug, and determine what's going on with your code
+    name: Debugging
+    slug: python-debugging
 locations:
-
-  - url: http://docs.python.org/2/library/collections.html#collections.OrderedDict
-    categories:
-      - python-gotchas
-    description:
-      Pythons dict() builtin type is not ordered and it plainly states that in
-      the documentation. This caused me trouble and to this day it still can
-      sneak up and bite me. OrderedDict to the rescue.
-
-  - url: https://github.com/Suor/funcy
-    categories:
-      - python-functional-programming
+-   categories:
+    - python-gotchas
+    description: Pythons dict() builtin type is not ordered and it plainly states
+        that in the documentation. This caused me trouble and to this day it still
+        can sneak up and bite me. OrderedDict to the rescue.
+    title: "8.3. collections \u2014 High-performance container datatypes \u2014 Python
+        v2.7.5 documentation"
+    url: http://docs.python.org/2/library/collections.html#collections.OrderedDict
+-   categories:
+    - python-functional-programming
+    description: !!python/unicode A collection of fancy functional tools focused on
+        practicality. Inspired by clojure, underscore and my own abstractions. Keep
+        reading to get an overview or read the docs (not complete yet).&hellip;
+    title: !!python/unicode funcy
+    url: https://github.com/Suor/funcy
+-   categories:
+    - python-frameworks-libraries
+    - python-tornado
+    description: !!python/unicode PythonShell Show File Finder Show Definition Finder
+    title: !!python/unicode nacho
+    url: https://github.com/avelino/nacho
+-   categories:
+    - python-image-processing
+    - rest-hypermedia
+    description: "Pilbox Pilbox is an image resizing application server built on Python's
+        Tornado web framework using the Python Imaging Library (PIL). It is not intended
+        to be the primary source of images, but\u2026"
+    title: !!python/unicode pilbox
+    url: https://github.com/agschwender/pilbox
+-   categories:
+    - python-django
+    description: "Python Show File Finder README.rst This is a simple Django middleware
+        utility that allows you to properly serve static assets from production with
+        a WSGI server like Gunicorn. Django doesn't\u2026"
+    title: !!python/unicode dj-static
+    url: https://github.com/kennethreitz/dj-static
+-   categories:
+    - python-text-processing
+    description: "Principles&#xB6; csvkit is to tabular data what the standard Unix
+        text processing suite (grep, sed, cut, sort) is to text. As such, csvkit adheres
+        to the Unix philosophy. Small is beautiful. Make\u2026"
+    title: "csvkit 0.5.0 (beta)\xB6"
+    url: http://csvkit.readthedocs.org/en/latest/
+-   categories:
+    - python-i18n-l10n
+    description: "Babel is an internationalization library for Python. It has full
+        unicode support and provides access to the CLDR data files. It's widely used
+        and BSD licensed. Babel is Simple and Useful &gt;&gt;&gt;\u2026"
+    title: !!python/unicode Welcome
+    url: http://babel.pocoo.org
+-   categories:
+    - python-concurrency
+    description: "Python module to easily create threadpools and serverpools with
+        additional advanced functionality. Installation Install from PyPi using pip,
+        a package manager for Python. $ pip install easypool\u2026"
+    title: !!python/unicode easypool
+    url: https://github.com/RobertLabonte/easypool
+-   categories:
+    - python-frameworks-libraries
+    description: !!python/unicode Python Show File Finder
+    title: !!python/unicode forwardable
+    url: https://github.com/5long/forwardable
+-   categories:
+    - python-debugging
+    description: "Manhole is a python daemon thread that will accept unix domain socket
+        connections and present the stacktraces for all threads and an interactive
+        prompt. Access to the socket is restricted to the\u2026"
+    title: !!python/unicode python-manhole
+    url: https://github.com/ionelmc/python-manhole
+title: Python

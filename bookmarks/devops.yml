@@ -1,0 +1,67 @@
+categories:
+-   description: Platform-as-a-service
+    name: PaaS
+    slug: devops-paas
+-   description: Linux containers with a sweet API
+    name: Docker.io
+    slug: devops-dockerio
+-   description: Things that make Vagrant even cooler
+    name: Vagrant plugins
+    slug: devops-vagrant-plugins
+-   description: Material useful for learning what it means to exhibit DevOps qualities
+    name: Education
+    slug: devops-education
+-   description: Various tools that make life easier
+    name: Tools
+    slug: devops-tools
+locations:
+-   categories:
+    - devops-vagrant-plugins
+    description: "A proof of concept Vagrant plugin that keeps track of vagrant machines
+        and provides a command for listing the status of all known machines. Installation
+        Make sure you have Vagrant 1.1+ and run:\u2026"
+    title: !!python/unicode vagrant-global-status
+    url: https://github.com/fgrehm/vagrant-global-status
+-   categories:
+    - devops-dockerio
+    description: "Maestro A command line tool for Container orchestration and management
+        in multi-container docker environments. Container sets are defined in a simple
+        YAML format that mirrors the options available in\u2026"
+    title: !!python/unicode maestro
+    url: https://github.com/toscanini/maestro
+-   categories:
+    - devops-education
+    description: "That's the question we hear over and over again. There are literally
+        hundreds of \"best practices\" in system administration. Which are the most
+        important? Where do I start? The Ops Report Card is a\u2026"
+    title: !!python/unicode OpsReportCard
+    url: http://www.opsreportcard.com
+-   categories:
+    - devops-dockerio
+    description: "An API client for docker written in Python client.Client(base_url='http://localhost:4243')
+        Client class. base_url refers to the protocol+hostname+port where the docker
+        server is hosted.\u2026"
+    title: !!python/unicode docker-py
+    url: https://github.com/dotcloud/docker-py
+-   categories:
+    - devops-tools
+    description: "Preface Package maintainers work hard and take a lot of shit. You
+        can't please everyone. So, if you're a maintainer: Thanks for maintaining
+        packages! What is fpm? It helps you build packages quickly\u2026"
+    title: !!python/unicode fpm
+    url: https://github.com/jordansissel/fpm
+-   categories:
+    - devops-tools
+    description: "Minion is a security testing framework built by Mozilla to bridge
+        the gap between developers and security testers. To do so, it enables developers
+        to scan their projects using a friendly interface.\u2026"
+    title: !!python/unicode minion
+    url: https://github.com/mozilla/minion
+-   categories:
+    - devops-vagrant-plugins
+    description: "Description This plugin allows Vagrant to run cucumber features,
+        and provides some glue for working with vagrant boxes within your cucumber
+        steps. It was originally developed to help us test\u2026"
+    title: !!python/unicode vagrant-cucumber
+    url: https://github.com/scalefactory/vagrant-cucumber
+title: DevOps

@@ -14,4 +14,9 @@ class SearchResultCollection extends Backbone.Collection
         q: queryString
       reset: true
 
-    return @fetch options
+    if @xhr
+      @xhr.abort()
+
+    @xhr = @fetch options
+
+    return @xhr

@@ -1,0 +1,20 @@
+categories:
+-   description: Things that help asses quality
+    name: Tools
+    slug: software-testing-tools
+locations:
+-   categories:
+    - software-testing-tools
+    description: "Wraith is a screenshot comparison tool, created by developers at
+        BBC News. What is it? Wraith uses either PhantomJS or SlimerJS to create screenshots
+        of different environments and then creates a diff\u2026"
+    title: !!python/unicode wraith
+    url: https://github.com/BBC-News/wraith
+-   categories:
+    - software-testing-tools
+    description: "Make continuous deployment safe by comparing before and after webpage
+        screenshots for each release. Depicted shows when any visual, perceptual differences
+        are found. This is the ultimate, automated\u2026"
+    title: !!python/unicode dpxdt
+    url: https://github.com/bslatkin/dpxdt
+title: Software testing

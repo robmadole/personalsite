@@ -14,6 +14,8 @@ class Personalsite(Injector):
         'routes.inject',
         'assets.inject',
         'filters.inject',
-        'content.inject')
+        'content.inject',
+        'errorhandlers.inject'
+    )
 
 site = Personalsite(app)

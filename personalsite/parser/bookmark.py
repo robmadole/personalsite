@@ -138,6 +138,7 @@ class Location(object):
     def __init__(self, location):
         self._location = location
         self.url = location.get('url')
+        self.title = location.get('title', None)
         self.description = location.get('description', None)
 
         self._categories = location.get('categories', [])

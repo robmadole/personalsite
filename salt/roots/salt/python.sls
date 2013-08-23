@@ -14,6 +14,7 @@ python-tools:
       - coverage
       - mock
       - beautifulsoup4
+      - docopt
     - download_cache: /home/vagrant/.pip-cache
     - require:
       - pkg: python-pip

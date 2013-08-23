@@ -1,0 +1,30 @@
+categories:
+-   description: Gems, Bundler, and everything related
+    name: Packaging
+    slug: ruby-packaging
+-   description: Learning the rubies
+    name: Educaction
+    slug: ruby-education
+locations:
+-   categories:
+    - ruby-packaging
+    description: "What is Gemfury? Hosted service for your private and custom gems
+        to simplify your deployment story. Once you upload your RubyGem and enable
+        Gemfury as a source, you can securely deploy any gem to\u2026"
+    title: !!python/unicode Private Gem Cloud Server!
+    url: http://www.gemfury.com
+-   categories:
+    - ruby-education
+    description: "Testing is a good practice, but if you do not test the edge cases,
+        it will not be useful. Test valid, edge and invalid case. For example, consider
+        the following action. before_filter\u2026"
+    title: !!python/unicode Affiliate books
+    url: http://betterspecs.org
+-   categories:
+    - ruby-education
+    description: "It&#x2019;s been way too long since I posted a Monday freebie. Today&#x2019;s
+        little video tries to answer a question I hear pretty often: what&#x2019;s
+        the difference between blocks, procs, and\u2026"
+    title: !!python/unicode 'RubyTapas Freebie: Blocks, Procs, & Lambdas'
+    url: http://devblog.avdi.org/2013/02/18/rubytapas-freebie-blocks-procs-lambdas/
+title: Ruby

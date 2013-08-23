@@ -1,0 +1,23 @@
+categories:
+-   description: Non-relational key and value based databases
+    name: Key value
+    slug: databases-key-value
+-   description: Language-specific software to interface with databases
+    name: Libraries
+    slug: databases-libraries
+locations:
+-   categories:
+    - databases-key-value
+    description: "A highly-available key value store for shared configuration and
+        service discovery. etcd is inspired by zookeeper and doozer, with a focus
+        on: Simple: curl'able user facing API (HTTP+JSON) Secure:\u2026"
+    title: !!python/unicode etcd
+    url: https://github.com/coreos/etcd
+-   categories:
+    - databases-libraries
+    description: "Object data mapper and advanced query manager for non relational
+        databases. Designed to work with Redis data-store, it now has an experimental
+        implementation for Mongodb. The object-data mapper\u2026"
+    title: !!python/unicode Python Stdnet
+    url: http://lsbardel.github.io/python-stdnet/
+title: Databases

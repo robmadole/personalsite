@@ -1,15 +1,23 @@
-title:
-  CSS
-
 categories:
-
-  - name: Preprocessors
+-   description: DSL that compiles down to CSS
+    name: Preprocessors
     slug: css-preprocessors
-    description:
-      DSL that compiles down to CSS
-
+-   description: Linting for CSS
+    name: Linters
+    slug: css-linters
 locations:
-
-  - url: https://github.com/visionmedia/styl
-    categories:
-      - css-preprocessors
+-   categories:
+    - css-linters
+    description: !!python/unicode "What is it? csscss will parse any CSS files you
+        give it and let you know which rulesets have duplicated declarations. What
+        is it for? One of the best strategies for me to maintain CSS is to reduce\u2026"
+    title: !!python/unicode csscss
+    url: http://zmoazeni.github.io/csscss/
+-   categories:
+    - css-preprocessors
+    description: !!python/unicode "Work-in-progress CSS preprocessor. Spiritual successor
+        of Stylus. Built on top of Rework. Styl is basically an opinionated configuration
+        of Rework. It does not aim for feature parity with Stylus. If\u2026"
+    title: !!python/unicode styl
+    url: https://github.com/visionmedia/styl
+title: CSS

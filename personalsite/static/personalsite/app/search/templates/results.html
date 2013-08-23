@@ -5,11 +5,11 @@
     {{/resultType}}
 
     {{#resultType "bookmark"}}
-      <li><i class="icon-bookmark"></i> <strong><a href="{{{url}}}"> {{title}}</a></strong></li>
+      <li><i class="icon-bookmark"></i> <strong><a href="{{{url}}}">{{title}}</a></strong></li>
     {{/resultType}}
 
     {{#resultType "location"}}
-      <li><i class="icon-link"></i> <a href="{{{url}}}">{{url}}</a></li>
+      <li><i class="icon-link"></i> <a href="{{{url}}}">{{title}}</a></li>
     {{/resultType}}
   {{else}}
     {{#if keyword}}

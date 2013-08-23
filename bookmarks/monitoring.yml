@@ -1,19 +1,18 @@
-title:
-  Monitoring
-
 categories:
-
-  - name: Presentations
+-   description: Presentations on the topic usually from various conferences
+    name: Presentations
     slug: monitoring-presentations
-    description:
-      Presentations on the topic usually from various conferences
-
 locations:
-
-  - url: https://speakerdeck.com/monitorama
-    categories:
-      - monitoring-presentations
-
-  - url: http://vimeo.com/monitorama/videos
-    categories:
-      - monitoring-presentations
+-   categories:
+    - monitoring-presentations
+    description: !!python/unicode Boston 2013 - StatsD Workshop - Daniel Schauenberg
+        Mar 29, 2013 by Monitorama
+    title: !!python/unicode Presentations by Monitorama // Speaker Deck
+    url: https://speakerdeck.com/monitorama
+-   categories:
+    - monitoring-presentations
+    description: !!python/unicode Vimeo Join Log In Create Enhancer New! Easily add
+        Looks + music to your videos.
+    title: "Monitorama\u2019s Videos on Vimeo"
+    url: http://vimeo.com/monitorama/videos
+title: Monitoring

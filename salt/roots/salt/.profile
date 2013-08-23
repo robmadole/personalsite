@@ -21,5 +21,7 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+export PATH=./scripts:$PATH
+
 export PYTHONDONTWRITEBYTECODE=1
 export PERSONALSITE_SETTINGS_FILE="{{ settings_file }}"

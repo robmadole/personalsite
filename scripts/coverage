@@ -11,7 +11,9 @@ def coverage():
 
     omit = [
         '*testcase*',
-        '*test_*']
+        '*test_*',
+        '*cli*'
+    ]
 
     cov = coverage(
         branch=True, config_file=False, source=['personalsite'],

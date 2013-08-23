@@ -1,0 +1,25 @@
+categories:
+-   description: Case studies and material to give you insight into what Open Source
+        means
+    name: Practicing
+    slug: opensource-practicing
+-   description: Performing work and message passing in distributed systems
+    name: Batch processing and messaging
+    slug: opensource-batch
+locations:
+-   categories:
+    - opensource-practicing
+    - devops-education
+    description: "Architects look at thousands of buildings during their training,
+        and study critiques of those buildings written by masters. In contrast, most
+        software developers only ever get to know a handful of\u2026"
+    title: !!python/unicode The Architecture of Open Source Applications
+    url: http://www.aosabook.org/en/index.html
+-   categories:
+    - opensource-batch
+    description: "What is it? Luigi is a Python module that helps you build complex
+        pipelines of batch jobs. It handles dependency resolution, workflow management,
+        visualization etc. It also comes with Hadoop support\u2026"
+    title: !!python/unicode luigi
+    url: https://github.com/spotify/luigi
+title: Open source
