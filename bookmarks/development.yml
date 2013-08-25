@@ -1,0 +1,20 @@
+categories:
+-   description: Tools or practices that help communicate or pair program
+    name: Collaborative
+    slug: development-collaborative
+locations:
+-   categories:
+    - development-collaborative
+    description: "Cross-editor real-time collaborationFloobits lets you use your favorite
+        editor to work on the same files as others in real-time. Right now we have
+        a Sublime Text plugin. We&#x2019;re also working on\u2026"
+    title: !!python/unicode Floobits
+    url: https://floobits.com
+-   categories:
+    - development-collaborative
+    description: "Development status: Works on Linux/OsX (Cygwin is untested). Flootty
+        is a collaborative terminal. In practice, it's similar to a shared screen
+        or tmux session. Flootty makes it dead simple for\u2026"
+    title: !!python/unicode flootty
+    url: https://github.com/Floobits/flootty/
+title: Software Development

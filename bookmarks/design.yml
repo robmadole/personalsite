@@ -2,6 +2,12 @@ categories:
 -   description: Conveying information in compact symbols
     name: Icons
     slug: design-icons
+-   description: Tools for communicating about designs
+    name: Tools
+    slug: design-tools
+-   description: Mockups and wireframing tools
+    name: Prototyping
+    slug: design-prototyping
 locations:
 -   categories:
     - design-icons
@@ -9,4 +15,25 @@ locations:
         Dansk Nederlands English Fran\xE7ais Deutsch \u0395\u03BB\u03BB\u03B7\u03BD\u03B9\u03BA\u03AC"
     title: !!python/unicode The Noun Project
     url: http://thenounproject.com
+-   categories:
+    - design-tools
+    description: "Generates UML sequence diagrams from simple texthttp://bramp.github.io/js-sequence-diagrams/
+        by Andrew Brampton 2012-2013 Example We turn Alice-&gt;Bob: Hello Bob, how
+        are you? Note right of Bob: Bob\u2026"
+    title: !!python/unicode js-sequence-diagrams
+    url: https://github.com/bramp/js-sequence-diagrams
+-   categories:
+    - design-prototyping
+    description: "For a complete overview, downloads and docs please visit framerjs.com.
+        About Framer is a modern prototyping tool. It can help you to quickly build
+        and test complex interactions and rich animations\u2026"
+    title: !!python/unicode Framer
+    url: https://github.com/koenbok/Framer
+-   categories:
+    - design-prototyping
+    description: "Title bar Title bars are full width and docked to the top of the
+        viewport. Title &lt;header class=\"bar-title\"&gt; &lt;h1 class=\"title\"&gt;Title&lt;/h1&gt;
+        &lt;/header&gt; Title bar with buttons\u2026"
+    title: !!python/unicode Ratchet
+    url: http://maker.github.io/ratchet/
 title: Design

@@ -1,0 +1,13 @@
+categories:
+-   description: Tabs and tools for learning to play a song
+    name: Tablature
+    slug: music-tab
+locations:
+-   categories:
+    - music-tab
+    description: !!python/unicode Use Soundslice to learn tunes faster and
+      smarter than ever. Loop sections, slow parts down, and sync tabs and
+      chords with any original recording. Let your heroes be your teachers.
+    title: !!python/unicode Soundslice
+    url: http://soundslice.com
+title: Music

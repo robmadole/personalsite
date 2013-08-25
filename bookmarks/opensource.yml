@@ -22,4 +22,12 @@ locations:
         visualization etc. It also comes with Hadoop support\u2026"
     title: !!python/unicode luigi
     url: https://github.com/spotify/luigi
+-   categories:
+    - opensource-practicing
+    - devops-services
+    description: "Introduction In the modern era, software is almost always delivered
+        as a service: called web apps, or software-as-a-service. The twelve-factor
+        app is a methodology for building software-as-a-service\u2026"
+    title: !!python/unicode The Twelve-Factor App
+    url: http://www.12factor.net
 title: Open source

@@ -5,7 +5,7 @@ categories:
 locations:
 -   categories:
     - linux-distros
-    - devops-paas
+    - devops-services
     description: "Minimal Linux kernel + systemd. That's about it. CoreOS has just
         enough bits to run containers, but does not ship a package manager itself.
         In fact, the root partition is completely read-only, to\u2026"

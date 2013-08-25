@@ -1,0 +1,40 @@
+categories:
+-   description: Frameworks and libraries for testing
+    name: Testing tools
+    slug: javascript-testing-tools
+-   description: Tools for everyday work
+    name: Generic tools
+    slug: javascript-generic-tools
+-   description: Everything Backbone.js related
+    name: Backbone.js
+    slug: javascript-backbonejs
+locations:
+-   categories:
+    - javascript-testing-tools
+    description: "In beta. Many things are unstable at this point in time. Check out
+        the roadmap. A browser JavaScript testing toolkit. It does browser testing
+        with browser automation (think JsTestDriver), QUnit style\u2026"
+    title: "Welcome! Buster.JS is...\xB6"
+    url: http://docs.busterjs.org/en/latest/
+-   categories:
+    - javascript-generic-tools
+    description: "A sample project where we hook up Bower to RequireJS and Bower to
+        Buster.JS, using Grunt. You need to have nodejs, npm, bower, grunt, buster
+        and PhantomJS installed. Installation: $ npm install\u2026"
+    title: !!python/unicode jspak
+    url: https://github.com/faassen/jspak
+-   categories:
+    - javascript-backbonejs
+    description: "Make your Backbone applications dance with a scalable and composite
+        application architecture! View MarionetteJS on GitHub About Backbone.Marionette
+        Backbone.Marionette is a composite application\u2026"
+    title: !!python/unicode MarionetteJS
+    url: http://marionettejs.com
+-   categories:
+    - javascript-backbonejs
+    description: "A simple infrastructure based on messaging patterns and service
+        bus implementations for decoupling Backbone and Backbone.Marionette applications.
+        Downloads And Source Grab the source from the src\u2026"
+    title: !!python/unicode backbone.wreqr
+    url: https://github.com/marionettejs/backbone.wreqr
+title: JavaScript

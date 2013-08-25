@@ -29,6 +29,9 @@ categories:
 -   description: Diagnose, debug, and determine what's going on with your code
     name: Debugging
     slug: python-debugging
+-   description: All thing related to distribute, setuptools, and PEP 376
+    name: Packaging
+    slug: python-packaging
 locations:
 -   categories:
     - python-gotchas
@@ -48,22 +51,23 @@ locations:
 -   categories:
     - python-frameworks-libraries
     - python-tornado
-    description: !!python/unicode PythonShell Show File Finder Show Definition Finder
+    description: !!python/unicode Python micro web-framework and asynchronous networking
+        library, support Python 3.x
     title: !!python/unicode nacho
     url: https://github.com/avelino/nacho
 -   categories:
     - python-image-processing
     - rest-hypermedia
-    description: "Pilbox Pilbox is an image resizing application server built on Python's
+    description: "Pilbox is an image resizing application server built on Python's
         Tornado web framework using the Python Imaging Library (PIL). It is not intended
         to be the primary source of images, but\u2026"
     title: !!python/unicode pilbox
     url: https://github.com/agschwender/pilbox
 -   categories:
     - python-django
-    description: "Python Show File Finder README.rst This is a simple Django middleware
-        utility that allows you to properly serve static assets from production with
-        a WSGI server like Gunicorn. Django doesn't\u2026"
+    description: "This is a simple Django middleware utility that allows you to properly
+        serve static assets from production with a WSGI server like Gunicorn. Django
+        doesn't\u2026"
     title: !!python/unicode dj-static
     url: https://github.com/kennethreitz/dj-static
 -   categories:
@@ -89,7 +93,7 @@ locations:
     url: https://github.com/RobertLabonte/easypool
 -   categories:
     - python-frameworks-libraries
-    description: !!python/unicode Python Show File Finder
+    description: !!python/unicode Ruby's forwardable protocol ported to Python
     title: !!python/unicode forwardable
     url: https://github.com/5long/forwardable
 -   categories:
@@ -99,4 +103,40 @@ locations:
         prompt. Access to the socket is restricted to the\u2026"
     title: !!python/unicode python-manhole
     url: https://github.com/ionelmc/python-manhole
+-   categories:
+    - python-django
+    description: "django-require is a Django staticfiles post-processor for optimizing
+        with RequireJS. Features Optimize your static assets using the excellent r.js
+        optimizer. Compile standalone modules using the\u2026"
+    title: !!python/unicode django-require
+    url: https://github.com/etianen/django-require
+-   categories:
+    - python-django
+    description: "Django's class-based generic views are great, they let you accomplish
+        a large number of web application design patterns in relatively few lines
+        of code. They do have their limits though, and that's\u2026"
+    title: !!python/unicode django-extra-views
+    url: https://github.com/AndrewIngram/django-extra-views
+-   categories:
+    - python-debugging
+    description: "This is an overview of tools I've used for debugging or profiling
+        purposes. Not necessarily complete, if you know better tools, comment below.
+        Logging Yes, really. Can't stress enough how important\u2026"
+    title: !!python/unicode Python debugging tools - Debugging tools I like to generally
+        use with python
+    url: http://blog.ionelmc.ro/2013/06/05/python-debugging-tools/
+-   categories:
+    - python-django
+    description: "django-fsm adds declarative states management for django models.
+        Instead of adding some state field to a django model, and manage it values
+        by hand, you could use FSMState field and mark model\u2026"
+    title: !!python/unicode kmmbvnr/django-fsm
+    url: https://github.com/kmmbvnr/django-fsm
+-   categories:
+    - python-packaging
+    description: "A built-package format for Python. A wheel is a ZIP-format archive
+        with a specially formatted filename and the .whl extension. It is designed
+        to contain all the files for a PEP 376 compatible install\u2026"
+    title: !!python/unicode Wheel
+    url: http://wheel.readthedocs.org/en/latest/
 title: Python

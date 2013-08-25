@@ -2,6 +2,9 @@ categories:
 -   description: Representations that carry links
     name: Hypermedia
     slug: rest-hypermedia
+-   description: Descriptive formats or REST-related guidelines
+    name: Specification
+    slug: rest-specs
 locations:
 -   categories:
     - rest-hypermedia
@@ -10,4 +13,11 @@ locations:
         with the addition of a set of hypermedia controls that\u2026"
     title: !!python/unicode docjson
     url: https://github.com/docjson/docjson
+-   categories:
+    - rest-specs
+    description: "Overview Format Extending Examples FAQ About Status This document
+        is a work in progress and will change as implementation work progresses. See
+        the Status page for more information. ID-Based JSON API\u2026"
+    title: !!python/unicode 'JSON API: Format'
+    url: http://jsonapi.org/format/
 title: REST

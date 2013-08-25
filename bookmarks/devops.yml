@@ -1,7 +1,7 @@
 categories:
--   description: Platform-as-a-service
-    name: PaaS
-    slug: devops-paas
+-   description: Platform-as-a-service and Software-as-a-service
+    name: PaaS and SaaS
+    slug: devops-services
 -   description: Linux containers with a sweet API
     name: Docker.io
     slug: devops-dockerio
@@ -64,4 +64,61 @@ locations:
         steps. It was originally developed to help us test\u2026"
     title: !!python/unicode vagrant-cucumber
     url: https://github.com/scalefactory/vagrant-cucumber
+-   categories:
+    - devops-dockerio
+    description: "Shipyard Shipyard is a web UI for http://docker.io To run the latest
+        version on port 8000: docker run -p :8000 ehazlett/shipyard Or to run on a
+        custom port (leave the -p option off to get random\u2026"
+    title: !!python/unicode shipyard
+    url: https://github.com/ehazlett/shipyard
+-   categories:
+    - devops-tools
+    description: "Battle-hardened node.js http proxy Features Reverse proxies incoming
+        http.ServerRequest streams Can be used as a CommonJS module in node.js Uses
+        event buffering to support application latency in\u2026"
+    title: !!python/unicode node-http-proxy
+    url: https://github.com/nodejitsu/node-http-proxy
+-   categories:
+    - devops-tools
+    description: !!python/unicode PackerIntroDocumentationCommunityPacker is a tool
+        for creating identical machine images for multiple platforms from a single
+        source configuration.
+    title: !!python/unicode Packer
+    url: http://www.packer.io
+-   categories:
+    - devops-tools
+    description: "A Python port of daemontools' envdir. What? envdir runs another
+        program with a modified environment according to files in a specified directory.
+        So for example, imagine a software you want to run on\u2026"
+    title: !!python/unicode envdir 0.4.1
+    url: https://pypi.python.org/pypi/envdir
+-   categories:
+    - devops-tools
+    description: "storm is a command line tool to manage your hosts at sshconfig.
+        installation pip install stormssh or if you like 90s: easy_install stormssh
+        or add storm directory to the your path. getting started\u2026"
+    title: !!python/unicode storm
+    url: https://github.com/emre/storm
+-   categories:
+    - devops-tools
+    - python-frameworks-libraries
+    description: "Python job scheduling for humans. An in-process scheduler for periodic
+        jobs that uses the builder pattern for configuration. Schedule lets you run
+        Python functions (or any other callable)\u2026"
+    title: !!python/unicode schedule
+    url: https://github.com/dbader/schedule
+-   categories:
+    - devops-tools
+    description: "A multi-server monitoring system built on top of Salt using Django.
+        It can serve both as an alerting system like monit and a monitoring system
+        like munin (using Graphite's whisper database). It aims\u2026"
+    title: !!python/unicode salmon
+    url: https://github.com/lincolnloop/salmon
+-   categories:
+    - devops-vagrant-plugins
+    description: "A Vagrant plugin that helps you reduce the amount of coffee you
+        drink while waiting for boxes to be provisioned by sharing a common package
+        cache among similiar VM instances. Kinda like\u2026"
+    title: !!python/unicode vagrant-cachier
+    url: https://github.com/fgrehm/vagrant-cachier
 title: DevOps
