@@ -177,6 +177,10 @@ header {
   list-style: none;
   margin-bottom: @baseLineHeight * 2;
 
+  &, .well {
+    padding-bottom: 0;
+  }
+
   ul, ol {
     .clearfix;
     list-style: none;
@@ -185,6 +189,7 @@ header {
 
     li {
       float: left;
+      margin-bottom: @baseLineHeight / 6 * 5;
       width: 50%;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -232,7 +237,7 @@ header {
 
   .categories {
     margin-top: @baseLineHeight;
-    padding-top: @baseLineHeight;
+    padding-top: @baseLineHeight / 2;
     border-top: 1px solid @grayLighter;
 
     &.collapse {
@@ -247,6 +252,10 @@ header {
       list-style: none;
       float: left;
       .columns(50%, 2, @baseLineHeight, transparent, none);
+    }
+
+    li {
+      line-height: @baseLineHeight * 2;
     }
   }
 
