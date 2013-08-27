@@ -25,3 +25,5 @@ export PATH=./scripts:$PATH
 
 export PYTHONDONTWRITEBYTECODE=1
 export PERSONALSITE_SETTINGS_FILE="{{ settings_file }}"
+
+cd /vagrant

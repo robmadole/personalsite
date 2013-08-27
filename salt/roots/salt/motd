@@ -4,11 +4,9 @@ Open the main documentation at:
 
 Run the development server:
 
-    $ cd /vagrant
-    $ ./scripts/develop
+    $ develop
 
 Run the tests:
 
-    $ cd /vagrant
     $ nosetests
 
