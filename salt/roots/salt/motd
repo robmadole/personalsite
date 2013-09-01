@@ -6,7 +6,7 @@ Run the development server:
 
     $ develop
 
-Run the tests:
+Run the Python application tests:
 
     $ nosetests
 

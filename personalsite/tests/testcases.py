@@ -4,6 +4,7 @@ from os.path import join
 
 from flask import g, appcontext_pushed
 from bs4 import BeautifulSoup
+from mock import patch, Mock
 
 from personalsite.parser import article, bookmark
 from personalsite.search.index import SearchIndex
@@ -89,3 +90,40 @@ class LoaderTestCase(object):
 
         for obj in objects:
             self.assertIsInstance(obj, self.object_class)
+
+
+class MockTwitterTestCase(TestCase):
+
+    """
+    Since Twitter rate limits, mock out the calls while testing.
+
+    """
+    twitter_responses = {
+        '/statuses/show': {
+            'user': {'profile_image_url': ''},
+            'retweeted': False
+        },
+        '/statuses/oembed': {
+            'html': u'<blockquote>Tweet</blockquote>'
+        }
+    }
+
+    def _get_twitter_response(
+            self, endpoint, method='GET', params=None, version='1.1'):
+        return self.twitter_responses[endpoint]
+
+    def setUp(self):
+        super(MockTwitterTestCase, self).setUp()
+
+        self.twython_patch = patch('personalsite.twitter.Twython')
+
+        self.twitter = self.twython_mock = self.twython_patch.start()
+
+        self.twython_mock().get_user_timeline = Mock(return_value=[{'id': 1}])
+        self.twython_mock().request = Mock(
+            side_effect=self._get_twitter_response)
+
+    def tearDown(self):
+        super(MockTwitterTestCase, self).tearDown()
+
+        self.twython_patch.stop()

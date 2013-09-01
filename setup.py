@@ -23,11 +23,13 @@ setup(
         'Flask==0.10.1',
         'Frozen-Flask==0.10',
         'Flask-Assets==0.8',
+        'Flask-Cache==0.12',
         'closure==20121212',
         'yuicompressor==2.4.7',
         'pyyaml==3.10',
         'whoosh==2.5.1',
         'requests==1.2.3',
+        'twython==3.0.0',
     ],
     license='CC-BY',
     author='Rob Madole'

@@ -1,0 +1,19 @@
+<div class="tweet-container">
+  {% if tweet.retweeted %}
+    {% set user = tweet.retweeted_status.user %}
+  {% else %}
+    {% set user = tweet.user %}
+  {% endif %}
+
+  <img src="{{ user.profile_image_url }}">
+
+  {% if tweet.retweeted %}
+
+    <span class="retweet-badge"><i class="icon-retweet"></i></span>
+
+    {{ oembed['html'] | safe }}
+  {% else %}
+
+    {{ oembed['html'] | safe }}
+  {% endif %}
+</div>

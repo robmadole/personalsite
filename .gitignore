@@ -6,4 +6,5 @@ cover
 docs/build
 *.pyc
 *.webassets-cache
+.secretenvs
 personalsite/static/bundles

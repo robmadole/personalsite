@@ -15,7 +15,8 @@ class Personalsite(Injector):
         'assets.inject',
         'filters.inject',
         'content.inject',
-        'errorhandlers.inject'
+        'errorhandlers.inject',
+        'cache.inject'
     )
 
 site = Personalsite(app)

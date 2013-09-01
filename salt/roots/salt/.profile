@@ -23,7 +23,17 @@ fi
 
 export PATH=./scripts:$PATH
 
+export SECRETENVS="/vagrant/.secretenvs"
 export PYTHONDONTWRITEBYTECODE=1
 export PERSONALSITE_SETTINGS_FILE="{{ settings_file }}"
+
+if [ -f "$SECRETENVS" ] ; then
+    source $SECRETENVS
+else
+    touch $SECRETENVS
+
+    echo "Created $SECRETENVS to hold the secret environment" \
+         "variables that should not be public"
+fi
 
 cd /vagrant

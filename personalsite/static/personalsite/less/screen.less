@@ -77,6 +77,33 @@ header {
   }
 }
 
+footer {
+  background-color: @blue;
+  padding: @baseLineHeight * 2 0;
+  color: white;
+
+  a, a:hover, a:focus {
+    color: white;
+  }
+
+  #where-to-find {
+    ul {
+      list-style: none;
+      margin-left: @baseFontSize;
+      padding: 0;
+
+      i {
+        display: inline-block;
+        width: 1.5em;
+      }
+    }
+  }
+
+  p {
+    font-family: @serifFontFamily;
+  }
+}
+
 .page-heading {
   margin: 0 0 @largeMargin 0;
   padding: @baseLineHeight 0;
@@ -324,3 +351,66 @@ header {
     text-align: center;
   }
 }
+
+.tweet-container {
+  @mutedTwitterColor: fadeOut(white, 30%);
+  @colorize: grayscale(1.0) sepia(1.0) hue-rotate(150deg);
+  @profileImageSize: 35px;
+
+  position: relative;
+
+  img {
+    position: absolute;
+    top: @baseLineHeight;
+    left: @baseLineHeight;
+    width: @profileImageSize;
+    height: @profileImageSize;
+    border: 1px solid @mutedTwitterColor;
+
+    -webkit-filter: @colorize;
+       -moz-filter: @colorize;
+        -ms-filter: @colorize;
+         -o-filter: @colorize;
+  }
+
+  .retweet-badge {
+    @retweetBadgeSize: 15px;
+
+    .border-radius(2px);
+    position: absolute;
+    top: @baseLineHeight + @profileImageSize - @retweetBadgeSize + 3;
+    left: @baseLineHeight - 1;
+    display: inline-block;
+    width: @retweetBadgeSize;
+    height: @retweetBadgeSize;
+    background-color: white;
+    color: @blue;
+    font-size: @baseFontSize * 0.66;
+    line-height: @retweetBadgeSize;
+    text-align: center;
+  }
+
+  .twitter-tweet {
+    padding: @baseLineHeight;
+    font-family: @sansFontFamily;
+    font-weight: @weightBook;
+    border: 1px solid @mutedTwitterColor;
+    .border-radius(5px);
+    color: @mutedTwitterColor;
+    text-align: right;
+
+    p {
+      padding-left: @profileImageSize + @baseFontSize;
+      margin-bottom: @baseLineHeight / 2;
+      text-align: left;
+      color: white;
+      font-size: @baseFontSize;
+      line-height: @baseLineHeight;
+
+      a {
+        font-weight: @weightBold;
+      }
+    }
+  }
+}
+

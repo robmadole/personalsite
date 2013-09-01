@@ -1,2 +1,26 @@
 <footer>
+  <div class="container">
+    <div class="row">
+      <div class="span4" id="about-me">
+        <h5>About me</h5>
+        <p>I like to craft things. It&rsquo;s not always software but most of the
+        time it is. I have wonderful wife and two amazing kids. I live in the
+        center of the United States and I'm surrounded by corn fields and cows.</p>
+      </div>
+      <div class="span2" id="where-to-find">
+        <h5>Where to find me</h5>
+        <ul>
+          <li><i class="icon-envelope"></i> <a href="mailto:robmadole@gmail.com">Email</a></li>
+          <li><i class="icon-twitter"></i> <a href="http://twitter.com/robmadole">Twitter</a></li>
+          <li><i class="icon-github"></i> <a href="http://github.com/robmadole">GitHub</a></li>
+          <li><i class="icon-linkedin"></i> <a href="http://www.linkedin.com/in/robmadole">LinkedIn</a></li>
+          <li><i class="icon-terminal"></i> <a href="{{ url_for('static', filename='personalsite/docs/rob_madole_resume.pdf') }}">Résumé</a></li>
+        </ul>
+      </div>
+      <div class="span6">
+        <h5>Last Twitter post</h5>
+        {{ latest_tweet() }}
+      </div>
+    </div>
+  </div>
 </footer>
