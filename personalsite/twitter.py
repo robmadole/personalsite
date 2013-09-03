@@ -1,5 +1,6 @@
 from flask import render_template
 from twython import Twython
+from twython.exceptions import TwythonRateLimitError
 
 
 def get_latest_tweet(app):
@@ -17,29 +18,27 @@ def get_latest_tweet(app):
     )
 
     # Latest tweet
-    user_timeline = twitter.get_user_timeline()
+    try:
+        user_timeline = twitter.get_user_timeline()
 
-    latest_id = user_timeline[0]['id']
+        latest_id = user_timeline[0]['id']
 
-    tweet_response = twitter.request(
-        '/statuses/show', params={
-            'id': latest_id
-        }
-    )
+        tweet_response = twitter.request(
+            '/statuses/show', params={
+                'id': latest_id
+            }
+        )
 
-    oembed_response = twitter.request(
-        '/statuses/oembed', params={
-            'id': latest_id,
-            'hide_media': False,
-            'hide_thread': True,
-            'omit_script': True
-        }
-    )
-
-    context = {
-        'tweet': tweet_response,
-        'oembed': oembed_response
-    }
+        oembed_response = twitter.request(
+            '/statuses/oembed', params={
+                'id': latest_id,
+                'hide_media': False,
+                'hide_thread': True,
+                'omit_script': True
+            }
+        )
+    except TwythonRateLimitError:
+        return u''
 
     return render_template(
         'latest_tweet.html',

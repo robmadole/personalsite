@@ -2,9 +2,10 @@ from unittest import TestCase
 from contextlib import contextmanager
 from os.path import join
 
-from flask import g, appcontext_pushed
+from flask import appcontext_pushed
 from bs4 import BeautifulSoup
 from mock import patch, Mock
+from twython.exceptions import TwythonRateLimitError
 
 from personalsite.parser import article, bookmark
 from personalsite.search.index import SearchIndex
@@ -25,28 +26,30 @@ class PersonalSiteTestCase(TestCase):
         Replace the application content with content from fixtures.
         """
         def handler(sender, **kwargs):
+            app = sender
+
             try:
-                g.articles = self.articles
+                app.articles = self.articles
             except AttributeError:
                 try:
-                    g.articles = list(article.loader.find(
+                    app.articles = list(article.loader.find(
                         join(fixture_directory, 'articles')))
                 except OSError:
-                    g.articles = []
+                    app.articles = []
 
             try:
-                g.bookmarks = self.bookmarks
+                app.bookmarks = self.bookmarks
             except AttributeError:
                 try:
-                    g.bookmarks = list(bookmark.loader.find(
+                    app.bookmarks = list(bookmark.loader.find(
                         join(fixture_directory, 'bookmarks')))
                 except OSError:
-                    g.bookmarks = []
+                    app.bookmarks = []
 
             try:
-                g.search_index = self.search_index
+                app.search_index = self.search_index
             except AttributeError:
-                g.search_index = SearchIndex(bookmarks=g.bookmarks)
+                app.search_index = SearchIndex(bookmarks=app.bookmarks)
 
         with appcontext_pushed.connected_to(handler, app):
             yield
@@ -57,9 +60,11 @@ class PersonalSiteTestCase(TestCase):
         Replace the application content with all empty values.
         """
         def handler(sender, **kwargs):
-            g.articles = None
-            g.bookmarks = None
-            g.search_index = None
+            app = sender
+
+            app.articles = None
+            app.bookmarks = None
+            app.search_index = None
 
         with appcontext_pushed.connected_to(handler, app):
             yield
@@ -127,3 +132,15 @@ class MockTwitterTestCase(TestCase):
         super(MockTwitterTestCase, self).tearDown()
 
         self.twython_patch.stop()
+
+    @contextmanager
+    def mock_rate_limit(self):
+        def raise_rate_limit_error(*args, **kwargs):
+            raise TwythonRateLimitError(None, None)
+
+        self.twython_mock().request = Mock(
+            side_effect=raise_rate_limit_error)
+
+        yield
+
+        self.twython_mock().side_effect = None

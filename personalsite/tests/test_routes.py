@@ -1,12 +1,15 @@
 import json
 from os.path import join, dirname
 
-from personalsite.tests.testcases import PersonalSiteTestCase
+from personalsite.tests.testcases import (
+    PersonalSiteTestCase, MockTwitterTestCase)
 from personalsite.web import app
 
 
-class ViewTest(PersonalSiteTestCase):
+class ViewTest(PersonalSiteTestCase, MockTwitterTestCase):
     def setUp(self):
+        super(ViewTest, self).setUp()
+
         self.client = app.test_client()
 
         self.content = self.content_from_fixtures(
@@ -15,6 +18,8 @@ class ViewTest(PersonalSiteTestCase):
         self.content.__enter__()
 
     def tearDown(self):
+        super(ViewTest, self).tearDown()
+
         self.content.__exit__(None, None, None)
 
     def test_entry_page_latest_article(self):

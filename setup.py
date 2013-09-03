@@ -24,6 +24,7 @@ setup(
         'Frozen-Flask==0.10',
         'Flask-Assets==0.8',
         'Flask-Cache==0.12',
+        'blinker==1.3',
         'closure==20121212',
         'yuicompressor==2.4.7',
         'pyyaml==3.10',
