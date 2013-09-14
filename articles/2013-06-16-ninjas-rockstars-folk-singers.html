@@ -75,7 +75,7 @@ Knowing Java doesn't necessarily mean that you write "Enterprise" software.</p>
 <p>Each musical artist has their own taste and every software engineer has a certain
 way they like to work to solve problems.</p>
 
-<p>Musicians group together around the type of music that they love or at least
+<p>Musicians group together around the type of music they love or at least
 appreciate. This happens naturally and automatically. When you
 see an orchestra of people there's a good chance that every seat is filled
 with a musician who likes the sound of orchestral music.</p>
@@ -168,7 +168,7 @@ heavy metal riff tear through a folk song but there are measurable effects.
 </p>
 
 <p>
-Symptoms your developers could be from different genres:
+Symptoms of diferring genres:
 </p>
 
 <ul>
@@ -199,9 +199,9 @@ Symptoms your developers could be from different genres:
 </ul>
 
 <p>
-I'm not saying the this "developer genre" concept is the only reason for these
-symptoms but I'd make a bet that a team that exhibits most of these
-characteristics has radically different developers making up the team.
+I'm not saying the "developer genre" concept is the only reason you see these
+symptoms. I'd bet that a team that exhibits most of these
+characteristics suffers from multiple genre issues.
 </p>
 
 <h3>Making music</h3>
@@ -248,7 +248,7 @@ big challenge just to get everyone on the same page.
 
 <p>
 In healthy doses these differences are a good thing. A team of people supporting and elevating
-each other and creating a better solution. They grow together and through productive
+each other create a better solution. They grow together and through productive
 discussion make something that is better than the sum of its parts.
 </p>
 
@@ -282,31 +282,30 @@ professional who do not need a lot of oversight and consequently are given a lot
 </p>
 
 <p>They both have a proven track record of deliverying. Jim is a faster
-programmer than Brittany and likes to take risks. Brittany thinks of more of the
+programmer than Brittany and likes to take risks. Brittany thinks more of the
 edge cases and focuses on writing good test coverage with everything she works
 on. These two developers are in different genres from one another.
 </p>
 
 <p>
-As they begin Brittany tries to talk about the different smaller components of the
-system and she wants to get agreement on what will compose the service. Jim wants to begin
-coding and let the process of writing software drive whatever design they come
-up with.
+As they begin, Brittany talks about the different smaller components of the
+service. She wants to get agreement on what will compose the service. Jim wants
+to begin coding and let the process of writing software drive the design.
 </p>
 
 <p>
 They disagree on how to start the project. They forego any
 further discussion since they probably will not see eye-to-eye and each take
-approaches that they are comfortable with. They decide to
+approaches they are comfortable with. They decide to
 huddle up at the end of the day to see what progress each has made.
 </p>
 
 <p>
 Jim implements a start-to-finish "positive path" of the service. That is
-to say, it can lookup the user and tell you what role that user has and give you
+to say, it can lookup the user, tell you what role that user has, and give you
 back a list of the things the user is allowed to do. This is precisely what he
 thinks their service should do. It doesn't include error handling and he hasn't
-written any tests, but this approach allows him to demonstrate the concept 
+written any tests, but this approach allows him to demonstrate the concept
 and get feedback quickly.
 </p>
 
@@ -319,11 +318,11 @@ demonstrate but is comfortable moving on because she is confident the foundation
 </p>
 
 <p>
-At the end of the day Brittany is impressed with the progress that Jim has made
-but has her doubts about the quality because it doesn't cover the negative code paths and is
+At the end of the day, Brittany is impressed with the progress that Jim has made
+but has doubts about the quality. It doesn't cover the negative code paths and is
 lacking tests. Jim appreciates the well-designed interface and good test
-coverage that Brittany has focused on but is worried that they are not making
-enough progress quickly enough and with her methodical approach.
+coverage Brittany focused on but is worried that they are not making
+enough progress.
 </p>
 
 <p>
@@ -351,15 +350,15 @@ comfortable with and knows it's not her best work.
 </p>
 
 <p>
-Jim is concerned that they did not provide enough business value and functionality. There
-were a lot of additional things that he would have liked to do if he had time
-but their focus on testing and continual conversations on internal design took
-up time. He simply isn't satisfied with the slow pace and knows this isn't his
+Jim is concerned that they did not provide enough business value and
+functionality. There were a lot of additional things that he like to work on but
+their focus on testing and continual conversations on internal design took up
+time. He simply isn't satisfied with the slow pace and knows this isn't his
 best work.
 </p>
 
 <p>
-Jim and Brittany get along just swell. But their difference in how they develop
+Jim and Brittany get along just swell. But their differences in how they develop
 software do not make them the best teammates. The software they have created seems to
 have an identity crisis. The different styles go together like oil and water and
 it's visible if you look deeply inside the code.
@@ -367,44 +366,47 @@ it's visible if you look deeply inside the code.
 
 <p>
 However, on the surface it appears that Jim and Brittany met with success. Their service
-integrates into the infrastructure and does its job. While it met the
-goals of the initial release the project marches on and another release is
+integrates into the infrastructure and does the job. While it met the
+goals of the initial release, the project marches on; another release is
 planned with a new set of features to accomplish.</p>
 
 <p>
-How efficient and pleasant will it be to continue the work in this code base? If
-a developer, new to the team, makes changes does he use Jim's approach or Brittany's. Should he
-write tests and focus on discreet components? Should he favor functionality and moving
-quickly to deliver features at the expense of testing? What should be done with the
-strange areas where things just don't appear to go together well; that's
-areas where Jim's code interfaces with Brittany's? Is it okay to
-leave the square pegs firmly wedged into the round holes?
+How efficient and pleasant will it be to continue the work in this code base?
+Does Brittany's approach or Jim's method presribe how future work will proceed?
+Should a new developer write tests and focus on discreet components? Should he
+favor functionality and moving quickly to deliver features at the expense of
+testing?
+</p>
+
+<p>
+Like a folk song interlaced with Heavy Metal riffs, the code base is a mess that
+just doesn't fit together well.
 </p>
 
 <h3>Would you classify Jim and Brittany in different genres?</h3>
 
 <p>
 In the example of Jim and Brittany I am not advocating that either style is more
-correct. Both the approaches that these developers take have merits. There are
-benefits to both and drawbacks to both.
+correct. Both approaches that these developers take have merits. There are
+benefits and drawbacks to both.
 </p>
 
 <p>
-Jim's approach is fast and feature bountiful. He wants to deliver functionality as
+Jim's approach is fast and feature-bountiful. He wants to deliver functionality as
 quickly as possible and make it better as it matures.
 </p>
 
 <p>
-Brittany's approach is methodical and feauture precious. She wants to deliver
+Brittany's approach is methodical and feauture-precious. She wants to deliver
 functionality that is well tested and designed and add more features as the
 system matures.
 </p>
 
 <p>
-You might think that the manager's failed to identify what style of development
-that they required for the project. I postulate that developers themselves
-seldom think about their genres on this level and if that is true probably
-fewer project managers do.
+You might think the manager failed to identify what style of development they
+required for the project. I postulate developers themselves seldom think about
+their genres and how it impacts the code they write. If that is true, how many
+project managers do?
 </p>
 
 <p>
@@ -416,11 +418,7 @@ proud? They are just too different.
 <p>
 We wouldn't expect a country music singer to be the third member of Daft Punk so
 why are we surprised when software development teams exhibit displeasure,
-frustration, and sometimes outright failure when they create software.
-
-<p>
-We need to pay more attention to how we create teams of developers who are in
-different genres.
+frustration, and sometimes outright failure when they create software?
 </p>
 
 <h3>Cultural fit</h3>
@@ -432,10 +430,10 @@ the same genre.
 </p>
 
 <p>
-The team may have been formed by accident or it may have been deliberate but the
+The team may have been formed by accident or it may have been deliberate. The
 end result is a group of people who have a lot of overlapping philosophy and
-probably similar past experience that led them to their current way of thinking
-and coding style.
+probably similar past experience. Their way of thinking
+and coding style compliment one another.
 </p>
 
 <p>
@@ -475,8 +473,8 @@ the group unless they have some assurance that you can perform and make music wi
 Why doesn't the software industry routinely audition developers and engineers for
 positions on a team? Some
 companies have figured this out but so many haven't. A company in Boston, MA
-pays potential employs to <a href="http://robots.thoughtbot.com/post/341224844/8-simple-rules-for-dating-my-business-our-hiring">work
-  with them for a week </a>to see if the fit is good.
+pays potential employees to <a href="http://robots.thoughtbot.com/post/341224844/8-simple-rules-for-dating-my-business-our-hiring">work
+  with them for a week </a>to see if they're a good fit.
 </p>
 
 <p>
