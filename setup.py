@@ -20,8 +20,8 @@ setup(
     zip_safe=False,
     platforms='any',
     install_requires=[
+        'gunicorn==18.0',
         'Flask==0.10.1',
-        'Frozen-Flask==0.10',
         'Flask-Assets==0.8',
         'Flask-Cache==0.12',
         'blinker==1.3',

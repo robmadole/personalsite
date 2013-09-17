@@ -1,0 +1,86 @@
+#!/usr/bin/env python
+import tarfile
+import os
+from shutil import rmtree
+from os.path import join
+from tempfile import mkdtemp
+
+from fabric.api import execute, require, env, run, put, cd, warn_only
+
+env.user = 'robmadole'
+env.key = os.environ['WEB_FACTION_AUTHORIZED_PRIVATE_KEY']
+env.remote_root = '/home/robmadole/webapps'
+env.remote_app = join(env.remote_root, 'v3_robmadole_app')
+env.remote_port = 16766
+env.remote_pid = join(env.remote_root, 'v3_robmadole_app/.app.pid')
+env.remote_content = join(env.remote_root, 'v3_robmadole_app/content')
+env.remote_virtual_env = join(env.remote_root, 'v3_robmadole_app/.virtualenv')
+env.remote_static = join(env.remote_root, 'v3_robmadole_static')
+
+
+def create_package():
+    env.tempdir = tempdir = mkdtemp()
+
+    env.app_archive = join(tempdir, 'app.tar')
+    env.content_archive = join(tempdir, 'content.tar')
+
+    with tarfile.open(env.app_archive, 'w') as arch:
+        arch.add('personalsite')
+        arch.add('setup.py')
+
+    with tarfile.open(env.content_archive, 'w') as arch:
+        arch.add('bookmarks')
+        arch.add('articles')
+
+
+def cleanup():
+    rmtree(env.tempdir)
+
+
+def upload_package():
+    require('app_archive', 'content_archive')
+
+    with warn_only():
+        run('kill `cat {}`'.format(env.remote_pid))
+
+    run('rm -rf {}/*'.format(env.remote_app))
+
+    run('virtualenv -p /usr/local/bin/python2.7 --no-site-packages {}'.format(
+        env.remote_virtual_env)
+    )
+
+    put(
+        env.app_archive,
+        env.remote_app
+    )
+
+    put(
+        env.content_archive,
+        env.remote_app
+    )
+
+    with cd(env.remote_app):
+        run('tar -xf app.tar')
+        run('tar -xf content.tar')
+
+    run('{}/bin/pip install --download-cache ~/.pip_cache -e {}'.format(
+        env.remote_virtual_env, env.remote_app)
+    )
+
+    gunicorn_script = '{}/bin/gunicorn --chdir {} -D -p {} ' + \
+        '-b 127.0.0.1:{} personalsite.web:app'
+
+    run(gunicorn_script.format(
+        env.remote_virtual_env, env.remote_app, env.remote_pid, env.remote_port
+    ))
+
+
+def deploy():
+    try:
+        create_package()
+        upload_package()
+    finally:
+        cleanup()
+
+
+execute(deploy, hosts=['robmadole.com'])

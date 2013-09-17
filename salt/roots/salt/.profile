@@ -35,4 +35,6 @@ else
          "be created manually."
 fi
 
-cd /vagrant
+if [ -d "/vagrant" ] ; then
+    cd /vagrant
+fi

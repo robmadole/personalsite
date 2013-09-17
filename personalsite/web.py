@@ -3,6 +3,7 @@ from flask import Flask
 from personalsite.injector import Injector, Injectables
 
 app = Flask(__name__)
+
 app.config.from_object('personalsite.settings.base')
 app.config.from_envvar('PERSONALSITE_SETTINGS_FILE')
 
