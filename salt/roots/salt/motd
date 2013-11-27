@@ -10,3 +10,7 @@ Run the Python application tests:
 
     $ nosetests
 
+Deploy the site to robmadole.com:
+
+    $ deploy
+

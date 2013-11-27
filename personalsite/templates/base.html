@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>{% block title %}Personal site for Rob Madole{% endblock %}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1024">
     {% include "head/javascript.html" %}
     {% include "head/css.html" %}
   </head>
@@ -24,4 +24,6 @@
 
     {% endblock %}
   </body>
+
+  {% include "tracking/google.html" %}
 </html>
