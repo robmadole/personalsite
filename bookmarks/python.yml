@@ -139,4 +139,44 @@ locations:
         to contain all the files for a PEP 376 compatible install\u2026"
     title: !!python/unicode Wheel
     url: http://wheel.readthedocs.org/en/latest/
+-   categories:
+    - python-frameworks-libraries
+    description: "Python API and shell utilities to monitor file system events. Example
+        API Usage A simple program that uses watchdog to monitor directories specified
+        as command-line arguments and logs events\u2026"
+    title: !!python/unicode gorakhargosh/watchdog
+    url: https://github.com/gorakhargosh/watchdog
+-   categories:
+    - python-frameworks-libraries
+    description: !!python/unicode Package Index &gt; WsgiService &gt; 0.3.1
+    title: !!python/unicode WsgiService 0.3.1
+    url: https://pypi.python.org/pypi/WsgiService
+-   categories:
+    - python-django
+    description: "Overview&#xB6; The aim of djeneralize is to enhance Django&#x2019;s
+        model-inheritance and allow the user to declare specializations of a general
+        case model and then query the generalized model, but\u2026"
+    title: "Welcome to djeneralize\u2019s documentation!\xB6"
+    url: http://pythonhosted.org/djeneralize
+-   categories:
+    - python-django
+    description: "Caching is one of the first things you can do when you need to start
+        thinking about scaling. Among efforts such as query minimization, denormalization,
+        code optimizations, compression, database\u2026"
+    title: !!python/unicode Evaluating Django Caching Options
+    url: http://codysoyland.com/2010/jan/17/evaluating-django-caching-options/
+-   categories:
+    - python-concurrency
+    description: "This article describes the Python threading synchronization mechanisms
+        in details. We are going to study the following types: Lock, RLock, Semaphore,
+        Condition, Event and Queue. Also, we are going\u2026"
+    title: !!python/unicode Locks, RLocks, Semaphores, Conditions, Events and Queues
+    url: http://www.laurentluce.com/posts/python-threads-synchronization-locks-rlocks-semaphores-conditions-events-and-queues/
+-   categories:
+    - python-frameworks-libraries
+    description: "Downloadunicode-nazi-1.1.tar.gz Annoying helper module that finds
+        unicode/bytestring comparisions and other problems. // The Unicode Nazi //
+        Once enabled the unicode nazi will complain whenever\u2026"
+    title: !!python/unicode unicode-nazi 1.1
+    url: http://pypi.python.org/pypi/unicode-nazi
 title: Python

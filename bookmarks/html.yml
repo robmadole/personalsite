@@ -1,0 +1,13 @@
+categories:
+-   description: Tools for working with HTML
+    name: Tools
+    slug: html-tools
+locations:
+-   categories:
+    - html-tools
+    description: "Walk through it with me, now !doctype html !-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+        -- !--[if lt IE 7 ] html class=\"no-js ie6\" lang=\"en\" ![endif]-- !--[if
+        IE 7 ]\u2026"
+    title: "HTML5 \u2605 Boilerplate"
+    url: http://html5boilerplate.com
+title: HTML

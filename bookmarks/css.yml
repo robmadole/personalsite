@@ -5,19 +5,50 @@ categories:
 -   description: Linting for CSS
     name: Linters
     slug: css-linters
+-   description: Stuff you can use to help with CSS
+    name: Tools
+    slug: css-tools
 locations:
 -   categories:
     - css-linters
-    description: !!python/unicode "What is it? csscss will parse any CSS files you
-        give it and let you know which rulesets have duplicated declarations. What
-        is it for? One of the best strategies for me to maintain CSS is to reduce\u2026"
+    description: "What is it? csscss will parse any CSS files you give it and let
+        you know which rulesets have duplicated declarations. What is it for? One
+        of the best strategies for me to maintain CSS is to reduce\u2026"
     title: !!python/unicode csscss
     url: http://zmoazeni.github.io/csscss/
 -   categories:
     - css-preprocessors
-    description: !!python/unicode "Work-in-progress CSS preprocessor. Spiritual successor
-        of Stylus. Built on top of Rework. Styl is basically an opinionated configuration
-        of Rework. It does not aim for feature parity with Stylus. If\u2026"
+    description: "Work-in-progress CSS preprocessor. Spiritual successor of Stylus.
+        Built on top of Rework. Styl is basically an opinionated configuration of
+        Rework. It does not aim for feature parity with Stylus. If\u2026"
     title: !!python/unicode styl
     url: https://github.com/visionmedia/styl
+-   categories:
+    - css-tools
+    description: "What is an EM? Wikipedia puts it well: \"An em is a unit of measurement
+        in the field of typography, equal to the size of the current font.\" If your
+        font-size is at 16 pixels, then 1em = 16px For more\u2026"
+    title: !!python/unicode PXtoEM.com PX to EM conversion made simple.
+    url: http://pxtoem.com/
+-   categories:
+    - css-tools
+    description: "Downloadpremailer-1.3.0.tar.gz Turns CSS blocks into style attributes
+        Turns CSS blocks into style attributes When you send HTML emails you can't
+        used style tags but instead you have to put inline\u2026"
+    title: !!python/unicode premailer 1.3.0
+    url: https://pypi.python.org/pypi/premailer
+-   categories:
+    - css-tools
+    description: "Download LESS Elements LESS Elements is a set of useful mixins for
+        the LESS CSS pre-processor to help you cut down the size of your stylesheets.
+        LESS is a fantastic tool that extends CSS and makes\u2026"
+    title: !!python/unicode a collection of useful LESS mixins
+    url: http://lesselements.com
+-   categories:
+    - css-tools
+    description: "CSS Spritemap Generator Spritemapper is an application that merges
+        multiple images into one and generates CSS positioning for the corresponding
+        slices. Improve loading times. Only 10% of a webpage's\u2026"
+    title: !!python/unicode Spritemapper
+    url: http://yostudios.github.io/Spritemapper/
 title: CSS

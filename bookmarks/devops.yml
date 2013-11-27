@@ -121,4 +121,20 @@ locations:
         cache among similiar VM instances. Kinda like\u2026"
     title: !!python/unicode vagrant-cachier
     url: https://github.com/fgrehm/vagrant-cachier
+-   categories:
+    - devops-tools
+    - devops-dockerio
+    - development-environments
+    description: "ven&#xB7;tril&#xB7;o&#xB7;quist: (noun) a person who can speak or
+        utter sounds so that they seem to come from somewhere else, esp. an entertainer
+        who makes their voice appear to come from a dummy of\u2026"
+    title: !!python/unicode ventriloquist
+    url: https://github.com/fgrehm/ventriloquist
+-   categories:
+    - devops-tools
+    description: "About Herd is a single-command Bittorrent-based file distribution
+        system, based on Twitter's Murder. It was designed for pushing code out to
+        a number of production systems. You can probably use it\u2026"
+    title: !!python/unicode Herd
+    url: https://github.com/russss/Herd
 title: DevOps

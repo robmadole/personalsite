@@ -5,6 +5,9 @@ categories:
 -   description: Descriptive formats or REST-related guidelines
     name: Specification
     slug: rest-specs
+-   description: Used to develop or work with REST interfaces
+    name: Tools
+    slug: rest-tools
 locations:
 -   categories:
     - rest-hypermedia
@@ -20,4 +23,11 @@ locations:
         the Status page for more information. ID-Based JSON API\u2026"
     title: !!python/unicode 'JSON API: Format'
     url: http://jsonapi.org/format/
+-   categories:
+    - rest-tools
+    description: "This is a super simple service for generating different HTTP codes.
+        It's useful for testing how your own scripts deal with varying responses.
+        Just add the status code you want to the URL, like this:\u2026"
+    title: !!python/unicode httpstat.us
+    url: http://httpstat.us
 title: REST

@@ -8,18 +8,18 @@ categories:
 -   description: Mockups and wireframing tools
     name: Prototyping
     slug: design-prototyping
+-   description: All things related to typography
+    name: Typography
+    slug: design-typography
 locations:
 -   categories:
     - design-icons
-    description: "\xD7 Close \u0627\u0644\u0639\u0631\u0628\u064A\u0651\u0629 \u0431\u044A\u043B\u0433\u0430\u0440\u0441\u043A\u0438
-        Dansk Nederlands English Fran\xE7ais Deutsch \u0395\u03BB\u03BB\u03B7\u03BD\u03B9\u03BA\u03AC"
+    description: Searchable icons from many designers organized by what they are.
     title: !!python/unicode The Noun Project
     url: http://thenounproject.com
 -   categories:
     - design-tools
-    description: "Generates UML sequence diagrams from simple texthttp://bramp.github.io/js-sequence-diagrams/
-        by Andrew Brampton 2012-2013 Example We turn Alice-&gt;Bob: Hello Bob, how
-        are you? Note right of Bob: Bob\u2026"
+    description: Generates UML sequence diagrams from simple text
     title: !!python/unicode js-sequence-diagrams
     url: https://github.com/bramp/js-sequence-diagrams
 -   categories:
@@ -31,9 +31,19 @@ locations:
     url: https://github.com/koenbok/Framer
 -   categories:
     - design-prototyping
-    description: "Title bar Title bars are full width and docked to the top of the
-        viewport. Title &lt;header class=\"bar-title\"&gt; &lt;h1 class=\"title\"&gt;Title&lt;/h1&gt;
-        &lt;/header&gt; Title bar with buttons\u2026"
+    description: Prototype iPhone apps with simple HTML, CSS, and JS components.
     title: !!python/unicode Ratchet
     url: http://maker.github.io/ratchet/
+-   categories:
+    - design-typography
+    description: Guidelines for combining some of the most popular typefaces together.
+    title: !!python/unicode Mixing Typefaces
+    url: http://www.as8.it/handouts/mixing-typefaces_U&lc1992.pdf
+-   categories:
+    - design-typography
+    description: "It's a brave new world. Web fonts are here, sparking an exciting
+        new era in web design. Ffffallback makes it easy to find the perfect fallback
+        fonts, so that your designs degrade gracefully. So, in\u2026"
+    title: !!python/unicode FFFFALLBACK
+    url: http://ffffallback.com
 title: Design

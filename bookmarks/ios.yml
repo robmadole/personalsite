@@ -1,0 +1,11 @@
+categories:
+-   description: Ways to make development easier
+    name: Development tools
+    slug: ios-tools
+locations:
+-   categories:
+    - ios-tools
+    description: "Screencasting for iPhone"
+    title: !!python/unicode atebits/SimFinger
+    url: https://github.com/atebits/SimFinger
+title: iOS

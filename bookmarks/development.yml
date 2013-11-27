@@ -2,6 +2,9 @@ categories:
 -   description: Tools or practices that help communicate or pair program
     name: Collaborative
     slug: development-collaborative
+-   description: Stuff that helps create development environments
+    name: Environments
+    slug: development-environments
 locations:
 -   categories:
     - development-collaborative
@@ -17,4 +20,11 @@ locations:
         or tmux session. Flootty makes it dead simple for\u2026"
     title: !!python/unicode flootty
     url: https://github.com/Floobits/flootty/
+-   categories:
+    - development-collaborative
+    description: "Don't waste your afternoon drawing UML Sequence Diagrams. Just enter
+        the description here, and click \"draw\". The SD/MSC Generator is an easy
+        alternative to using mouse-centric software tools like\u2026"
+    title: !!python/unicode Draw and Edit Sequence Diagrams in seconds
+    url: http://www.websequencediagrams.com
 title: Software Development
