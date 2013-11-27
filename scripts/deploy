@@ -39,6 +39,11 @@ def cleanup():
 def upload_package():
     require('app_archive', 'content_archive')
 
+    supercommand = 'supervisorctl -c ~/etc/supervisord.conf -u ' + \
+        'robmadole -p supervisor {} personalsite'
+
+    run(supercommand.format('stop'))
+
     run('rm -rf {}/*'.format(env.remote_app))
 
     run('virtualenv -p /usr/local/bin/python2.7 --no-site-packages {}'.format(
@@ -63,7 +68,7 @@ def upload_package():
         env.remote_virtual_env, env.remote_app)
     )
 
-    run('supervisorctl -c ~/etc/supervisord.conf -u robmadole -p supervisor restart personalsite')
+    run(supercommand.format('start'))
 
 
 def deploy():

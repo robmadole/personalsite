@@ -179,4 +179,26 @@ locations:
         Once enabled the unicode nazi will complain whenever\u2026"
     title: !!python/unicode unicode-nazi 1.1
     url: http://pypi.python.org/pypi/unicode-nazi
+-   categories:
+    - python-concurrency
+    description: "Readme | Design | Installing | Demos | Code What Is Brubeck? Brubeck
+        is a flexible Python web framework that aims to make the process of building
+        scalable web services easy. The documentation goes\u2026"
+    title: !!python/unicode a Mongrel2 handler
+    url: http://brubeck.io
+-   categories:
+    - python-frameworks-libraries
+    - devops-tools
+    description: "Usage&#xB6; Installing APScheduler&#xB6; On Python 3.3 or later
+        (or if you have distutils2 &lt;http://pypi.python.org/pypi/Distutils2&gt;
+        installed) you can do: $ pysetup install apscheduler\u2026"
+    title: "Advanced Python Scheduler \u2014 APScheduler 2.0.3 documentation"
+    url: http://pythonhosted.org/APScheduler/
+-   categories:
+    - python-frameworks-libraries
+    description: "HTTPie is a CLI HTTP utility built out of frustration with existing
+        tools. The goal is to make CLI interaction with HTTP-based services as human-friendly
+        as possible. HTTPie does so by providing an\u2026"
+    title: !!python/unicode httpie
+    url: https://github.com/jkbr/httpie
 title: Python

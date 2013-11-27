@@ -37,4 +37,11 @@ locations:
         Downloads And Source Grab the source from the src\u2026"
     title: !!python/unicode backbone.wreqr
     url: https://github.com/marionettejs/backbone.wreqr
+-   categories:
+    - javascript-generic-tools
+    description: "A hack on top of 2to3 for modernizing code for hybrid codebases.
+        Downloads &#8595; :: Python _ _ _ __ ___ __| |___ _ _ _ _ (_)______ | ' \\/
+        _ \\/ _` / -_) '_| ' \\| |_ / -_) |_|_|_\\___/\\__,_\\___|_|\u2026"
+    title: !!python/unicode Python Package Index
+    url: http://pypi.python.org/pypi/modernize
 title: JavaScript

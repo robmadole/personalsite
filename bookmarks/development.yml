@@ -5,6 +5,9 @@ categories:
 -   description: Stuff that helps create development environments
     name: Environments
     slug: development-environments
+-   description: Writing and managing documention for software development
+    name: Documentation
+    slug: development-documentation
 locations:
 -   categories:
     - development-collaborative
@@ -27,4 +30,18 @@ locations:
         alternative to using mouse-centric software tools like\u2026"
     title: !!python/unicode Draw and Edit Sequence Diagrams in seconds
     url: http://www.websequencediagrams.com
+-   categories:
+    - development-collaborative
+    description: "This Privacy Policy governs the manner in which Screenhero Inc.
+        collects, uses, maintains and discloses information collected from users (each,
+        a \"User\") of the screenhero.com website (\"Site\"). This\u2026"
+    title: !!python/unicode Collaborative Screen Sharing
+    url: http://screenhero.com
+-   categories:
+    - development-documentation
+    description: "Docco is a quick-and-dirty documentation generator, written in Literate
+        CoffeeScript. It produces an HTML document that displays your comments intermingled
+        with your code. All prose is passed through\u2026"
+    title: !!python/unicode Docco
+    url: http://jashkenas.github.io/docco/
 title: Software Development

@@ -10,4 +10,11 @@ locations:
         IE 7 ]\u2026"
     title: "HTML5 \u2605 Boilerplate"
     url: http://html5boilerplate.com
+-   categories:
+    - html-tools
+    description: "It's small and standalone At only 3kb when gzipped, it is a lightweight
+        and efficient library. No extras you don't need. Hammer doesn't require jQuery
+        or other libraries to work. A jQuery plugin is\u2026"
+    title: !!python/unicode You can touch this
+    url: http://eightmedia.github.io/hammer.js/
 title: HTML

@@ -14,6 +14,12 @@ categories:
 -   description: Various tools that make life easier
     name: Tools
     slug: devops-tools
+-   description: Tools, techniques, protocols to stay safe
+    name: Security
+    slug: devops-security
+-   description: Metrics, monitoring, alerting, logging, analysis
+    name: Operations
+    slug: devops-operations
 locations:
 -   categories:
     - devops-vagrant-plugins
@@ -125,9 +131,8 @@ locations:
     - devops-tools
     - devops-dockerio
     - development-environments
-    description: "ven&#xB7;tril&#xB7;o&#xB7;quist: (noun) a person who can speak or
-        utter sounds so that they seem to come from somewhere else, esp. an entertainer
-        who makes their voice appear to come from a dummy of\u2026"
+    description: Ventriloquist combines Vagrant and Docker to give developers the
+        ability to configure portable and disposable development VMs with ease.
     title: !!python/unicode ventriloquist
     url: https://github.com/fgrehm/ventriloquist
 -   categories:
@@ -137,4 +142,61 @@ locations:
         a number of production systems. You can probably use it\u2026"
     title: !!python/unicode Herd
     url: https://github.com/russss/Herd
+-   categories:
+    - devops-security
+    description: "gauntlt is a ruggedization framework PROJECT STATUS gauntlt is under
+        active development. We welcome community feedback and contributions. Please
+        file issues via github and follow the project on\u2026"
+    title: !!python/unicode gauntlt
+    url: https://github.com/gauntlt/gauntlt
+-   categories:
+    - devops-tools
+    description: "Sitespeed.io is an open source tool that helps you analyze and optimize
+        your website speed and performance based on performance best practices. It
+        collects data from multiple pages on your website,\u2026"
+    title: !!python/unicode Analyze your website speed and performance
+    url: http://www.sitespeed.io
+-   categories:
+    - devops-services
+    description: "In addition to managing membership, Serf can broadcast custom events.
+        These can be used to trigger deploys, restart processes, spread tales of human
+        heroism, and anything else you may want. The event\u2026"
+    title: !!python/unicode Serf
+    url: http://www.serfdom.io
+-   categories:
+    - devops-operations
+    description: "Supergrep is a web based log streamer written in node. It can be
+        used quite nicely to surface new log lines (errors, etc.) that aren't normally
+        expected. Essentially, having supergrep running in your\u2026"
+    title: !!python/unicode supergrep
+    url: https://github.com/etsy/supergrep
+-   categories:
+    - devops-operations
+    description: "Skyline is a real-time* anomaly detection* system*, built to enable
+        passive monitoring of hundreds of thousands of metrics, without the need to
+        configure a model/thresholds for each one, as you might\u2026"
+    title: !!python/unicode skyline
+    url: https://github.com/etsy/skyline
+-   categories:
+    - devops-operations
+    description: "Oculus is the anomaly correlation component of Etsy's Kale system.
+        It lets you search for metrics, using your choice of comparison algorithms:
+        and shows you other metrics which are similar: You can\u2026"
+    title: !!python/unicode oculus
+    url: https://github.com/etsy/oculus
+-   categories:
+    - devops-operations
+    - python-frameworks-libraries
+    description: "Release v0.4.0 (What&#x2019;s new?). structlog makes structured
+        logging in Python easy by augmenting your existing logger. It allows you to
+        split your log entries up into key/value pairs and build\u2026"
+    title: "Structured Logging in Python \u2014 structlog documentation"
+    url: http://www.structlog.org
+-   categories:
+    - devops-tools
+    description: "README.md Mantrid is a pure-Python HTTP load balancer. It is designed
+        with high availability and simplicity in mind: it is configured at runtime
+        with JSON over HTTP and can temporarily hold open\u2026"
+    title: !!python/unicode epio/mantrid
+    url: https://github.com/epio/mantrid
 title: DevOps

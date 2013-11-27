@@ -11,6 +11,9 @@ categories:
 -   description: All things related to typography
     name: Typography
     slug: design-typography
+-   description: Everything related to movable type on the web
+    name: Fonts
+    slug: design-fonts
 locations:
 -   categories:
     - design-icons
@@ -46,4 +49,11 @@ locations:
         fonts, so that your designs degrade gracefully. So, in\u2026"
     title: !!python/unicode FFFFALLBACK
     url: http://ffffallback.com
+-   categories:
+    - design-fonts
+    description: "Newsletter Books Manifesto Blog Join Login We're done with the tired
+        old fontstacks of yesteryear. The web is no longer limited, and now it's time
+        to raise our standards. Since 2009, The League has\u2026"
+    title: !!python/unicode The League of Moveable Type
+    url: https://www.theleagueofmoveabletype.com
 title: Design
