@@ -8,7 +8,7 @@ nodejs-ppas:
 nodejs:
   pkg:
     - installed
-    - version: 0.10.12-1chl1~precise1
+    - version: 0.10.21-1chl1~precise1
 
 npm-packages:
   npm:

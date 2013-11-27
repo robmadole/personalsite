@@ -29,10 +29,6 @@ export PERSONALSITE_SETTINGS_FILE="{{ settings_file }}"
 
 if [ -f "$SECRETENVS" ] ; then
     source $SECRETENVS
-else
-    echo "Missing $SECRETENVS to hold the secret environment" \
-         "variables that should not be public. This needs to" \
-         "be created manually."
 fi
 
 if [ -d "/vagrant" ] ; then

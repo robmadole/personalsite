@@ -12,7 +12,6 @@ env.key = os.environ['WEB_FACTION_AUTHORIZED_PRIVATE_KEY']
 env.remote_root = '/home/robmadole/webapps'
 env.remote_app = join(env.remote_root, 'v3_robmadole_app')
 env.remote_port = 16766
-env.remote_pid = join(env.remote_root, 'v3_robmadole_app/.app.pid')
 env.remote_content = join(env.remote_root, 'v3_robmadole_app/content')
 env.remote_virtual_env = join(env.remote_root, 'v3_robmadole_app/.virtualenv')
 env.remote_static = join(env.remote_root, 'v3_robmadole_static')
@@ -40,9 +39,6 @@ def cleanup():
 def upload_package():
     require('app_archive', 'content_archive')
 
-    with warn_only():
-        run('kill `cat {}`'.format(env.remote_pid))
-
     run('rm -rf {}/*'.format(env.remote_app))
 
     run('virtualenv -p /usr/local/bin/python2.7 --no-site-packages {}'.format(
@@ -67,12 +63,7 @@ def upload_package():
         env.remote_virtual_env, env.remote_app)
     )
 
-    gunicorn_script = '{}/bin/gunicorn --chdir {} -D -p {} ' + \
-        '-b 127.0.0.1:{} personalsite.web:app'
-
-    run(gunicorn_script.format(
-        env.remote_virtual_env, env.remote_app, env.remote_pid, env.remote_port
-    ))
+    run('supervisorctl -c ~/etc/supervisord.conf -u robmadole -p supervisor restart personalsite')
 
 
 def deploy():
