@@ -1,5 +1,5 @@
 categories:
--   description: Things that help asses quality
+-   description: Things that help assess quality
     name: Tools
     slug: software-testing-tools
 locations:
@@ -17,4 +17,18 @@ locations:
         are found. This is the ultimate, automated\u2026"
     title: !!python/unicode dpxdt
     url: https://github.com/bslatkin/dpxdt
+-   categories:
+    - software-testing-tools
+    description: "Aruba is Cucumber extension for Command line applications written
+        in any programming language. Features at a glance: Test any command line application
+        Manipulate the file system Create great HTML\u2026"
+    title: !!python/unicode aruba
+    url: https://github.com/cucumber/aruba
+-   categories:
+    - software-testing-tools
+    description: "Add this line to your application's Gemfile: And then execute: Or
+        install it yourself as: Getting Started $ serverspec-init Input target host
+        name: www.example.jp Select OS type of target host: 1)\u2026"
+    title: !!python/unicode serverspec
+    url: http://serverspec.org
 title: Software testing

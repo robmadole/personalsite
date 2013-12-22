@@ -201,4 +201,26 @@ locations:
         as possible. HTTPie does so by providing an\u2026"
     title: !!python/unicode httpie
     url: https://github.com/jkbr/httpie
+-   categories:
+    - python-frameworks-libraries
+    - development-documentation
+    description: "docopt creates beautiful command-line interfaces New in version
+        0.4.2: Fixed bugs #34 #39 #40. Isn't it awesome how optparse and argparse
+        generate help messages based on your code?! Hell no! You know\u2026"
+    title: !!python/unicode docopt
+    url: https://github.com/docopt/docopt
+-   categories:
+    - python-frameworks-libraries
+    description: "Release v0.1.2. (Installation) twosheds is a library for making
+        command language interpreters, or shells. Most existing shells are written
+        in C which makes extension difficult. Python is\u2026"
+    title: !!python/unicode twosheds
+    url: http://twosheds.readthedocs.org/en/latest/index.html
+-   categories:
+    - python-frameworks-libraries
+    description: "Chronic is halfway between a simple timer and a profiler. Add decorators
+        or wrap code in with statements to get the execution time. Chronic keeps track
+        of the call hierarchy to tell you what timed\u2026"
+    title: !!python/unicode chronic
+    url: https://github.com/davidcrawford/chronic
 title: Python

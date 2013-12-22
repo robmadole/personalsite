@@ -8,6 +8,9 @@ categories:
 -   description: Everything Backbone.js related
     name: Backbone.js
     slug: javascript-backbonejs
+-   description: Creating graphs or other images with JS
+    name: Visualization
+    slug: javascript-visualization
 locations:
 -   categories:
     - javascript-testing-tools
@@ -38,10 +41,31 @@ locations:
     title: !!python/unicode backbone.wreqr
     url: https://github.com/marionettejs/backbone.wreqr
 -   categories:
+    - javascript-visualization
+    description: "Time Series Visualization Mouseover or use the arrow keys to inspect
+        values.Open in a new window.Cubism.js is a D3 plugin for visualizing time
+        series. Use Cubism to construct better realtime\u2026"
+    title: !!python/unicode Cubism.js
+    url: http://square.github.io/cubism/
+-   categories:
+    - javascript-backbonejs
+    description: "(or, how to write modular JavaScript apps for desktop and mobile)
+        A work-in-progress by Addy Osmani Index Introduction The Basics Models Views
+        Collections Routers Namespacing Additional tips\u2026"
+    title: !!python/unicode addyosmani/backbone-fundamentals
+    url: https://github.com/addyosmani/backbone-fundamentals
+-   categories:
     - javascript-generic-tools
-    description: "A hack on top of 2to3 for modernizing code for hybrid codebases.
-        Downloads &#8595; :: Python _ _ _ __ ___ __| |___ _ _ _ _ (_)______ | ' \\/
-        _ \\/ _` / -_) '_| ' \\| |_ / -_) |_|_|_\\___/\\__,_\\___|_|\u2026"
-    title: !!python/unicode Python Package Index
-    url: http://pypi.python.org/pypi/modernize
+    description: "jasmine-jquery provides two extensions for Jasmine JavaScript Testing
+        Framework: a set of custom matchers for jQuery framework an API for handling
+        HTML fixtures in your specs Installation Simply\u2026"
+    title: !!python/unicode jasmine-jquery
+    url: https://github.com/velesin/jasmine-jquery
+-   categories:
+    - javascript-generic-tools
+    description: "An animated CSS3 loading spinner with VML fallback for IE. No images,
+        no external CSS No dependencies Highly configurable Resolution independent
+        Uses VML as fallback in old IEs Uses @keyframe\u2026"
+    title: !!python/unicode spin.js
+    url: https://github.com/fgnass/spin.js
 title: JavaScript

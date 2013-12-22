@@ -2,6 +2,9 @@ categories:
 -   description: Platform-as-a-service and Software-as-a-service
     name: PaaS and SaaS
     slug: devops-services
+-   description: Various interesting posts to level up your DevOps
+    name: Interesting ideas
+    slug: devops-ideas
 -   description: Linux containers with a sweet API
     name: Docker.io
     slug: devops-dockerio
@@ -14,6 +17,9 @@ categories:
 -   description: Various tools that make life easier
     name: Tools
     slug: devops-tools
+-   description: Managing infrasctructure by making it automated and executable
+    name: Configuration management
+    slug: devops-configuration-management
 -   description: Tools, techniques, protocols to stay safe
     name: Security
     slug: devops-security
@@ -57,7 +63,7 @@ locations:
     title: !!python/unicode fpm
     url: https://github.com/jordansissel/fpm
 -   categories:
-    - devops-tools
+    - devops-security
     description: "Minion is a security testing framework built by Mozilla to bridge
         the gap between developers and security testers. To do so, it enables developers
         to scan their projects using a friendly interface.\u2026"
@@ -115,6 +121,7 @@ locations:
     url: https://github.com/dbader/schedule
 -   categories:
     - devops-tools
+    - monitoring-tools
     description: "A multi-server monitoring system built on top of Salt using Django.
         It can serve both as an alerting system like monit and a monitoring system
         like munin (using Graphite's whisper database). It aims\u2026"
@@ -172,13 +179,15 @@ locations:
     url: https://github.com/etsy/supergrep
 -   categories:
     - devops-operations
-    description: "Skyline is a real-time* anomaly detection* system*, built to enable
+    - monitoring-tools
+    description: "Skyline is a real-time anomaly detection system*, built to enable
         passive monitoring of hundreds of thousands of metrics, without the need to
         configure a model/thresholds for each one, as you might\u2026"
     title: !!python/unicode skyline
     url: https://github.com/etsy/skyline
 -   categories:
     - devops-operations
+    - monitoring-tools
     description: "Oculus is the anomaly correlation component of Etsy's Kale system.
         It lets you search for metrics, using your choice of comparison algorithms:
         and shows you other metrics which are similar: You can\u2026"
@@ -187,9 +196,9 @@ locations:
 -   categories:
     - devops-operations
     - python-frameworks-libraries
-    description: "Release v0.4.0 (What&#x2019;s new?). structlog makes structured
-        logging in Python easy by augmenting your existing logger. It allows you to
-        split your log entries up into key/value pairs and build\u2026"
+    description: "structlog makes structured logging in Python easy by augmenting
+        your existing logger. It allows you to split your log entries up into key/value
+        pairs and build\u2026"
     title: "Structured Logging in Python \u2014 structlog documentation"
     url: http://www.structlog.org
 -   categories:
@@ -199,4 +208,45 @@ locations:
         with JSON over HTTP and can temporarily hold open\u2026"
     title: !!python/unicode epio/mantrid
     url: https://github.com/epio/mantrid
+-   categories:
+    - devops-vagrant-plugins
+    description: "vagrant-dns allows you to configure a dns-server managing a development
+        subdomain. It works much like pow, but manages Vagrant machines. Installation
+        $ vagrant plugin install vagrant-dns Usage In\u2026"
+    title: !!python/unicode vagrant-dns
+    url: https://github.com/BerlinVagrant/vagrant-dns
+-   categories:
+    - devops-services
+    description: "A sortable table displaying all the Amazon EC2 instance type and
+        pricing information so its easier to make comparisons. It's hosted on S3 and
+        awaiting your improvements on GitHub. Region: Costs: Name\u2026"
+    title: !!python/unicode Amazon EC2 Instance Comparison
+    url: http://www.ec2instances.info/
+-   categories:
+    - devops-security
+    description: "To jab or poke, as with a pointed object. To goad to action; incite.
+        Purpose This test suite contains a collection of very opinionated security-related
+        tests, intended for general usage against most\u2026"
+    title: !!python/unicode prodder
+    url: https://github.com/garethr/prodder
+-   categories:
+    - devops-configuration-management
+    description: !!python/unicode Mirrors Forks Sources All
+    title: "saltstack-formulas (Salt Stack Formulas) \xB7 GitHub"
+    url: https://github.com/saltstack-formulas
+-   categories:
+    - devops-ideas
+    description: "Posted: 2013-12-14 15:39 &#xA0;&#xA0;|&#xA0;&#xA0;More posts about
+        Testing BDD DevOps This is a write up of a talk I originally gave at DevopsDays
+        London in March 2013. I had a lot of positive\u2026"
+    title: !!python/unicode Load Balancer Testing with a Honeypot Daemon
+    url: http://mauveweb.co.uk/posts/2013/12/load-balancer-testing-with-honeyd.html
+-   categories:
+    - devops-security
+    - python-frameworks-libraries
+    description: "Signing URLs is as simple as follows. Required imports. &gt;&gt;&gt;
+        from ska import sign_url Producing a signed URL. &gt;&gt;&gt; signed_url =
+        sign_url( &gt;&gt;&gt; auth_user='user',\u2026"
+    title: !!python/unicode ska
+    url: https://github.com/barseghyanartur/ska
 title: DevOps

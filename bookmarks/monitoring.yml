@@ -2,6 +2,9 @@ categories:
 -   description: Presentations on the topic usually from various conferences
     name: Presentations
     slug: monitoring-presentations
+-   description: Software to help get eyes and ears on other software
+    name: Tools
+    slug: monitoring-tools
 locations:
 -   categories:
     - monitoring-presentations
@@ -15,4 +18,11 @@ locations:
         Looks + music to your videos.
     title: "Monitorama\u2019s Videos on Vimeo"
     url: http://vimeo.com/monitorama/videos
+-   categories:
+    - monitoring-tools
+    description: "A library to easily measure what's going on in your python. Metrology
+        allows you to add instruments to your python code and hook them to external
+        reporting tools like Graphite so as to better\u2026"
+    title: !!python/unicode metrology
+    url: https://github.com/cyberdelia/metrology
 title: Monitoring
