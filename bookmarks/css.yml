@@ -51,4 +51,10 @@ locations:
         slices. Improve loading times. Only 10% of a webpage's\u2026"
     title: !!python/unicode Spritemapper
     url: http://yostudios.github.io/Spritemapper/
+-   categories:
+    - css-tools
+    description: !!python/unicode Adobe Timeline Play Previous keyframe Toggle keyframe
+        Next keyframe 0s No filter applied. Add a filter to style the content.
+    title: !!python/unicode CSS FilterLab Experiment
+    url: http://html.adobe.com/webstandards/csscustomfilters/cssfilterlab/
 title: CSS

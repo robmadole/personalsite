@@ -68,4 +68,32 @@ locations:
         Uses VML as fallback in old IEs Uses @keyframe\u2026"
     title: !!python/unicode spin.js
     url: https://github.com/fgnass/spin.js
+-   categories:
+    - javascript-visualization
+    description: "Thumbnails are only shown from Flickr, Youtube, Vimeo etc. That
+        was done for performance reasons. Having a very large image file as a thumbnail
+        really slows down the timeline. Flickr, Youtube etc\u2026"
+    title: !!python/unicode Timeline
+    url: http://timeline.knightlab.com
+-   categories:
+    - javascript-generic-tools
+    description: "Great! So how do I use it? Of course you'll need to include the
+        js file in your HTML, but that's all you need to do to get started. All that's
+        left for you to do is describe all of your key combos.\u2026"
+    title: !!python/unicode 'Keypress: A Javascript library for capturing input'
+    url: http://dmauro.github.io/Keypress/
+-   categories:
+    - javascript-generic-tools
+    description: "Incredibly simple yet powerful features for images: drag and drop
+        them from your computer, copy and paste from an editor. Paste a link and see
+        an image &#x2014; also works with YouTube and Vimeo.\u2026"
+    title: !!python/unicode Meet the most fantastic Redactor ever
+    url: http://imperavi.com/redactor/
+-   categories:
+    - javascript-backbonejs
+    description: "Developing Backbone.js Applications By Addy Osmani (@addyosmani)
+        Available free for open-source reading below or for purchase via the O'Reilly
+        store. Pull requests and comments always welcome.\u2026"
+    title: !!python/unicode Developing Backbone.js Applications -
+    url: http://addyosmani.github.com/backbone-fundamentals/
 title: JavaScript

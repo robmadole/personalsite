@@ -231,22 +231,34 @@ locations:
     url: https://github.com/garethr/prodder
 -   categories:
     - devops-configuration-management
-    description: !!python/unicode Mirrors Forks Sources All
-    title: "saltstack-formulas (Salt Stack Formulas) \xB7 GitHub"
+    description: !!python/unicode Examples for setting up services or performing other
+        common configuration management tasks using Salt
+    title: Salt Stack Formulas
     url: https://github.com/saltstack-formulas
 -   categories:
     - devops-ideas
-    description: "Posted: 2013-12-14 15:39 &#xA0;&#xA0;|&#xA0;&#xA0;More posts about
-        Testing BDD DevOps This is a write up of a talk I originally gave at DevopsDays
-        London in March 2013. I had a lot of positive\u2026"
+    description: Unit testing a load balancer
     title: !!python/unicode Load Balancer Testing with a Honeypot Daemon
     url: http://mauveweb.co.uk/posts/2013/12/load-balancer-testing-with-honeyd.html
 -   categories:
     - devops-security
     - python-frameworks-libraries
-    description: "Signing URLs is as simple as follows. Required imports. &gt;&gt;&gt;
-        from ska import sign_url Producing a signed URL. &gt;&gt;&gt; signed_url =
-        sign_url( &gt;&gt;&gt; auth_user='user',\u2026"
+    description: Lets you easily sign data, using symmetric-key algorithm encryption.
+        Allows you to validate signed data and identify possible validation errors.
     title: !!python/unicode ska
     url: https://github.com/barseghyanartur/ska
+-   categories:
+    - devops-services
+    description: "Welcome to CRIU, a project to implement checkpoint/restore functionality
+        for Linux in userspace. Checkpoint/Restore In Userspace, or CRIU, is a software
+        tool for Linux operating system. Using this\u2026"
+    title: !!python/unicode CRIU
+    url: http://criu.org/Main_Page
+-   categories:
+    - devops-services
+    description: "What is SmartStack? SmartStack is an automated service discovery
+        and registration framework. It makes the lives of engineers easier by transparently
+        handling creation, deletion, failure, and\u2026"
+    title: !!python/unicode 'SmartStack: Service Discovery in the Cloud'
+    url: http://nerds.airbnb.com/smartstack-service-discovery-cloud/
 title: DevOps

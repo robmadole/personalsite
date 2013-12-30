@@ -31,4 +31,11 @@ locations:
         name: www.example.jp Select OS type of target host: 1)\u2026"
     title: !!python/unicode serverspec
     url: http://serverspec.org
+-   categories:
+    - software-testing-tools
+    description: "Did you ever test strings for unicode compatibility? Ever looked
+        for inspiration and found the whole Unicode table? Create your own shiny,
+        random, any-size, pre-defined or custom tailored, Unicode\u2026"
+    title: !!python/unicode unicode-gen
+    url: https://github.com/gvanderploeg/unicode-gen
 title: Software testing

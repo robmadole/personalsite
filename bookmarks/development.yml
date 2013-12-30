@@ -44,4 +44,12 @@ locations:
         with your code. All prose is passed through\u2026"
     title: !!python/unicode Docco
     url: http://jashkenas.github.io/docco/
+-   categories:
+    - development-collaborative
+    description: "The easiest way to share localhost web servers to the rest of the
+        world $ gem install localtunnel $ localtunnel 8000 share this url: http://xyz.localtunnel.com
+        STEP 1: Install localtunnel using\u2026"
+    title: !!python/unicode 'localtunnel: instantly show localhost to the rest of
+        the world'
+    url: http://progrium.com/localtunnel/
 title: Software Development
