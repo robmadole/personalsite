@@ -14,3 +14,7 @@ Deploy the site to robmadole.com:
 
     $ deploy
 
+To add a location to the bookmarks:
+
+    $ addloc URL CATEGORYSLUG[, CATEGORYSLUG...]
+
