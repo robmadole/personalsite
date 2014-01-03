@@ -261,4 +261,17 @@ locations:
         handling creation, deletion, failure, and\u2026"
     title: !!python/unicode 'SmartStack: Service Discovery in the Cloud'
     url: http://nerds.airbnb.com/smartstack-service-discovery-cloud/
+-   categories:
+    - devops-services
+    description: "Serf is a very nice service discovery and orchestration framework
+        which allows you to write scripts to react to different events across your
+        infrastructure. However most of the examples are simple\u2026"
+    title: !!python/unicode serf-master
+    url: https://github.com/garethr/serf-master
+-   categories:
+    - devops-configuration-management
+    description: !!python/unicode Insanely complete Ansible playbook, showing off
+        all the options Download Gist
+    title: !!python/unicode phred/pedantically_commented_playbook.yml
+    url: https://gist.github.com/phred/2897937
 title: DevOps

@@ -48,13 +48,6 @@ locations:
     title: !!python/unicode Cubism.js
     url: http://square.github.io/cubism/
 -   categories:
-    - javascript-backbonejs
-    description: "(or, how to write modular JavaScript apps for desktop and mobile)
-        A work-in-progress by Addy Osmani Index Introduction The Basics Models Views
-        Collections Routers Namespacing Additional tips\u2026"
-    title: !!python/unicode addyosmani/backbone-fundamentals
-    url: https://github.com/addyosmani/backbone-fundamentals
--   categories:
     - javascript-generic-tools
     description: "jasmine-jquery provides two extensions for Jasmine JavaScript Testing
         Framework: a set of custom matchers for jQuery framework an API for handling
@@ -91,9 +84,22 @@ locations:
     url: http://imperavi.com/redactor/
 -   categories:
     - javascript-backbonejs
-    description: "Developing Backbone.js Applications By Addy Osmani (@addyosmani)
-        Available free for open-source reading below or for purchase via the O'Reilly
-        store. Pull requests and comments always welcome.\u2026"
-    title: !!python/unicode Developing Backbone.js Applications -
+    description: "Available free for open-source reading below or for purchase via
+        the O'Reilly store. Pull requests and comments always welcome.\u2026"
+    title: !!python/unicode Developing Backbone.js Applications
     url: http://addyosmani.github.com/backbone-fundamentals/
+-   categories:
+    - javascript-testing-tools
+    description: "Write one of these: BDD TDD Object define([ 'intern!bdd', 'intern/chai!expect',
+        '../MyWidget' ], function (bdd, expect, MyWidget) { bdd.describe('demo widget',
+        function () { var widget;\u2026"
+    title: !!python/unicode Intern
+    url: http://theintern.io
+-   categories:
+    - javascript-testing-tools
+    description: "Download The only file you need is blanket.js. Download the library
+        and reference it in your test runner. &lt;script src=\"blanket.js\"&gt;&lt;/script&gt;
+        Configure Add a data-cover attribute to the\u2026"
+    title: !!python/unicode Seamless javascript code coverage
+    url: http://blanketjs.org
 title: JavaScript

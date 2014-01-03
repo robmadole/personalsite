@@ -25,4 +25,11 @@ locations:
         reporting tools like Graphite so as to better\u2026"
     title: !!python/unicode metrology
     url: https://github.com/cyberdelia/metrology
+-   categories:
+    - monitoring-tools
+    description: "Crucible Crucible is a refinement and feedback suite for algorithm
+        testing. It was designed to be used to create anomaly detection algorithms,
+        but it is very simple and can probably be extended to\u2026"
+    title: !!python/unicode crucible
+    url: https://github.com/astanway/crucible
 title: Monitoring

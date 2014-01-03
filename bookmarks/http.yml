@@ -1,3 +1,4 @@
+title: HTTP
 categories:
 -   description: Controlling content using caching headers
     name: Caching
@@ -15,7 +16,7 @@ locations:
     url: https://devcenter.heroku.com/articles/increasing-application-performance-with-http-cache-headers
 -   categories:
     - python-frameworks-libraries
-    - http-tools
+    - http-cli
     description: "HTTPie is a CLI HTTP utility built out of frustration with existing
         tools. The goal is to make CLI interaction with HTTP-based services as human-friendly
         as possible. HTTPie does so by providing an\u2026"

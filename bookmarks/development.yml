@@ -52,4 +52,11 @@ locations:
     title: !!python/unicode 'localtunnel: instantly show localhost to the rest of
         the world'
     url: http://progrium.com/localtunnel/
+-   categories:
+    - development-environments
+    - devops-tools
+    - python-frameworks-libraries
+    description: !!python/unicode PythonShell Show File Finder
+    title: !!python/unicode honcho
+    url: https://github.com/nickstenning/honcho
 title: Software Development
