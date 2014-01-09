@@ -56,4 +56,11 @@ locations:
         to raise our standards. Since 2009, The League has\u2026"
     title: !!python/unicode The League of Moveable Type
     url: https://www.theleagueofmoveabletype.com
+-   categories:
+    - design-icons
+    description: "Just create a directory for your svg files. Then, on the command
+        line, run: fontcustom watch /path/to/vectors Font Custom will create the font
+        files and accompanying CSS file. It will also continue\u2026"
+    title: !!python/unicode Font Custom
+    url: http://fontcustom.com
 title: Design

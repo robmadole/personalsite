@@ -5,6 +5,9 @@ categories:
 -   description: Language-specific software to interface with databases
     name: Libraries
     slug: databases-libraries
+-   description: Document-based databases
+    name: Libraries
+    slug: databases-document
 locations:
 -   categories:
     - databases-key-value
@@ -20,4 +23,32 @@ locations:
         implementation for Mongodb. The object-data mapper\u2026"
     title: !!python/unicode Python Stdnet
     url: http://lsbardel.github.io/python-stdnet/
+-   categories:
+    - databases-document
+    description: "RethinkDB is built to store JSON documents, and scale to multiple
+        machines with very little effort. It has a pleasant query language that supports
+        really useful queries like table joins and group by,\u2026"
+    title: !!python/unicode a distributed document database for scalable web applications
+    url: http://www.rethinkdb.com
+-   categories:
+    - databases-document
+    description: "Built by RJMetrics. RJMetrics lets you analyze data in MongoDB,
+        MySQL, spreadsheets, and more without needing to write queries. Try it free.
+        About the Translator | Cohort Analysis Mongo and MongoDB\u2026"
+    title: !!python/unicode Query Translator
+    url: http://www.querymongo.com
+-   categories:
+    - databases-document
+    description: "Dex, the Index Bot Dex is a MongoDB performance tuning tool that
+        compares queries to the available indexes in the queried collection(s) and
+        generates index suggestions based on simple heuristics.\u2026"
+    title: !!python/unicode dex
+    url: https://github.com/mongolab/dex
+-   categories:
+    - databases-key-value
+    description: "Key-Value store written in Python and based on levelDB, allows high
+        performance on-disk bulk read/write. Allows async, multithreaded and/or remote
+        access to a multi-leveldb backend. Relying on the\u2026"
+    title: !!python/unicode Elevator
+    url: https://github.com/oleiade/Elevator
 title: Databases

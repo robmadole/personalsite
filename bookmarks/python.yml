@@ -38,6 +38,9 @@ categories:
 -   description: All thing related to distribute, setuptools, and PEP 376
     name: Packaging
     slug: python-packaging
+-   description: Educational stuff focused around the Python language
+    name: Education
+    slug: python-education
 locations:
 -   categories:
     - python-gotchas
@@ -239,10 +242,9 @@ locations:
     url: https://code.google.com/p/psutil/
 -   categories:
     - python-version3
-    description: "Six is a Python 2 and 3 compatibility library. It provides
-        utility functions for smoothing over the differences between the Python
-        versions with the goal of writing Python code that is compatible on both Python
-        versions."
+    description: Six is a Python 2 and 3 compatibility library. It provides utility
+        functions for smoothing over the differences between the Python versions with
+        the goal of writing Python code that is compatible on both Python versions.
     title: !!python/unicode six 1.3.0
     url: https://pypi.python.org/pypi/six
 -   categories:
@@ -250,19 +252,74 @@ locations:
     description: "Abstract With Python 3 being the future of Python while Python 2
         is still in active use, it is good to have your project available for both
         major releases of Python. This guide is meant to help you\u2026"
-    title: "Porting Python 2 Code to Python 3"
+    title: Porting Python 2 Code to Python 3
     url: http://docs.python.org/3/howto/pyporting.html
 -   categories:
     - python-version3
-    description: "Download modernize-0.2.tar.gz A hack on top of 2to3 for modernizing
-        code for hybrid codebases."
+    description: Download modernize-0.2.tar.gz A hack on top of 2to3 for modernizing
+        code for hybrid codebases.
     title: !!python/unicode modernize 0.2
     url: https://pypi.python.org/pypi/modernize
 -   categories:
     - python-version3
-    description: "The missing compatibility layer between Python 2 and Python
-        3. It allows you to use a single, clean Python 3.x-compatible codebase to
-        support both Python 2 and Python 3 with minimal\u2026"
-    title: "future: clean single-source support for Python 2/3"
+    description: "The missing compatibility layer between Python 2 and Python 3. It
+        allows you to use a single, clean Python 3.x-compatible codebase to support
+        both Python 2 and Python 3 with minimal\u2026"
+    title: 'future: clean single-source support for Python 2/3'
     url: http://python-future.org
+-   categories:
+    - python-frameworks-libraries
+    description: "About autopep8 automatically formats Python code to conform to the
+        PEP 8 style guide. It uses the pep8 utility to determine what parts of the
+        code needs to be formatted. autopep8 is capable of fixing\u2026"
+    title: !!python/unicode autopep8
+    url: https://github.com/hhatto/autopep8
+-   categories:
+    - python-functional-programming
+    description: "Despite the fact that Python is not pure-functional programming
+        language, it's multi-paradigm PL and it gives you enough freedom to take credits
+        from functional programming approach. There are\u2026"
+    title: !!python/unicode fn.py
+    url: https://github.com/kachayev/fn.py
+-   categories:
+    - python-functional-programming
+    description: "Sat 01 September 2012 By Mikhail Korobov Python provides great built-in
+        types like dict, list, tuple and set; there are also array, collections, heapq
+        modules in the standard library; this article is\u2026"
+    title: !!python/unicode Fast Non-Standard Data Structures for Python
+    url: http://kmike.ru/python-data-structures/
+-   categories:
+    - python-education
+    description: !!python/unicode Python Show File Finder
+    title: !!python/unicode python-patterns
+    url: https://github.com/faif/python-patterns
+-   categories:
+    - python-frameworks-libraries
+    - devops-tools
+    description: "This is just a fun project I'm writing to help me with another project.
+        It implements a set of common things you need to do to write a server in Python.
+        The project is meant to be educational for\u2026"
+    title: !!python/unicode python-lust
+    url: https://github.com/zedshaw/python-lust
+-   categories:
+    - python-frameworks-libraries
+    description: "Logbook is a logging sytem for Python that replaces the standard
+        library&#x2019;s logging module. It was designed with both complex and simple
+        applications in mind and the idea to make logging fun:\u2026"
+    title: "Welcome to Logbook \u2014 Logbook"
+    url: http://pythonhosted.org/Logbook/
+-   categories:
+    - python-frameworks-libraries
+    description: "The logutils package provides a set of handlers for the Python standard
+        library&#x2019;s logging package. Some of these handlers are out-of-scope
+        for the standard library, and so they are packaged\u2026"
+    title: "Logutils documentation \u2014 Logutils v0.3.3 documentation"
+    url: http://pythonhosted.org/logutils/
+-   categories:
+    - python-debugging
+    description: "Debug tool tracking Python memory allocations. Provide the following
+        information: Allocated size and number of allocations per file, or optionally
+        per file and line number Compute the average size of\u2026"
+    title: !!python/unicode pytracemalloc
+    url: https://github.com/wyplay/pytracemalloc
 title: Python

@@ -274,4 +274,45 @@ locations:
         all the options Download Gist
     title: !!python/unicode phred/pedantically_commented_playbook.yml
     url: https://gist.github.com/phred/2897937
+-   categories:
+    - devops-services
+    description: "Apache Kafka is publish-subscribe messaging rethought as a distributed
+        commit log. Fast A single Kafka broker can handle hundreds of megabytes of
+        reads and writes per second from thousands of\u2026"
+    title: !!python/unicode Kafka
+    url: http://kafka.apache.org
+-   categories:
+    - devops-security
+    description: !!python/unicode Risk I/O Blog Sign Up
+    title: !!python/unicode RiskDB Vulnerability Explorer
+    url: https://db.risk.io
+-   categories:
+    - devops-operations
+    description: "logstash is a tool for managing events and logs. You can use it
+        to collect logs, parse them, and store them for later use (like, for searching).
+        Speaking of searching, logstash comes with a web\u2026"
+    title: !!python/unicode open source log management
+    url: http://www.logstash.net
+-   categories:
+    - devops-operations
+    - python-frameworks-libraries
+    description: "Tracks server state and statistics, allowing you to see what your
+        server is doing. It can also send metrics to Graphite for graphing or to a
+        file for crash forensics. scales is inspired by the\u2026"
+    title: !!python/unicode scales
+    url: https://github.com/Cue/scales
+-   categories:
+    - devops-services
+    description: "Ever heard of the Chaos Monkey? It&#x2019;s a project at Netflix
+        to enhance the infrastructure tolerance. The Chaos Monkey will randomly shut
+        down some servers or block some network connections, and\u2026"
+    title: "Vaurien, the Chaos TCP Proxy\xB6"
+    url: http://vaurien.readthedocs.org
+-   categories:
+    - devops-operations
+    description: "Graph-explorer A graphite dashboard that's different, from Vimeo
+        Structures your metrics The Graphite tree model is hard to organize and query,
+        it lacks information and can be inflexible when\u2026"
+    title: !!python/unicode Graph-explorer by Vimeo
+    url: http://vimeo.github.io/graph-explorer/
 title: DevOps

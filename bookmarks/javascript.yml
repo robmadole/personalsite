@@ -11,6 +11,9 @@ categories:
 -   description: Creating graphs or other images with JS
     name: Visualization
     slug: javascript-visualization
+-   description: Documentation, style guides, and resources for learning
+    name: Education
+    slug: javascript-education
 locations:
 -   categories:
     - javascript-testing-tools
@@ -109,4 +112,38 @@ locations:
         for testing client-side JavaScript code in a\u2026"
     title: !!python/unicode Insanely fast, headless full-stack testing using Node.js
     url: http://zombie.labnotes.org
+-   categories:
+    - javascript-education
+    description: "A mostly reasonable approach to JavaScript Table of Contents Types
+        Primitives: When you access a primitive type you work directly on its value
+        string number boolean null undefined var foo = 1, bar =\u2026"
+    title: !!python/unicode javascript
+    url: https://github.com/airbnb/javascript
+-   categories:
+    - javascript-generic-tools
+    description: "Features General Principles: HTML5 compliant: correctly and accurately
+        implemented (HTML5) Markup-, JS- and DOM-APIs capability based loading: extremely
+        lightweight in modern browsers cross-browser\u2026"
+    title: !!python/unicode webshim
+    url: https://github.com/aFarkas/webshim
+-   categories:
+    - javascript-testing-tools
+    description: !!python/unicode Uses phantomjs to get screenshots of your running
+        sites in different resolutions.
+    title: !!python/unicode review
+    url: https://github.com/juliangruber/review
+-   categories:
+    - javascript-generic-tools
+    description: "dropzone.js DropzoneJS is an open source library that provides drag'n'drop
+        file uploads with image previews. Loading fonts Try it out: (This is just
+        a demo dropzone. Uploaded files are not stored.)\u2026"
+    title: !!python/unicode Dropzone.js
+    url: http://www.dropzonejs.com
+-   categories:
+    - javascript-testing-tools
+    description: "Fixtures The fixtures module allows you to load HTML content to
+        be used by your tests. Try using this in conjunction with a powerful assertion
+        library such as chai-jquery. The code was completely\u2026"
+    title: !!python/unicode js-fixtures
+    url: https://github.com/badunk/js-fixtures
 title: JavaScript
