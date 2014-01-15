@@ -5,6 +5,9 @@ categories:
 -   description: Learning the rubies
     name: Educaction
     slug: ruby-education
+-   description: Ruby libraries and tools for doing stuff
+    name: Tools
+    slug: ruby-tools
 locations:
 -   categories:
     - ruby-packaging
@@ -27,4 +30,11 @@ locations:
         the difference between blocks, procs, and\u2026"
     title: !!python/unicode 'RubyTapas Freebie: Blocks, Procs, & Lambdas'
     url: http://devblog.avdi.org/2013/02/18/rubytapas-freebie-blocks-procs-lambdas/
+-   categories:
+    - ruby-tools
+    description: "Que is a queue for Ruby applications that manages jobs using PostgreSQL's
+        advisory locks. There are several advantages to this design: Safety - If a
+        Ruby process dies, its jobs won't be lost, or left\u2026"
+    title: !!python/unicode que
+    url: https://github.com/chanks/que
 title: Ruby

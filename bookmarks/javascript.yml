@@ -146,4 +146,10 @@ locations:
         library such as chai-jquery. The code was completely\u2026"
     title: !!python/unicode js-fixtures
     url: https://github.com/badunk/js-fixtures
+-   categories:
+    - javascript-testing-tools
+    description: !!python/unicode Developer preview 0.0.8*Automated cross browser
+        testing with JavaScript!Exterminate all the bugs!
+    title: !!python/unicode DalekJS
+    url: http://dalekjs.com
 title: JavaScript
