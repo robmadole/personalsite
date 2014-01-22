@@ -152,4 +152,11 @@ locations:
         testing with JavaScript!Exterminate all the bugs!
     title: !!python/unicode DalekJS
     url: http://dalekjs.com
+-   categories:
+    - javascript-backbonejs
+    description: "Convention-based, awesome model binding for Backbone.js , inspired
+        by Brad Phelan , Knockout.js ' data-binding capabilities, and Brandon Satrom
+        's work with Knockout. This plugin provides a simple,\u2026"
+    title: !!python/unicode derickbailey/backbone.modelbinding
+    url: https://github.com/derickbailey/backbone.modelbinding
 title: JavaScript

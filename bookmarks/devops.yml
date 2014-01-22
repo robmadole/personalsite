@@ -315,4 +315,38 @@ locations:
         it lacks information and can be inflexible when\u2026"
     title: !!python/unicode Graph-explorer by Vimeo
     url: http://vimeo.github.io/graph-explorer/
+-   categories:
+    - devops-dockerio
+    description: "Baseimage-docker is a special Docker image that is configured for
+        correct use within Docker containers. It is Ubuntu, plus modifications for
+        Docker-friendliness. You can use it as a base for your own\u2026"
+    title: !!python/unicode baseimage-docker
+    url: https://github.com/phusion/baseimage-docker
+-   categories:
+    - devops-dockerio
+    description: !!python/unicode 
+    title: !!python/unicode Quay - Private Docker Repository
+    url: https://quay.io
+-   categories:
+    - devops-dockerio
+    description: "Punctual, lightweight development environments using Docker. Fig
+        is a tool for defining and running isolated application environments. You
+        define the services which comprise your app in a simple,\u2026"
+    title: !!python/unicode Fig | Punctual, lightweight development environments using
+        Docker
+    url: http://orchardup.github.io/fig
+-   categories:
+    - devops-services
+    description: "Bento is a project that encapsulates Packer templates for building
+        Vagrant baseboxes. We use these boxes internally at Opscode for testing Hosted
+        Enterprise Chef, Private Enterprise Chef and our open\u2026"
+    title: !!python/unicode bento
+    url: https://github.com/opscode/bento
+-   categories:
+    - devops-tools
+    description: "PRM PRM (Package Repository Manager) is an Operating System independent
+        Package Repository tool. It allows you to quickly build Debian and Yum Package
+        Repositories. PRM supports Repository syncing to\u2026"
+    title: !!python/unicode prm
+    url: https://github.com/dnbert/prm
 title: DevOps

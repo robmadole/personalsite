@@ -322,4 +322,32 @@ locations:
         per file and line number Compute the average size of\u2026"
     title: !!python/unicode pytracemalloc
     url: https://github.com/wyplay/pytracemalloc
+-   categories:
+    - python-frameworks-libraries
+    description: !!python/unicode Bitbucket is a code hosting site with unlimited
+        public and private repositories. We're also free for small teams! Sign up
+        for free Close
+    title: !!python/unicode defnull / contexter
+    url: https://bitbucket.org/defnull/contexter
+-   categories:
+    - python-frameworks-libraries
+    description: "Interpy extends Python to support Ruby like string interpolation
+        #{}. Quick example: print \"Hello #{your_name}\" It is hightly optimized,
+        and directly compiled to bytecode, so you will have the same\u2026"
+    title: !!python/unicode interpy
+    url: https://github.com/SyrusAkbary/interpy
+-   categories:
+    - python-frameworks-libraries
+    description: "Introduction and History&#xB6; Welcome to Pecan, a lean Python web
+        framework inspired by CherryPy, TurboGears, and Pylons. Pecan was originally
+        created by the developers of ShootQ while working at\u2026"
+    title: "Introduction and History \u2014 Pecan 0.4.4 documentation"
+    url: http://pecan.readthedocs.org
+-   categories:
+    - python-frameworks-libraries
+    description: "Booby is a standalone data modeling and validation library written
+        in Python. Booby is under active development and licensed under the Apache2
+        license, so feel free to contribute and report errors\u2026"
+    title: "Booby: data modeling and validation \u2014 Booby 0.5.0 documentation"
+    url: https://booby.readthedocs.org/
 title: Python
