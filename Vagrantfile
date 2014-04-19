@@ -2,8 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "precise64"
-  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
+  config.vm.box = "hashicorp/precise64"
 
   # Flask in development mode
   config.vm.network :forwarded_port, guest: 5000, host: 5000, auto_correct: false
@@ -19,7 +18,7 @@ Vagrant.configure("2") do |config|
     salt.run_highstate = true
     salt.minion_config = "salt/minion"
     salt.install_type = "git"
-    salt.install_args = "v0.14.1"
+    salt.install_args = "v2014.1.1"
     salt.install_master = false
     salt.bootstrap_script = "salt/bootstrap.sh"
     salt.verbose = false
