@@ -349,4 +349,36 @@ locations:
         Repositories. PRM supports Repository syncing to\u2026"
     title: !!python/unicode prm
     url: https://github.com/dnbert/prm
+-   categories:
+    - devops-dockerio
+    description: "MaestroNG, an orchestrator of Docker-based deployments The original
+        Maestro was developed as a single-host orchestrator for Docker-based deployments.
+        Given the state of Docker at the time of its\u2026"
+    title: !!python/unicode signalfuse/maestro-ng
+    url: https://github.com/signalfuse/maestro-ng
+-   categories:
+    - devops-dockerio
+    description: !!python/unicode 19 public repos 0 members
+    title: !!python/unicode dockerforge
+    url: https://github.com/dockerforge
+-   categories:
+    - devops-security
+    description: "Your best defense against Cross Site Scripting (XSS) What it looks
+        like: Content-Security-Policy: script-src 'self' https://apis.google.com A
+        great example: Simplemachines.org Tell Me More Content\u2026"
+    title: !!python/unicode Content Security Policy
+    url: https://securityheaders.com/content-security-policy.php
+-   categories:
+    - devops-operations
+    description: !!python/unicode What Is It? See for yourself! StatusPage is the
+        easiest way to create hosted status pages. Status pages live outside of your
+        infrastructure so when you're down, your status page isn't.
+    title: !!python/unicode Hosted Status Pages for Your Company
+    url: https://www.statuspage.io
+-   categories:
+    - devops-dockerio
+    description: "SSD containers starting at $5 per month Signup to Deployed in under
+        60 seconds \xA9 Copper.io 2013. All rights reserved."
+    title: !!python/unicode Docker hosting on blazing fast dedicated infrastructure
+    url: https://stackdock.com
 title: DevOps

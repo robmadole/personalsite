@@ -23,6 +23,9 @@ categories:
 -   description: All things Django-related
     name: Django
     slug: python-django
+-   description: All things Flask-related
+    name: Flask
+    slug: python-flask
 -   description: Internationalization and localization
     name: I18N and L10N
     slug: python-i18n-l10n
@@ -350,4 +353,102 @@ locations:
         license, so feel free to contribute and report errors\u2026"
     title: "Booby: data modeling and validation \u2014 Booby 0.5.0 documentation"
     url: https://booby.readthedocs.org/
+-   categories:
+    - python-frameworks-libraries
+    description: "_|_|_|_| _| _| _|_|_| _| _| _|_| _| _|_| _|_|_| _| _| _|_| _|_|_|_|
+        _|_| _| _| _| _| _| _| _| _| _|_|_| _| _| _|_|_| _| Faker is a Python package
+        that generates fake data for you. Whether you need to\u2026"
+    title: !!python/unicode faker
+    url: https://github.com/joke2k/faker
+-   categories:
+    - python-frameworks-libraries
+    description: "cryptography is a Python library which exposes cryptographic recipes
+        and primitives. We hope it&#x2019;ll be your one-stop-shop for all your cryptographic
+        needs in Python. Installing&#xB6; You can\u2026"
+    title: "Welcome to cryptography \u2014 Cryptography 0.2.dev1 documentation"
+    url: https://cryptography.io/en/latest/
+-   categories:
+    - python-concurrency
+    description: !!python/unicode Python Show File Finder
+    title: !!python/unicode abhinavsingh/async_pubsub
+    url: https://github.com/abhinavsingh/async_pubsub
+-   categories:
+    - python-packaging
+    description: "PyPI can go down, package maintainers can remove old tarballs, and
+        downloading tarballs can take a long time. pip2pi helps to alleviate these
+        problems by making it blindingly simple to maintain a\u2026"
+    title: !!python/unicode pip2pi
+    url: https://github.com/wolever/pip2pi
+-   categories:
+    - python-debugging
+    description: "_ ___ ___ ___ _ _ _ | | / _ \\ / __/ __| \\| | /_\\ | |_| (_) |
+        (_ \\__ \\ .` |/ _ \\ |____\\___/ \\___|___/_|\\_/_/ \\_\\ logsna is a small
+        Python library that provides a sane log output format.\u2026"
+    title: !!python/unicode logsna
+    url: https://github.com/rspivak/logsna
+-   categories:
+    - python-frameworks-libraries
+    - rest-tools
+    description: "Provides a read-only restful interface for accessing data from Git
+        repositories (local to the server). Modeled off the GitHub Git DB API for
+        compatibility (see http://developer.github.com/v3/git/).\u2026"
+    title: !!python/unicode restfulgit
+    url: https://github.com/hulu/restfulgit
+-   categories:
+    - python-tornado
+    - python-concurrency
+    description: "Simple platform for real-time message broadcasting in web applications.
+        The main goal of Centrifuge is the same as in Pusher or Pubnub services. The
+        main difference is that Centrifuge is open-source\u2026"
+    title: !!python/unicode centrifuge
+    url: https://github.com/FZambia/centrifuge
+-   categories:
+    - python-flask
+    description: "Flask Foundation is a solid foundation for flask applications, built
+        with best practices, that you can easily construct your website/webapp off
+        of. Built off of the bootstrapy project Best practices\u2026"
+    title: !!python/unicode Flask-Foundation
+    url: https://github.com/JackStouffer/Flask-Foundation
+-   categories:
+    - python-concurrency
+    description: "Zero MQ wrapper that makes it trivial to set up 0MQ connections.
+        A wrapper for a wrapper... Does that make any sense? Well, to me it did, since
+        the pyzmq wrapper tries to stay very close to the\u2026"
+    title: !!python/unicode philipbergen/zero
+    url: https://github.com/philipbergen/zero
+-   categories:
+    - python-debugging
+    description: "Release v0.4.1 (What&#x2019;s new?). structlog makes structured
+        logging in Python easy by augmenting your existing logger. It allows you to
+        split your log entries up into key/value pairs and build\u2026"
+    title: "Structured Logging in Python \u2014 structlog documentation"
+    url: http://www.structlog.org/en/0.4.1/
+-   categories:
+    - python-frameworks-libraries
+    description: !!python/unicode 'Cerberus is an ISC Licensed validation tool for
+        Python dictionaries. &gt;&gt;&gt; v = Validator({''name'': {''type'': ''string''}})
+        &gt;&gt;&gt; v.validate'
+    title: !!python/unicode nicolaiarocci/cerberus
+    url: https://github.com/nicolaiarocci/cerberus
+-   categories:
+    - python-flask
+    description: !!python/unicode Python Show File Finder README.rst Elegant WebSockets
+        for your Flask apps.
+    title: !!python/unicode flask-sockets
+    url: https://github.com/kennethreitz/flask-sockets
+-   categories:
+    - python-frameworks-libraries
+    description: "Although managing data in relational database has plenty of benefits,
+        they&#x2019;re rarely used in day-to-day work with small to medium scale datasets.
+        But why is that? Why do we see an awful lot of\u2026"
+    title: "databases for lazy people\xB6"
+    url: http://dataset.readthedocs.org/en/latest/
+-   categories:
+    - python-frameworks-libraries
+    - rest-tools
+    description: "Release v0.2.0. (Installation) marshmallow is an ORM/ODM/framework-agnostic
+        library for converting complex datatypes, such as objects, into native Python
+        datatypes. The serialized objects can then be\u2026"
+    title: "Simplified Object Serialization \u2014 marshmallow 0.2.0 documentation"
+    url: http://marshmallow.readthedocs.org/en/latest/
 title: Python

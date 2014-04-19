@@ -37,4 +37,23 @@ locations:
         Ruby process dies, its jobs won't be lost, or left\u2026"
     title: !!python/unicode que
     url: https://github.com/chanks/que
+-   categories:
+    - ruby-education
+    description: "The Koans walk you along the path to enlightenment in order to learn
+        Ruby. The goal is to learn the Ruby language, syntax, structure, and some
+        common functions and libraries. We also teach you\u2026"
+    title: !!python/unicode Learn Ruby With the Edgecase Ruby Koans
+    url: http://rubykoans.com
+-   categories:
+    - ruby-tools
+    description: !!python/unicode 
+    title: !!python/unicode deivid-rodriguez/byebug
+    url: https://github.com/deivid-rodriguez/byebug
+-   categories:
+    - ruby-tools
+    description: !!python/unicode Inspired by the &#x2018;zucker&#x2019; project.
+        Install gem install sugar-high Usage See specs for example use Update Aug
+        21, 2011 Extracted file_mutate and sweetloader gems.
+    title: !!python/unicode kristianmandrup/sugar-high
+    url: https://github.com/kristianmandrup/sugar-high
 title: Ruby

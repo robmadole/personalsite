@@ -30,4 +30,11 @@ locations:
         Just add the status code you want to the URL, like this:\u2026"
     title: !!python/unicode httpstat.us
     url: http://httpstat.us
+-   categories:
+    - rest-specs
+    description: "What are REST Hooks? REST Hooks itself is not a specification, it
+        is a collection of patterns that treat webhooks like subscriptions. These
+        subscriptions are manipulated via a REST API just like any\u2026"
+    title: !!python/unicode Reduce your REST API server load by 66x
+    url: http://resthooks.org
 title: REST

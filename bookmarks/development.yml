@@ -59,4 +59,18 @@ locations:
     description: !!python/unicode PythonShell Show File Finder
     title: !!python/unicode honcho
     url: https://github.com/nickstenning/honcho
+-   categories:
+    - development-documentation
+    description: "We've selected some APIs our users have built to give you a sense
+        of what can be done with Apiary. We have a solution for company of every size.
+        Hacker Free API Documentation Public or Private APIs\u2026"
+    title: "Apiary \u2014 Home"
+    url: http://apiary.io
+-   categories:
+    - development-collaborative
+    description: "Generates UML sequence diagrams from simple texthttp://bramp.github.io/js-sequence-diagrams/
+        by Andrew Brampton 2012-2013 Example We turn Alice-&gt;Bob: Hello Bob, how
+        are you? Note right of Bob: Bob\u2026"
+    title: !!python/unicode js-sequence-diagrams
+    url: https://github.com/bramp/js-sequence-diagrams
 title: Software Development

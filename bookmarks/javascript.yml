@@ -14,6 +14,9 @@ categories:
 -   description: Documentation, style guides, and resources for learning
     name: Education
     slug: javascript-education
+-   description: Anything related to jQuery or jQuery plugins
+    name: jQuery
+    slug: javascript-jquery
 locations:
 -   categories:
     - javascript-testing-tools
@@ -159,4 +162,36 @@ locations:
         's work with Knockout. This plugin provides a simple,\u2026"
     title: !!python/unicode derickbailey/backbone.modelbinding
     url: https://github.com/derickbailey/backbone.modelbinding
+-   categories:
+    - javascript-backbonejs
+    description: "Provides a function for generating model constructors which will
+        never produce multiple instances with the same unique identifier. When you
+        create a new instance of a model created with\u2026"
+    title: !!python/unicode misteroneill/backbone-model-factory
+    url: https://github.com/misteroneill/backbone-model-factory
+-   categories:
+    - javascript-visualization
+    description: !!python/unicode About Features Examples Tutorials Reference Download
+        Donation License Mailing List
+    title: !!python/unicode Paper.js
+    url: http://paperjs.org
+-   categories:
+    - javascript-visualization
+    description: "DocumentationDownload 6 Chart types Visualise your data in different
+        ways. Each of them animated, fully customisable and look great, even on retina
+        displays. HTML5 Based Chart.js uses the HTML5\u2026"
+    title: !!python/unicode Chart.js
+    url: http://www.chartjs.org
+-   categories:
+    - javascript-generic-tools
+    description: !!python/unicode 'An internal DSL for generating HTML in JavaScript.
+        Examples Basic elements html.div(''#main'', [ html.h1(null, ''Hello, world!''),
+        html.img({src: ''foo.jpg''})'
+    title: !!python/unicode pithy
+    url: https://github.com/caolan/pithy
+-   categories:
+    - javascript-jquery
+    description: A uncluttered list of jQuery plugins
+    title: !!python/unicode Unheap
+    url: http://www.unheap.com
 title: JavaScript

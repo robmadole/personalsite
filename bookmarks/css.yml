@@ -8,6 +8,9 @@ categories:
 -   description: Stuff you can use to help with CSS
     name: Tools
     slug: css-tools
+-   description: Learn how to be a better CSS author
+    name: Education
+    slug: css-education
 locations:
 -   categories:
     - css-linters
@@ -57,4 +60,11 @@ locations:
         Next keyframe 0s No filter applied. Add a filter to style the content.
     title: !!python/unicode CSS FilterLab Experiment
     url: http://html.adobe.com/webstandards/csscustomfilters/cssfilterlab/
+-   categories:
+    - css-education
+    description: "&#x201C;SMACSS is becoming one of the most useful contributions
+        to front-end discussions in years&#x201D; * I&#x2019;ve been analyzing my
+        process (and the process of those around me) and figuring out\u2026"
+    title: !!python/unicode What is it?
+    url: http://smacss.com
 title: CSS

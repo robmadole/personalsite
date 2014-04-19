@@ -1,4 +1,3 @@
-title: HTTP
 categories:
 -   description: Controlling content using caching headers
     name: Caching
@@ -6,12 +5,15 @@ categories:
 -   description: Different CLI tools used to interact with HTTP servers
     name: Command-line tools
     slug: http-cli
+-   description: Generic tools used to deal with HTTP
+    name: Tools
+    slug: http-tools
 locations:
 -   categories:
     - http-caching
-    description: "The modern day developer
-        has a wide variety of techniques and technologies available to improve application
-        performance and end-user experience. One of the\u2026"
+    description: "The modern day developer has a wide variety of techniques and technologies
+        available to improve application performance and end-user experience. One
+        of the\u2026"
     title: !!python/unicode Increasing Application Performance with HTTP Cache Headers
     url: https://devcenter.heroku.com/articles/increasing-application-performance-with-http-cache-headers
 -   categories:
@@ -22,3 +24,11 @@ locations:
         as possible. HTTPie does so by providing an\u2026"
     title: !!python/unicode httpie
     url: https://github.com/jkbr/httpie
+-   categories:
+    - http-tools
+    description: "Summary A pure JavaScript CORS alternative/polyfill. No server configuration
+        required - just add a proxy.html on the domain you wish to communicate with.
+        This library utilizes XHook to hook all XHR,\u2026"
+    title: !!python/unicode xdomain
+    url: https://github.com/jpillora/xdomain
+title: HTTP

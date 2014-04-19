@@ -17,4 +17,18 @@ locations:
         or other libraries to work. A jQuery plugin is\u2026"
     title: !!python/unicode You can touch this
     url: http://eightmedia.github.io/hammer.js/
+-   categories:
+    - html-tools
+    description: "Click to edit, Select to apply effect, click items of toolbar to
+        toggle effects. Horizontal-Rule can be insert by click&#x300C;...&#x300D;on
+        the toolbar or just type&#x300C;... &#x300D;/&#x300C;---\u2026"
+    title: !!python/unicode Pen - What You See Is What You Get (WYSIWYG)
+    url: http://sofish.github.io/pen/
+-   categories:
+    - html-tools
+    description: "Process Docs Inliner Email Templates Download Email anywhere. On
+        any device. How HTML email was meant to be read. Reach out your tentacles
+        to a broad range of people who subscribe to your emails. Our\u2026"
+    title: !!python/unicode 'Ink: A Responsive Email Framework from ZURB'
+    url: http://zurb.com/ink/
 title: HTML
