@@ -44,6 +44,9 @@ categories:
 -   description: Educational stuff focused around the Python language
     name: Education
     slug: python-education
+-   description: Testing-related tools and resources
+    name: Testing
+    slug: python-testing
 locations:
 -   categories:
     - python-gotchas
@@ -451,4 +454,57 @@ locations:
         datatypes. The serialized objects can then be\u2026"
     title: "Simplified Object Serialization \u2014 marshmallow 0.2.0 documentation"
     url: http://marshmallow.readthedocs.org/en/latest/
+-   categories:
+    - python-frameworks-libraries
+    - rest-tools
+    description: "Release v0.2.0. (Installation) marshmallow is an ORM/ODM/framework-agnostic
+        library for converting complex datatypes, such as objects, into native Python
+        datatypes. The serialized objects can then be\u2026"
+    title: "Simplified Object Serialization \u2014 marshmallow 0.2.0 documentation"
+    url: http://marshmallow.readthedocs.org/en/latest/
+-   categories:
+    - python-concurrency
+    description: "An async programming framework with a blocking look-alike syntax.
+        monocle straightens out event-driven code using Python's generators. It aims
+        to be portable between event-driven I/O frameworks, and\u2026"
+    title: !!python/unicode saucelabs/monocle
+    url: https://github.com/saucelabs/monocle
+-   categories:
+    - python-frameworks-libraries
+    description: "RQ (Redis Queue) is a simple Python library for queueing jobs and
+        processing them in the background with workers. It is backed by Redis and
+        it is designed to have a low barrier to entry. It should be\u2026"
+    title: !!python/unicode 'RQ: Simple job queues for Python'
+    url: http://python-rq.org
+-   categories:
+    - python-testing
+    description: !!python/unicode 
+    title: !!python/unicode olegpidsadnyi/pytest-bdd
+    url: https://github.com/olegpidsadnyi/pytest-bdd
+-   categories:
+    - python-concurrency
+    description: !!python/unicode Show File Finder docs
+    title: !!python/unicode vaidik/sherlock
+    url: https://github.com/vaidik/sherlock
+-   categories:
+    - python-frameworks-libraries
+    description: "Simple Declarative Authentication DSL inspired by Ryan Bates&#x2019;
+        excellent cancan library Introduction Meet bouncer. bouncer is your faithful
+        servant. Big, burly, trustworthy &#x2013; smarter\u2026"
+    title: !!python/unicode jtushman/bouncer
+    url: https://github.com/jtushman/bouncer
+-   categories:
+    - python-flask
+    description: "Flask declarative authorization leveraging bouncer flask-bouncer
+        is an authorization library for Flask which restricts what resources a given
+        user is allowed to access. All the permissions are\u2026"
+    title: !!python/unicode jtushman/flask-bouncer
+    url: https://github.com/jtushman/flask-bouncer
+-   categories:
+    - python-django
+    description: "Twisted meets Django: Making deployment easy Hendrix is a multi-threaded,
+        multi-process and asynchronous web server for Django projects. The idea here
+        is to have a highly extensible wsgi deployment\u2026"
+    title: !!python/unicode hangarunderground/hendrix
+    url: https://github.com/hangarunderground/hendrix
 title: Python

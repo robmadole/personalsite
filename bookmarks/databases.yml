@@ -51,4 +51,11 @@ locations:
         access to a multi-leveldb backend. Relying on the\u2026"
     title: !!python/unicode Elevator
     url: https://github.com/oleiade/Elevator
+-   categories:
+    - databases-key-value
+    description: "What Trousseau is a gpg encrypted key-value store designed to be
+        a simple, safe and trustworthy place for your data. It stores data in a single
+        multi-recipients encrypted file and can supports both\u2026"
+    title: !!python/unicode trousseau
+    url: https://github.com/oleiade/trousseau
 title: Databases

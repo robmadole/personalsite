@@ -38,4 +38,37 @@ locations:
         random, any-size, pre-defined or custom tailored, Unicode\u2026"
     title: !!python/unicode unicode-gen
     url: https://github.com/gvanderploeg/unicode-gen
+-   categories:
+    - software-testing-tools
+    description: "Continuous Integration for Github and Bitbucket that monitors your
+        code for bugs Get Started For Free Free It's Free Unlimited Builds Unlimited
+        Public Projects 0 Private Projects Starter Unlimited\u2026"
+    title: !!python/unicode Don't Let Bugs Invade your Code
+    url: https://drone.io
+-   categories:
+    - software-testing-tools
+    description: "Continuous Integration for Github and Bitbucket that monitors your
+        code for bugs Get Started For Free Free It's Free Unlimited Builds Unlimited
+        Public Projects 0 Private Projects Starter Unlimited\u2026"
+    title: !!python/unicode Don't Let Bugs Invade your Code
+    url: http://drone.io
+-   categories:
+    - software-testing-tools
+    description: "SIGN UP FOR FREE unlimited free repositories 2 concurrent builds
+        max 25 minutes per build unlimited collaborators no credit card required Increasing
+        #developervelocity Wercker is a continuous\u2026"
+    title: !!python/unicode The open delivery platform
+    url: http://wercker.com
+-   categories:
+    - software-testing-tools
+    description: "PhantomJS-based modular web performance metrics collector. Requirements
+        PhantomJS 1.7+ NodeJS (for run-multiple.js script) Dependencies phantomas
+        uses the following 3rd party libraries (located in\u2026"
+    title: !!python/unicode phantomas
+    url: https://github.com/macbre/phantomas
+-   categories:
+    - software-testing-tools
+    description: !!python/unicode Home Features Pricing About
+    title: !!python/unicode Pricing plans
+    url: https://www.shippable.com
 title: Software testing

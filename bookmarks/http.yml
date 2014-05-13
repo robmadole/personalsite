@@ -31,4 +31,11 @@ locations:
         This library utilizes XHook to hook all XHR,\u2026"
     title: !!python/unicode xdomain
     url: https://github.com/jpillora/xdomain
+-   categories:
+    - http-tools
+    description: "a simple, rfc 2616 compliant file streaming module for node node-static
+        has an in-memory file cache, making it highly efficient. node-static understands
+        and supports conditional GET and HEAD\u2026"
+    title: !!python/unicode cloudhead/node-static
+    url: https://github.com/cloudhead/node-static
 title: HTTP

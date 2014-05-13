@@ -32,4 +32,11 @@ locations:
         but it is very simple and can probably be extended to\u2026"
     title: !!python/unicode crucible
     url: https://github.com/astanway/crucible
+-   categories:
+    - monitoring-tools
+    description: "About Diamond is a python daemon that collects system metrics and
+        publishes them to Graphite (and others). It is capable of collecting cpu,
+        memory, network, i/o, load and disk metrics. Additionally,\u2026"
+    title: !!python/unicode BrightcoveOS/Diamond
+    url: https://github.com/BrightcoveOS/Diamond
 title: Monitoring

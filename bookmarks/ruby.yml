@@ -56,4 +56,11 @@ locations:
         21, 2011 Extracted file_mutate and sweetloader gems.
     title: !!python/unicode kristianmandrup/sugar-high
     url: https://github.com/kristianmandrup/sugar-high
+-   categories:
+    - ruby-tools
+    description: "Painless multithreaded programming for Ruby Celluloid is a concurrent
+        object oriented programming framework for Ruby which lets you build multithreaded
+        programs out of concurrent objects just as\u2026"
+    title: !!python/unicode Actor-based Concurrent Objects for Ruby
+    url: http://celluloid.io
 title: Ruby

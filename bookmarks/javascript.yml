@@ -194,4 +194,32 @@ locations:
     description: A uncluttered list of jQuery plugins
     title: !!python/unicode Unheap
     url: http://www.unheap.com
+-   categories:
+    - javascript-generic-tools
+    description: "SockJS family: Work in progress: SockJS is a browser JavaScript
+        library that provides a WebSocket-like object. SockJS gives you a coherent,
+        cross-browser, Javascript API which creates a low latency,\u2026"
+    title: !!python/unicode sockjs-client
+    url: https://github.com/sockjs/sockjs-client
+-   categories:
+    - javascript-generic-tools
+    description: "dropzone.js DropzoneJS is an open source library that provides drag'n'drop
+        file uploads with image previews. Loading fonts Try it out: (This is just
+        a demo dropzone. Uploaded files are not stored.)\u2026"
+    title: !!python/unicode Dropzone.js
+    url: http://www.dropzonejs.com
+-   categories:
+    - javascript-testing-tools
+    description: "gremlins.js is a monkey testing library written in JavaScript, for
+        Node.js and the browser. Use it to check the robustness of web applications
+        by unleashing a horde of undisciplined gremlins. Kate:\u2026"
+    title: !!python/unicode marmelab/gremlins.js
+    url: https://github.com/marmelab/gremlins.js
+-   categories:
+    - javascript-generic-tools
+    description: "gulp's use of streams and code-over-configuration makes for a simpler
+        and more intuitive build. Easy to use By preferring code over configuration,
+        gulp keeps simple things simple and makes complex\u2026"
+    title: !!python/unicode the streaming build system
+    url: http://gulpjs.com
 title: JavaScript

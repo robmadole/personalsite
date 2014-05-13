@@ -381,4 +381,46 @@ locations:
         60 seconds \xA9 Copper.io 2013. All rights reserved."
     title: !!python/unicode Docker hosting on blazing fast dedicated infrastructure
     url: https://stackdock.com
+-   categories:
+    - devops-operations
+    description: !!python/unicode Bluepill is a simple process monitoring tool written
+        in Ruby. Installation It's hosted on rubygems.org. sudo gem install bluepill
+        In order to take advantage
+    title: !!python/unicode bluepill-rb/bluepill
+    url: https://github.com/bluepill-rb/bluepill
+-   categories:
+    - devops-dockerio
+    description: "Baseimage-docker is a special Docker image that is configured for
+        correct use within Docker containers. It is Ubuntu, plus modifications for
+        Docker-friendliness. You can use it as a base for your own\u2026"
+    title: !!python/unicode phusion/baseimage-docker
+    url: https://github.com/phusion/baseimage-docker
+-   categories:
+    - devops-dockerio
+    description: "Blockade is a utility for testing network failures and partitions
+        in distributed applications. Blockade uses Docker containers to run application
+        processes and manages the network from the host\u2026"
+    title: !!python/unicode dcm-oss/blockade
+    url: https://github.com/dcm-oss/blockade
+-   categories:
+    - devops-services
+    description: "confd is a lightweight configuration management tool focused on:
+        keeping local configuration files up-to-date by polling etcd and processing
+        template resources. reloading applications to pick up new\u2026"
+    title: !!python/unicode confd
+    url: https://github.com/kelseyhightower/confd
+-   categories:
+    - devops-configuration-management
+    description: "Show File Finder README.md Generate startup scripts for the wasteland
+        of sorrow that is process launchers. Ideally, you should be able to specify
+        a configuration of how to run a given service command\u2026"
+    title: !!python/unicode pleaserun
+    url: https://github.com/jordansissel/pleaserun
+-   categories:
+    - devops-services
+    description: "Gogeta is a dynamic reverse proxy which configuration is based on
+        etcd. It provides real time dynamic reconfiguration of routes without having
+        to restart the process. It is part of the nuxeo.io\u2026"
+    title: !!python/unicode nuxeo/gogeta
+    url: https://github.com/nuxeo/gogeta
 title: DevOps
