@@ -30,7 +30,7 @@ setup(
         'pyyaml==3.10',
         'whoosh==2.5.1',
         'requests==1.2.3',
-        'twython==3.0.0',
+        'twython==3.1.2',
     ],
     license='CC-BY',
     author='Rob Madole'

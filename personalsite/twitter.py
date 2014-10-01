@@ -24,13 +24,13 @@ def get_latest_tweet(app):
         latest_id = user_timeline[0]['id']
 
         tweet_response = twitter.request(
-            '/statuses/show', params={
+            'statuses/show', params={
                 'id': latest_id
             }
         )
 
         oembed_response = twitter.request(
-            '/statuses/oembed', params={
+            'statuses/oembed', params={
                 'id': latest_id,
                 'hide_media': False,
                 'hide_thread': True,
