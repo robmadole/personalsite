@@ -20,7 +20,6 @@ Vagrant.configure("2") do |config|
     salt.install_type = "git"
     salt.install_args = "v2014.1.1"
     salt.install_master = false
-    salt.bootstrap_script = "salt/bootstrap.sh"
     salt.verbose = false
   end
 end

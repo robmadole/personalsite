@@ -29,7 +29,7 @@
         {% for bookmark in bookmarks %}
           {% set url = url_for('bookmark_detail', slug=bookmark.slug) %}
           <li class="bookmark well" role="card">
-            <a class="btn btn-small category-expand" role="category-expander" href="#"><i class="icon-list-ul"></i></a>
+            <a class="btn btn-small category-expand" role="category-expander" href="#"><i class="icon icon-list-ul"></i></a>
             <h3 role="title"><a href="{{ url }}">{{ bookmark.title }}</a></h3>
 
             <div class="categories collapse" role="categories">
